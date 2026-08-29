@@ -1,0 +1,1313 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+</head><body>
+<title>사랑스런 우리가족 유럽여행</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap">
+
+<style>
+:root{
+  --font:Pretendard,"Pretendard Variable",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;
+  --ground:#FAFAFB; --surface:#FFFFFF; --surface-2:#F3F4F7;
+  --ink:#14171C; --ink-2:#464C57; --muted:#68717E;
+  --line:#E2E5EA; --line-2:#CBD1D9;
+  --accent:#A81729; --accent-soft:#FAECEE;
+  --warn:#8A5205; --warn-soft:#FCF3E4;
+  --ok:#186339; --ok-soft:#E9F3ED;
+  --move:#1C4A73; --move-soft:#E9F0F7;
+  --shadow:0 1px 2px rgba(20,23,28,.05), 0 8px 24px -16px rgba(20,23,28,.28);
+  --on-now:#FFFFFF;
+  --c1:#FF4D4D; --c1t:#C11F2E; --c1s:rgba(255,77,77,.20);
+  --c2:#FF9500; --c2t:#A85413; --c2s:rgba(255,149,0,.22);
+  --c3:#FFCC00; --c3t:#8A6D00; --c3s:rgba(255,204,0,.28);
+  --c4:#30C551; --c4t:#1F7A3D; --c4s:rgba(48,197,81,.20);
+  --c5:#0A84FF; --c5t:#0A5AA8; --c5s:rgba(10,132,255,.18);
+  --c6:#3838D8; --c6t:#2E2EB0; --c6s:rgba(56,56,216,.24);
+  --c7:#A93BEC; --c7t:#7E1FBC; --c7s:rgba(169,59,236,.22);
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1216; --surface:#161A20; --surface-2:#1D222A;
+    --ink:#E8EBF0; --ink-2:#B2BAC6; --muted:#828B99;
+    --line:#252B34; --line-2:#39414E;
+    --accent:#EE8391; --accent-soft:#2A181C;
+    --warn:#E4A854; --warn-soft:#2A2216;
+    --ok:#6FC08D; --ok-soft:#15251C;
+    --move:#83B6E2; --move-soft:#15202B;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+    --on-now:#14171C;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1216; --surface:#161A20; --surface-2:#1D222A;
+  --ink:#E8EBF0; --ink-2:#B2BAC6; --muted:#828B99;
+  --line:#252B34; --line-2:#39414E;
+  --accent:#EE8391; --accent-soft:#2A181C;
+  --warn:#E4A854; --warn-soft:#2A2216;
+  --ok:#6FC08D; --ok-soft:#15251C;
+  --move:#83B6E2; --move-soft:#15202B;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.7);
+    --on-now:#14171C;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:var(--font);
+  font-weight:400; line-height:1.55; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:940px; margin:0 auto; padding:0 20px 96px}
+
+/* ---------- masthead ---------- */
+.mast{padding:56px 0 28px; border-bottom:2px solid var(--ink)}
+.eyebrow{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:12px; font-weight:500;
+  letter-spacing:.18em; text-transform:uppercase; color:var(--accent); margin:0 0 14px;
+}
+.mast h1{
+  margin:0; font-size:clamp(20px,7.7vw,46px); font-weight:700; letter-spacing:-.02em;
+  line-height:1.1; white-space:nowrap;
+}
+.crew{display:flex; flex-wrap:wrap; align-items:center; gap:7px 6px; margin:16px 0 0; padding:0; list-style:none}
+.crew .nm{
+  font-size:14.5px; font-weight:600; letter-spacing:-.01em;
+  color:var(--move); background:var(--move-soft);
+  padding:4px 11px; border-radius:999px; white-space:nowrap;
+}
+.crew .hrt{font-style:normal; font-size:14px; line-height:1}
+.mast .sub{margin:14px 0 0; color:var(--ink-2); font-size:clamp(11px,3.45vw,16px); font-weight:300;
+  white-space:nowrap; letter-spacing:-.01em}
+
+.stats{display:flex; flex-wrap:wrap; gap:0; margin:26px 0 0; border-top:1px solid var(--line)}
+.stat{flex:1 1 140px; padding:14px 18px 14px 0; border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat .k{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11.5px; letter-spacing:.13em;
+  text-transform:uppercase; color:var(--muted); display:block; margin-bottom:5px}
+.stat .v{font-size:19px; font-weight:600; font-variant-numeric:tabular-nums; letter-spacing:-.01em}
+.stat .v small{font-size:13px; font-weight:400; color:var(--muted); margin-left:3px}
+
+/* ---------- progress ---------- */
+.prog{margin-top:34px}
+.prog-head{display:flex; align-items:baseline; gap:12px; margin-bottom:11px; flex-wrap:nowrap; min-width:0}
+.prog-status{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:22px; font-weight:600;
+  letter-spacing:-.01em; color:var(--accent); }
+.prog-sub{font-size:14px; color:var(--muted); font-weight:300;
+  flex:1; min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.bar-hint{
+  display:flex; align-items:center; justify-content:flex-start; gap:4px;
+  font-family:var(--font); font-size:10.5px; font-weight:600; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:-3px 0 5px;
+}
+.bar{
+  position:relative; display:flex; gap:2px; height:46px;
+  background:var(--line); border-radius:5px; overflow:visible; padding:2px;
+}
+.seg{
+  position:relative; display:flex; flex-direction:column; justify-content:flex-start; align-items:flex-start;
+  background:var(--surface-2); border-radius:3px; flex:1 1 0; padding:8px 6px 0; min-width:0; overflow:hidden; cursor:pointer;
+}
+.seg:nth-child(1){background:var(--c1s)}
+.seg:nth-child(2){background:var(--c2s)}
+.seg:nth-child(3){background:var(--c3s)}
+.seg:nth-child(4){background:var(--c4s)}
+.seg:nth-child(5){background:var(--c5s)}
+.seg:nth-child(6){background:var(--c6s)}
+.seg:nth-child(7){background:var(--c7s)}
+.seg.done{opacity:.45}
+.seg:nth-child(1).now{background:var(--c1)}
+.seg:nth-child(2).now{background:var(--c2)}
+.seg:nth-child(3).now{background:var(--c3)}
+.seg:nth-child(4).now{background:var(--c4)}
+.seg:nth-child(5).now{background:var(--c5)}
+.seg:nth-child(6).now{background:var(--c6)}
+.seg:nth-child(7).now{background:var(--c7)}
+.seg .sc{
+  font-size:13.5px; font-weight:600; white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis; line-height:1.25;
+}
+.seg .sn{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11.5px; color:var(--muted);
+  line-height:1.25;
+}
+.seg .l1{display:flex; align-items:baseline; gap:3px; white-space:nowrap; overflow:hidden; min-width:0}
+.seg .dtn{
+  font-family:var(--font); font-size:10px; font-weight:500; color:var(--muted);
+  line-height:1.2; white-space:nowrap;
+}
+.seg.now .dtn{color:#14171C}
+.seg .scs{display:none}
+.seg.now .sc, .seg.now .scs, .seg.now .sn{color:#14171C}
+.seg:nth-child(6).now .sc, .seg:nth-child(6).now .scs, .seg:nth-child(6).now .sn,
+.seg:nth-child(7).now .sc, .seg:nth-child(7).now .scs, .seg:nth-child(7).now .sn{color:#fff}
+.seg:nth-child(6).now .dtn, .seg:nth-child(7).now .dtn{color:rgba(255,255,255,.85)}
+.seg:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.marker{
+  position:absolute; top:0; bottom:0; width:2px; background:var(--ink);
+  z-index:3; display:none; pointer-events:none;
+}
+.marker::after{
+  content:""; position:absolute; top:-4px; left:-3px; width:8px; height:8px;
+  background:var(--ink); border-radius:50%;
+}
+.scale{
+  display:flex; justify-content:space-between; margin-top:6px;
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11.5px; color:var(--muted);
+  }
+
+/* ---------- preview control ---------- */
+.preview{
+  display:flex; align-items:center; gap:11px; margin-top:12px; flex-wrap:wrap;
+  padding-top:11px; border-top:1px dashed var(--line-2);
+}
+.preview .pv-label{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--muted); flex:none;
+}
+.pv-days{
+  display:grid; grid-template-columns:repeat(7,1fr); gap:3px; flex:1 1 100%; order:9; padding:3px 0;
+}
+.pd{
+  display:flex; align-items:center; justify-content:center; gap:3px;
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11px; font-weight:600;
+  color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line);
+  padding:4px 2px; border-radius:5px; min-height:28px; cursor:pointer; line-height:1.2;
+  transition:border-color .15s, background .15s, color .15s;
+}
+.pd small{display:none}
+.pwd{
+  text-align:center; font-family:var(--font); font-size:10px; font-weight:600;
+  letter-spacing:.06em; color:var(--muted); padding-bottom:1px;
+}
+.pwd.sun{color:var(--accent)}
+.pd:hover{border-color:var(--move)}
+.pd:focus-visible{outline:2px solid var(--move); outline-offset:2px}
+.pd.on{background:var(--move); border-color:var(--move); color:#14171C; font-weight:700}
+.pd.on small{color:rgba(20,23,28,.7)}
+.pd.pc1{background:var(--c1s); border-color:transparent}
+.pd.pc2{background:var(--c2s); border-color:transparent}
+.pd.pc3{background:var(--c3s); border-color:transparent}
+.pd.pc4{background:var(--c4s); border-color:transparent}
+.pd.pc5{background:var(--c5s); border-color:transparent}
+.pd.pc6{background:var(--c6s); border-color:transparent}
+.pd.pc7{background:var(--c7s); border-color:transparent}
+.pd.pc1.on{background:var(--c1); border-color:var(--c1)}
+.pd.pc2.on{background:var(--c2); border-color:var(--c2)}
+.pd.pc3.on{background:var(--c3); border-color:var(--c3)}
+.pd.pc4.on{background:var(--c4); border-color:var(--c4)}
+.pd.pc5.on{background:var(--c5); border-color:var(--c5)}
+.pd.pc6.on{background:var(--c6); border-color:var(--c6)}
+.pd.pc7.on{background:var(--c7); border-color:var(--c7)}
+.pd.pc6.on, .pd.pc7.on{color:#fff}
+.pd.today-pd{border-color:var(--accent)}
+#pvReset{
+  font-family:var(--font); font-size:13px; font-weight:500;
+  color:var(--ink-2); background:var(--surface-2); border:1px solid var(--line-2);
+  padding:10px 15px; border-radius:6px; min-height:44px; cursor:pointer; flex:none;
+  transition:border-color .15s, color .15s;
+}
+#pvReset:hover{border-color:var(--accent); color:var(--accent)}
+#pvReset:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.prog.is-preview .prog-status{color:var(--move)}
+
+/* ---------- next deadline strip ---------- */
+.next-dl{
+  display:flex; align-items:baseline; gap:10px; width:100%; margin:16px 0 0; text-align:left;
+  background:var(--warn-soft); border:0; border-left:3px solid var(--warn);
+  padding:11px 14px; border-radius:0 6px 6px 0; cursor:pointer; font-family:var(--font);
+}
+.next-dl:focus-visible{outline:2px solid var(--warn); outline-offset:2px}
+.next-dl .nd-k{font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--warn); font-weight:600; flex:none}
+.next-dl .nd-d{font-size:16px; font-weight:700; color:var(--warn); font-variant-numeric:tabular-nums; flex:none}
+.next-dl .nd-t{font-size:14px; color:var(--ink-2); min-width:0}
+
+/* ---------- deadline calendar ---------- */
+.dl{margin-top:44px; padding:22px 24px; background:var(--surface); border:1px solid var(--line);
+  border-radius:8px; box-shadow:var(--shadow); scroll-margin-top:12px}
+.dl-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:10px}
+.dl h2{margin:0; font-size:17px; font-weight:700; letter-spacing:-.01em}
+.dl-sub{font-size:13px; color:var(--muted); font-weight:300}
+.dl-list{display:flex; flex-direction:column}
+.dl-row{
+  display:grid; grid-template-columns:76px 78px 1fr auto; gap:10px; align-items:baseline;
+  padding:8px 0; border-bottom:1px solid var(--line); font-size:14.5px;
+}
+.dl-row:last-child{border-bottom:0}
+.dd{font-variant-numeric:tabular-nums; font-weight:600; white-space:nowrap}
+.db{font-size:11px; font-weight:600; letter-spacing:.05em; padding:2px 7px; border-radius:3px;
+  justify-self:start; white-space:nowrap}
+.db.pay{background:var(--move-soft); color:var(--move)}
+.db.cxl{background:var(--accent-soft); color:var(--accent)}
+.db.open{background:var(--ok-soft); color:var(--ok)}
+.dt{min-width:0}
+.dm{font-variant-numeric:tabular-nums; color:var(--muted); white-space:nowrap; font-size:13.5px}
+.dl-row.past{opacity:.42}
+.dl-row.past .dd{text-decoration:line-through}
+.dl-row.next{background:var(--warn-soft); margin:0 -10px; padding-left:10px; padding-right:10px;
+  border-radius:6px; border-bottom-color:transparent}
+.dl-row.next .dd{color:var(--warn)}
+.dl-note{margin:12px 0 0; font-size:13px; color:var(--muted); font-weight:300; line-height:1.6}
+.dl-note b{color:var(--ink-2); font-weight:600}
+.dl.done .dl-list, .dl.done .dl-note{display:none}
+.dt a, .tcard a{color:var(--accent); font-weight:600; text-decoration:none;
+  border-bottom:1px solid var(--accent-soft)}
+.dt a:hover, .tcard a:hover{border-bottom-color:var(--accent)}
+.dt a:focus-visible, .tcard a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* ---------- weather ---------- */
+.wx{margin-top:44px; padding:22px 24px; background:var(--surface); border:1px solid var(--line);
+  border-radius:8px; box-shadow:var(--shadow)}
+.wx h2{margin:0 0 4px; font-size:17px; font-weight:700; letter-spacing:-.01em}
+.wx .lead{margin:0 0 16px; font-size:14px; color:var(--muted); font-weight:300}
+.snap-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:10px}
+.snap-title{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11.5px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--accent); font-weight:600}
+.snap-time{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11.5px; color:var(--muted)}
+.snap-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:2px;
+  background:var(--line); border:1px solid var(--line); border-radius:6px; overflow:hidden}
+.sc-card{background:var(--surface-2); padding:11px 12px; display:flex; flex-direction:column; gap:1px}
+.sc-card.alp{background:var(--move-soft)}
+.sc-city{font-size:13px; font-weight:600; line-height:1.3}
+.sc-city em{font-style:normal; font-family:var(--font); font-variant-numeric:tabular-nums; font-size:10.5px;
+  color:var(--muted); font-weight:400}
+.sc-t{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:24px; font-weight:500;
+  letter-spacing:-.02em; line-height:1.2; margin:1px 0}
+.sc-card.alp .sc-t{color:var(--move)}
+.sc-m{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11px; color:var(--muted)}
+.sc-w{font-size:12px; color:var(--ink-2); margin-top:2px}
+.snap-note{margin:12px 0 22px; font-size:13px; color:var(--muted); font-weight:300; line-height:1.6}
+.snap-note b{color:var(--ink-2); font-weight:600}
+.wx-links{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:20px}
+.wx-links a{
+  display:inline-flex; flex-direction:column; gap:1px; text-decoration:none;
+  background:var(--surface-2); border:1px solid var(--line);
+  padding:8px 13px; border-radius:5px; transition:border-color .15s, background .15s;
+}
+.wx-links a:hover, .wx-links a:focus-visible{border-color:var(--accent); background:var(--accent-soft)}
+.wx-links a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+.wx-links .n{font-size:14px; font-weight:600; color:var(--ink)}
+.wx-links .u{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11px; color:var(--muted)}
+.wx-tbl{width:100%; min-width:640px; border-collapse:collapse; font-size:14px}
+.wx-tbl th{
+  text-align:left; font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11px;
+  letter-spacing:.11em; text-transform:uppercase; color:var(--muted);
+  font-weight:500; padding:0 10px 7px 0; border-bottom:1px solid var(--line-2);
+}
+.wx-tbl td{padding:8px 10px 8px 0; border-bottom:1px solid var(--line); vertical-align:top}
+.wx-tbl td.mono{font-family:var(--font); font-variant-numeric:tabular-nums; white-space:nowrap}
+.wx-tbl tr:last-child td{border-bottom:0}
+.wx-tbl .city{font-weight:600}
+.wx-tbl .cold{color:var(--move); font-weight:600}
+.wx-tbl .alt{display:block; font-size:11px; color:var(--muted); font-weight:400}
+.wx-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.tbl-hint{display:none; margin:8px 0 0; font-size:13px; color:var(--muted); font-weight:300}
+
+/* ---------- city block ---------- */
+.city{margin-top:52px; scroll-margin-top:12px}
+.city-head{
+  display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
+  padding-bottom:12px; border-bottom:2px solid var(--accent);
+}
+.city-name{font-size:26px; font-weight:700; letter-spacing:-.02em; margin:0}
+.city-meta{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:13.5px; color:var(--muted);
+  margin-left:auto;
+}
+.nights{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:12px; font-weight:600;
+  background:var(--accent-soft); color:var(--accent);
+  padding:3px 8px; border-radius:3px; letter-spacing:.04em;
+}
+.city.cc1 .city-head{border-bottom-color:var(--c1)} .city.cc1 .nights{background:var(--c1s); color:var(--c1t)}
+.city.cc2 .city-head{border-bottom-color:var(--c2)} .city.cc2 .nights{background:var(--c2s); color:var(--c2t)}
+.city.cc3 .city-head{border-bottom-color:var(--c3)} .city.cc3 .nights{background:var(--c3s); color:var(--c3t)}
+.city.cc4 .city-head{border-bottom-color:var(--c4)} .city.cc4 .nights{background:var(--c4s); color:var(--c4t)}
+.city.cc5 .city-head{border-bottom-color:var(--c5)} .city.cc5 .nights{background:var(--c5s); color:var(--c5t)}
+.city.cc6 .city-head{border-bottom-color:var(--c6)} .city.cc6 .nights{background:var(--c6s); color:var(--c6t)}
+.city.cc7 .city-head{border-bottom-color:var(--c7)} .city.cc7 .nights{background:var(--c7s); color:var(--c7t)}
+
+.stay{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:2px;
+  background:var(--line); border:1px solid var(--line); margin:14px 0 8px;
+  border-radius:6px; overflow:hidden;
+}
+.stay div{background:var(--surface); padding:11px 13px}
+.stay .k{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--muted); display:block; margin-bottom:4px}
+.stay .v{font-size:14.5px; font-weight:500; line-height:1.4}
+.stay .v.mono{font-family:var(--font); font-variant-numeric:tabular-nums}
+
+/* ---------- day ---------- */
+.day{
+  display:grid; grid-template-columns:112px 1fr; gap:20px;
+  padding:20px 0; border-bottom:1px solid var(--line);
+}
+.day:last-child{border-bottom:0}
+.day.travel .date .num{color:var(--move)}
+.day.today{background:var(--accent-soft); border-radius:6px; padding-left:12px; padding-right:12px; margin:0 -12px}
+.day.today .date .d{color:var(--accent)}
+body.pv .day.today{background:var(--move-soft)}
+body.pv .day.today .date .d{color:var(--move)}
+
+.date{position:sticky; top:14px; align-self:start}
+.date .num{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:12px; font-weight:600;
+  letter-spacing:.1em; color:var(--accent); display:block; margin-bottom:3px;
+}
+.date .d{font-size:20px; font-weight:600; font-variant-numeric:tabular-nums; letter-spacing:-.01em}
+.date .w{font-size:13.5px; color:var(--muted); margin-left:5px; font-weight:400}
+.tag{
+  display:inline-block; margin-top:7px; font-family:var(--font); font-variant-numeric:tabular-nums;
+  font-size:11px; font-weight:600; letter-spacing:.08em; padding:2px 6px; border-radius:3px;
+}
+.tag.move{background:var(--move-soft); color:var(--move)}
+.tag.wash{background:var(--ok-soft); color:var(--ok)}
+
+.items{display:flex; flex-direction:column; gap:9px; min-width:0}
+.item{display:grid; grid-template-columns:58px 1fr; gap:12px; align-items:baseline}
+.item .t{
+  font-family:var(--font); font-variant-numeric:tabular-nums; font-size:13.5px; font-weight:500;
+  color:var(--muted); padding-top:1px;
+}
+.item .c{font-size:15.5px; line-height:1.5}
+.item .c b{font-weight:600}
+.item .c .note{display:block; color:var(--ink-2); font-size:13.5px; margin-top:2px; font-weight:400}
+
+.alert{
+  display:flex; gap:9px; align-items:flex-start;
+  background:var(--warn-soft); border-left:3px solid var(--warn);
+  padding:9px 12px; border-radius:0 4px 4px 0; font-size:14px; color:var(--ink-2);
+}
+.alert b{color:var(--warn); font-weight:600}
+.alert::before{content:"주의"; font-family:var(--font); font-variant-numeric:tabular-nums; font-size:10.5px;
+  font-weight:600; letter-spacing:.1em; color:var(--warn); flex:none; padding-top:3px}
+
+/* ---------- back to top ---------- */
+.totop, .tobot{
+  position:fixed; right:16px; bottom:calc(18px + env(safe-area-inset-bottom, 0px));
+  width:48px; height:48px; border-radius:50%; padding:0;
+  background:var(--surface); color:var(--ink-2);
+  border:1px solid var(--line-2); box-shadow:var(--shadow);
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; z-index:50;
+  opacity:0; transform:translateY(8px); pointer-events:none;
+  transition:opacity .2s, transform .2s, border-color .15s, color .15s;
+}
+.totop.show, .tobot.show{opacity:1; transform:none; pointer-events:auto}
+.totop:hover, .tobot:hover{border-color:var(--accent); color:var(--accent)}
+.totop:focus-visible, .tobot:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* ---------- footer ---------- */
+.todo{margin-top:56px; padding-top:28px; border-top:2px solid var(--ink)}
+.todo h2{font-size:20px; font-weight:700; margin:0 0 18px; letter-spacing:-.01em}
+.tgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px}
+.tcard{background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 17px; box-shadow:var(--shadow)}
+.tcard h3{margin:0 0 10px; font-size:13px; font-family:var(--font); font-variant-numeric:tabular-nums;
+  letter-spacing:.11em; text-transform:uppercase; color:var(--accent); font-weight:600}
+.tcard ul{margin:0; padding-left:17px; font-size:14.5px; line-height:1.65; color:var(--ink-2)}
+.tcard li{margin-bottom:5px}
+.tcard li b{color:var(--ink); font-weight:600}
+.tcard li b.hot{color:var(--accent)}
+.tcard li.pair{list-style:none; margin:6px 0 8px -17px; padding-left:22px; position:relative}
+.tcard li.pair .pr{position:relative; margin-bottom:7px}
+.tcard li.pair .pr:last-child{margin-bottom:0}
+.tcard li.pair .pr::before{
+  content:""; position:absolute; left:-14px; top:.5em; margin-top:-1px;
+  width:7px; height:7px; border-radius:50%; background:var(--accent);
+}
+.tcard li.pair .plink{
+  position:absolute; left:2px; width:8px;
+  border:2px solid var(--accent); border-right:0; border-radius:6px 0 0 6px;
+  pointer-events:none;
+}
+
+.foot{margin-top:32px; font-size:13px; color:var(--muted); font-weight:300}
+
+@media (max-width:720px){
+  .wrap{padding:0 15px 72px}
+  .mast{padding:34px 0 20px}
+  body{font-size:16px}
+
+  .stat{flex:1 1 45%; padding:12px 14px 12px 0}
+  .stat:nth-child(2), .stat:nth-child(4){border-right:0}
+
+  /* 가로 차트 — 폰에서는 축약 라벨 + 최소폭으로 잘림 방지 */
+  .bar{height:46px; padding:2px; gap:1px; margin:0 -8px}
+  .scale{margin:6px -8px 0}
+  .seg{padding:7px 2px 0}
+  .seg:nth-child(2){flex:1.22 1 0}   /* 그린델발트 — 긴 이름 보정 */
+  .seg .sc{display:none}
+  .seg .scs{display:block; font-size:10.5px; font-weight:700; white-space:nowrap; line-height:1.3}
+  .seg .sn{font-size:9px}
+  .seg .l1{gap:1px}
+  .seg .dtn{font-size:9px}
+  .scale{font-size:11.5px}
+  .bar-hint{font-size:11px}
+  .prog-status{font-size:23px}
+  .preview{gap:8px}
+  .pwd{font-size:9.5px}
+  .pd{font-size:10.5px; padding:3px 0; min-height:26px}
+
+  .stay{grid-template-columns:repeat(auto-fit,minmax(128px,1fr))}
+  .snap-grid{grid-template-columns:repeat(2,1fr)}
+  .sc-card:last-child{grid-column:1 / -1}
+  .tgrid{grid-template-columns:1fr; gap:14px}
+  .wx{padding:18px 15px}
+
+  .city-name{font-size:23px}
+  .city-head{gap:9px}
+  .city-meta{margin-left:0; width:100%; font-size:13px}
+
+  .day{grid-template-columns:1fr; gap:10px; padding:17px 0}
+  .date{position:static; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap}
+  .date .num{margin-bottom:0}
+  .tag{margin-top:0}
+  .item{grid-template-columns:1fr; gap:2px}
+  .item .t{font-size:12px; letter-spacing:.06em; color:var(--accent); font-weight:600}
+  .item .c{font-size:15.5px}
+  .day.today{margin:0 -10px; padding-left:10px; padding-right:10px}
+
+  /* 폰 가독성 — 본문 계열 한 단계 더 */
+  body{font-size:17px}
+  .item .c{font-size:17px; line-height:1.55}
+  .item .c .note{font-size:15px}
+  .item .t{font-size:12.5px}
+  .stay .v{font-size:16px}
+  .stay .k{font-size:11.5px}
+  .alert{font-size:15.5px; padding:11px 13px}
+  .prog-sub{font-size:14px}
+  .wx h2{font-size:19px}
+  .wx .lead{font-size:15px}
+  .wx-tbl{font-size:15px}
+  .wx-tbl th{font-size:11.5px}
+  .snap-note{font-size:14px}
+  .snap-title, .snap-time{font-size:12.5px}
+  .sc-city{font-size:14.5px}
+  .sc-t{font-size:26px}
+  .sc-m{font-size:12px}
+  .sc-w{font-size:13px}
+  .wx-links .n{font-size:15px}
+  .wx-links .u{font-size:12px}
+  .date .d{font-size:22px}
+  .date .w{font-size:15px}
+  .date .num{font-size:12.5px}
+  .city-meta{font-size:14px}
+  .tcard h3{font-size:13px}
+  .tcard ul{font-size:15.5px; line-height:1.7}
+  .todo h2{font-size:21px}
+  .foot{font-size:13.5px}
+  .stat .v{font-size:21px}
+  .stat .k{font-size:12px}
+  /* 제목·이름·도시 세 줄의 좌우 끝을 맞춘다 */
+  .mast h1{text-align:justify; text-align-last:justify}
+  .mast .sub{text-align:justify; text-align-last:justify}
+  .crew{gap:6px 4px; justify-content:space-between}
+  .crew .nm{font-size:clamp(11px,3.9vw,15px); padding:4px 10px}
+  .crew .hrt{font-size:clamp(11px,3.7vw,15px)}
+  .wx-tbl .alt{font-size:12.5px}
+  .tbl-hint{display:block}
+  .dl{padding:18px 15px}
+  .dl-row{grid-template-columns:62px 66px 1fr auto; gap:8px; font-size:14.5px}
+  .db{font-size:10.5px; padding:2px 6px}
+  .dm{font-size:13px}
+  .next-dl .nd-t{font-size:14.5px}
+}
+
+@media (max-width:380px){
+  .stay, .snap-grid{grid-template-columns:1fr}
+  .prog-status{font-size:17px}
+  .pd{font-size:10px}
+}
+@media (max-width:340px){
+  .seg{min-width:36px; padding:0 3px}
+  .seg .scs{font-size:11px}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none !important; animation:none !important}}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <p class="eyebrow">2026.12.23 — 2027.01.12</p>
+  <h1>사랑스런 우리가족 유럽여행</h1>
+  <p class="crew"><span class="nm">김찬양</span><em class="hrt">💗</em><span class="nm">황유나</span><em class="hrt">💗</em><span class="nm">황유솔</span><em class="hrt">💗</em><span class="nm">황선광</span></p>
+  <p class="sub">파리 · 그린델발트 · 루체른 · 밀라노 · 피렌체 · 나폴리 · 로마</p>
+  <div class="stats">
+    <div class="stat"><span class="k">기간</span><span class="v">20<small>박</small> 21<small>일</small></span></div>
+    <!-- 인원 메모: 4명 · 성인 2 + 아이 2 (표기 생략 — 이름 pill이 이미 보여줌) -->
+    <div class="stat"><span class="k">숙소</span><span class="v">7<small>곳 · 예약완료</small></span></div>
+    <div class="stat"><span class="k">확정 지출</span><span class="v">1,050<small>만원</small></span></div>
+    <div class="stat"><span class="k">총 지출(계획)</span><span class="v">1,882<small>/2,000만원</small></span></div>
+  </div>
+  <button type="button" class="next-dl" id="nextDl" hidden>
+    <span class="nd-k">다음 마감</span><span class="nd-d" id="ndD"></span><span class="nd-t" id="ndT"></span>
+  </button>
+</header>
+
+<!-- ================= 진행 차트 ================= -->
+<section class="prog">
+  <div class="prog-head">
+    <span class="prog-status" id="progStatus">—</span>
+    <span class="prog-sub" id="progSub">2026.12.23 출발 · 2027.01.12 귀국</span>
+  </div>
+  <div class="bar-hint" aria-hidden="true"><span>Click</span><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M12 4v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="bar" id="bar">
+    <div class="seg" data-nights="5" data-start="0"><span class="l1"><span class="sc">파리</span><span class="scs">파리</span><span class="sn">5박</span></span><span class="dtn">디즈니</span></div>
+    <div class="seg" data-nights="3" data-start="5"><span class="l1"><span class="sc">그린델발트</span><span class="scs">그린델</span><span class="sn">3박</span></span><span class="dtn">융프라우</span></div>
+    <div class="seg" data-nights="2" data-start="8"><span class="l1"><span class="sc">루체른</span><span class="scs">루체른</span><span class="sn">2박</span></span><span class="dtn">새해맞이</span></div>
+    <div class="seg" data-nights="2" data-start="10"><span class="l1"><span class="sc">밀라노</span><span class="scs">밀라노</span><span class="sn">2박</span></span><span class="dtn">베네치아</span></div>
+    <div class="seg" data-nights="3" data-start="12"><span class="l1"><span class="sc">피렌체</span><span class="scs">피렌체</span><span class="sn">3박</span></span><span class="dtn">피사</span></div>
+    <div class="seg" data-nights="1" data-start="15"><span class="l1"><span class="sc">나폴리</span><span class="scs">나폴리</span><span class="sn">1박</span></span><span class="dtn">폼페이</span></div>
+    <div class="seg" data-nights="4" data-start="16"><span class="l1"><span class="sc">로마</span><span class="scs">로마</span><span class="sn">4박</span></span><span class="dtn">바티칸</span></div>
+    <div class="marker" id="marker"></div>
+  </div>
+  <div class="scale"><span>12.23 수</span><span>1.2 토</span><span>1.12 화</span></div>
+
+
+  <div class="preview">
+    <span class="pv-label">미리보기 — 날짜를 눌러보세요</span>
+    <button type="button" id="pvReset">오늘로</button>
+    <div class="pv-days" id="pvDays"></div>
+  </div>
+</section>
+
+<!-- ================= 결제·취소 캘린더 ================= -->
+<section class="dl" id="dl">
+  <div class="dl-head">
+    <h2>결제 · 취소 캘린더</h2>
+    <span class="dl-sub" id="dlSub">지난 항목은 흐려지고, 다음 마감이 자동 표시됩니다</span>
+  </div>
+  <div class="dl-list">
+    <div class="dl-row" data-date="2026-09-29"><span class="dd">9.29 화</span><span class="db open">판매 개시</span><span class="dt">최후의 만찬 1.2 슬롯 — <b>한국시간 19:00</b> · <a href="https://cenacolovinciano.vivaticket.it/" target="_blank" rel="noopener">비바티켓</a> 계정 먼저</span><span class="dm">예상</span></div>
+    <div class="dl-row" data-date="2026-09-30"><span class="dd">9.30 수</span><span class="db open">판매 개시</span><span class="dt">TGV Lyria 12.28 — <b>한국시간 14시부터 확인</b> · <a href="https://www.sncf-connect.com/" target="_blank" rel="noopener">SNCF</a> 계정 먼저</span><span class="dm">확정</span></div>
+    <div class="dl-row" data-date="2026-12-01"><span class="dd">12월 초</span><span class="db open">구매</span><span class="dt">스위스 반액카드 2장 — 패밀리 카드 동시 신청 필수</span><span class="dm"><span class="krw" data-cur="CHF" data-amt="300">약 ₩512,000</span></span></div>
+    <div class="dl-row" data-date="2026-12-14"><span class="dd">12.14</span><span class="db pay">결제</span><span class="dt">파리 5박</span><span class="dm">₩1,457,036</span></div>
+    <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db cxl">취소마감</span><span class="dt">디즈니 4매 — 한국시간 08:00</span><span class="dm">₩674,366</span></div>
+    <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db cxl">취소마감</span><span class="dt">파리 5박</span><span class="dm"></span></div>
+    <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db pay">결제</span><span class="dt">피렌체 3박</span><span class="dm">₩1,083,252</span></div>
+    <div class="dl-row" data-date="2026-12-24"><span class="dd">12.24</span><span class="db pay">결제</span><span class="dt">밀라노 2박</span><span class="dm"><span class="krw" data-cur="USD" data-amt="502.60">약 ₩693,000</span></span></div>
+    <div class="dl-row" data-date="2026-12-26"><span class="dd">12.26</span><span class="db pay">결제</span><span class="dt">로마 4박</span><span class="dm"><span class="krw" data-cur="USD" data-amt="738.27">약 ₩1,017,000</span></span></div>
+    <div class="dl-row" data-date="2026-12-26"><span class="dd">12.26~27</span><span class="db pay">결제</span><span class="dt">루체른 2박</span><span class="dm"><span class="krw" data-cur="CHF" data-amt="600.65">약 ₩1,024,000</span></span></div>
+    <div class="dl-row" data-date="2026-12-29"><span class="dd">12.29</span><span class="db cxl">취소마감</span><span class="dt">루체른 — 한국시간 07:59</span><span class="dm"></span></div>
+    <div class="dl-row" data-date="2026-12-29"><span class="dd">12.29</span><span class="db pay">결제</span><span class="dt">나폴리 1박</span><span class="dm"><span class="krw" data-cur="USD" data-amt="234.41">약 ₩323,000</span></span></div>
+    <div class="dl-row" data-date="2026-12-30"><span class="dd">12.30</span><span class="db cxl">취소마감</span><span class="dt">피렌체 3박</span><span class="dm"></span></div>
+    <div class="dl-row" data-date="2027-01-01"><span class="dd">1.1</span><span class="db cxl">취소마감</span><span class="dt">밀라노 — 한국시간 23:00</span><span class="dm"></span></div>
+    <div class="dl-row" data-date="2027-01-03"><span class="dd">1.3</span><span class="db cxl">취소마감</span><span class="dt">로마 — 현지 16:00</span><span class="dm"></span></div>
+    <div class="dl-row" data-date="2027-01-06"><span class="dd">1.6</span><span class="db cxl">취소마감</span><span class="dt">나폴리 1박</span><span class="dm"></span></div>
+  </div>
+  <p class="dl-note">12.22~27 엿새에 결제 4건 <b>약 407만원</b>이 몰립니다 — 카드 한도를 미리 확인하십시오.
+  에어비앤비는 결제된 뒤에도 무료취소 마감 전이면 전액 환불됩니다. 그린델발트만 <b>선결제 · 취소 불가</b>.<br>
+  달러·프랑 금액은 환율 기준 <span id="fxTime">2026.08.29 · USD 1,378원 · CHF 1,705원</span>으로 자동 환산한 값이며,
+  실제 청구액은 결제 시점 환율에 따라 조금 달라집니다.</p>
+</section>
+
+<!-- ================= 날씨 ================= -->
+<section class="wx">
+  <h2>날씨</h2>
+  <p class="lead">이 여행에서 가장 큰 변수입니다. 특히 12.29~30 융프라우요흐는 날씨가 전부입니다.</p>
+
+  <div class="snap-head">
+    <span class="snap-title">현재 날씨</span>
+    <span class="snap-time">2026.08.29 02:30 현지 조회 · 한국시간 09:30</span>
+  </div>
+  <div class="snap-grid">
+    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">18.0°</span><span class="sc-m">체감 17.8° · 16.4–23.8°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">10.9°</span><span class="sc-m">체감 10.6° · 9.8–19.4°</span><span class="sc-w">안개</span></div>
+    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">−2.0°</span><span class="sc-m">체감 −8.4° · 바람 24.5km/h</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">14.7°</span><span class="sc-m">체감 15.7° · 13.0–24.5°</span><span class="sc-w">부분 흐림</span></div>
+    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">22.6°</span><span class="sc-m">체감 25.7° · 21.2–29.6°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">22.5°</span><span class="sc-m">체감 25.4° · 21.6–28.4°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">26.9°</span><span class="sc-m">체감 29.7° · 21.5–31.8°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">27.4°</span><span class="sc-m">체감 29.6° · 24.4–35.3°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">27.2°</span><span class="sc-m">체감 31.0° · 25.9–34.7°</span><span class="sc-w">대체로 맑음</span></div>
+  </div>
+  <p class="snap-note"><b>3시간마다 자동 갱신됩니다.</b> 위 시각이 마지막 조회 시점입니다. 실제 예보가 의미를 갖는 건 <b>여행 7~10일 전</b>부터이므로 아래 평년값을 기준으로 준비하시고, 12월 중순부터 갱신하시면 됩니다.</p>
+
+  <div class="wx-links">
+    <a href="https://www.jungfrau.ch/en-gb/webcams/" target="_blank" rel="noopener">
+      <span class="n">융프라우 공식 웹캠</span><span class="u">jungfrau.ch</span></a>
+    <a href="https://www.meteoswiss.admin.ch/" target="_blank" rel="noopener">
+      <span class="n">MeteoSwiss — 스위스</span><span class="u">meteoswiss.admin.ch</span></a>
+    <a href="https://meteofrance.com/" target="_blank" rel="noopener">
+      <span class="n">Météo-France — 파리</span><span class="u">meteofrance.com</span></a>
+    <a href="https://www.3bmeteo.com/" target="_blank" rel="noopener">
+      <span class="n">3B Meteo — 이탈리아</span><span class="u">3bmeteo.com</span></a>
+  </div>
+
+  <div class="wx-scroll">
+  <table class="wx-tbl">
+    <thead><tr><th>지역</th><th>최고</th><th>최저</th><th>일몰</th><th>메모</th></tr></thead>
+    <tbody>
+      <tr><td class="city">파리</td><td class="mono">3~7℃</td><td class="mono">1~3℃</td><td class="mono">16:55</td><td>실내 위주라 날씨 영향 작음</td></tr>
+      <tr><td class="city">그린델발트<br><span class="alt">해발 1,034m</span></td><td class="mono">1~3℃</td><td class="mono">-5~-3℃</td><td class="mono">16:45</td><td><b>계곡 그늘 15:30.</b> 눈이 쌓여 있을 확률 높음</td></tr>
+      <tr><td class="city cold">융프라우요흐<br><span class="alt">해발 3,454m</span></td><td class="mono cold">-9℃</td><td class="mono cold">-14℃</td><td class="mono">—</td><td><b>체감 -20~-25℃.</b> 방수장갑·선글라스·핫팩 필수</td></tr>
+      <tr><td class="city">루체른</td><td class="mono">2~5℃</td><td class="mono">-2~0℃</td><td class="mono">16:35</td><td>1.1 전 상점 휴무 — 12.31 장보기</td></tr>
+      <tr><td class="city">밀라노</td><td class="mono">6~8℃</td><td class="mono">0~2℃</td><td class="mono">16:50</td><td>안개가 잦음</td></tr>
+      <tr><td class="city">베네치아</td><td class="mono">6~8℃</td><td class="mono">1~3℃</td><td class="mono">16:45</td><td>겨울 아쿠아 알타 가능</td></tr>
+      <tr><td class="city">피렌체·피사</td><td class="mono">10~12℃</td><td class="mono">2~4℃</td><td class="mono">16:50</td><td>미켈란젤로 광장은 일몰 전에</td></tr>
+      <tr><td class="city">나폴리·폼페이</td><td class="mono">13~15℃</td><td class="mono">6~8℃</td><td class="mono">16:50</td><td>폼페이는 그늘이 없어 <b>겨울이 오히려 유리</b></td></tr>
+      <tr><td class="city">로마</td><td class="mono">12~14℃</td><td class="mono">3~5℃</td><td class="mono">16:50</td><td>비 오는 날이 있음</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="tbl-hint">표가 잘리면 옆으로 밀어서 보세요</p>
+</section>
+
+<!-- ================= 파리 ================= -->
+<section class="city">
+  <div class="city-head">
+    <h2 class="city-name">파리</h2>
+    <span class="nights">5박</span>
+    <span class="city-meta">12.23 수 — 12.28 월</span>
+  </div>
+  <div class="stay">
+    <div><span class="k">숙소</span><span class="v">다니엘라 아파트 · 5층 엘리베이터</span></div>
+    <div><span class="k">위치</span><span class="v">11구 Rue du Chemin Vert</span></div>
+    <div><span class="k">체크인 / 아웃</span><span class="v mono">16:00 / 11:00</span></div>
+    <div><span class="k">요금</span><span class="v mono">1,457,036원</span></div>
+    <div><span class="k">결제</span><span class="v mono">12.14 자동</span></div>
+    <div><span class="k">무료취소</span><span class="v mono">12.22</span></div>
+    <div><span class="k">호스트</span><span class="v mono">WhatsApp (부모 폰에 저장됨)</span></div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 01</span><span class="d">12.23</span><span class="w">수</span>
+      <span class="tag move">이동</span></div>
+    <div class="items">
+      <div class="item"><span class="t">10:05</span><span class="c">인천 출발 <b>OZ501</b><span class="note">직항 A350 · 좌석 지정 완료 (예약번호는 부모 폰에)</span></span></div>
+      <div class="item"><span class="t">16:25</span><span class="c">파리 <b>샤를드골</b> 도착</span></div>
+      <div class="item"><span class="t">18:30</span><span class="c">숙소 도착 <span class="note">입국·수하물 1시간 + 시내 이동 1시간</span></span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">근처 마트에서 <b>아침거리만</b></span></div>
+      <div class="alert"><span>내일 오후부터 상점이 일찍 닫고 <b>12.25는 시내 대부분 휴무</b>입니다. 본격 장보기는 12.24 오전에 하십시오.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 02</span><span class="d">12.24</span><span class="w">목</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전</span><span class="c"><b>마트 장보기</b> — 이틀치<span class="note">12.25 전 상점 휴무 대비</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c"><b>에펠탑</b> + 트로카데로</span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">숙소에서 크리스마스 이브</span></div>
+      <div class="alert"><span>상점·식당이 <b>오후에 조기 마감</b>합니다. 저녁 외식은 어렵다고 보시는 편이 안전합니다.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 03</span><span class="d">12.25</span><span class="w">금</span></div>
+    <div class="items">
+      <div class="item"><span class="t">개장 전</span><span class="c"><b>디즈니랜드 파리</b> — 개장 30분 전 도착<span class="note">연중 최대 혼잡일. 어트랙션 3~4개가 현실적</span></span></div>
+      <div class="item"><span class="t">입장</span><span class="c"><b>Disneyland Park</b> 선택<span class="note">1파크 지정권 — 당일 입구에서 파크를 고릅니다. 성·판타지랜드가 있는 쪽</span></span></div>
+      <div class="item"><span class="t">종일</span><span class="c">도시락 반입 가능 · <b>오후 5시 철수 옵션</b> 미리 합의</span></div>
+      <div class="alert"><span><b>여권 4인 지참.</b> 기명 티켓이라 신분 확인과 입장 시 사진 촬영이 있을 수 있습니다.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 04</span><span class="d">12.26</span><span class="w">토</span>
+      <span class="tag wash">세탁 1</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전</span><span class="c"><b>루브르</b><span class="note">화요일 휴관 · 시간 예약 필수. 18세 미만 무료여도 예약은 별도</span></span></div>
+      <div class="item"><span class="t">스케치</span><span class="c"><b>가족 스케치 타임</b> — 관람 뒤 30분~1시간<span class="note">연필 + 50×40cm 이하 종이는 공식 허용 (잉크·물감·이젤 금지). 리슐리외관 조각 중정(쿠르 마를리)이 밝고 벤치가 많아 아이들과 앉아 그리기 좋습니다. 준비물: 스케치북·연필·지우개 4인분</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c"><b>노트르담</b> + 시테섬<span class="note">루브르에서 도보 15분. 무료지만 온라인 시간 예약 필수 — 예약창이 며칠 전에 열립니다</span></span></div>
+      <div class="item"><span class="t">선택</span><span class="c"><b>생트샤펠</b> — 노트르담 도보 3분<span class="note">스테인드글라스 1,113장면. 18세 미만 무료, 30~40분</span></span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">세탁 1차 <span class="note">건조기 있음 — 하룻밤이면 완료</span></span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 05</span><span class="d">12.27</span><span class="w">일</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전</span><span class="c"><b>오르세</b><span class="note">월요일 휴관 · 5층 인상파가 핵심 · 예약 권장</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c">오랑주리 <b>또는</b> 몽마르트르</span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">짐 정리 후 일찍 취침<span class="note">내일 05:30 기상</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 그린델발트 ================= -->
+<section class="city">
+  <div class="city-head">
+    <h2 class="city-name">그린델발트</h2>
+    <span class="nights">3박</span>
+    <span class="city-meta">12.28 월 — 12.31 목</span>
+  </div>
+  <div class="stay">
+    <div><span class="k">숙소</span><span class="v">엘리먼츠 로지</span></div>
+    <div><span class="k">위치</span><span class="v">Tuftbach 4, 3818</span></div>
+    <div><span class="k">체크인 / 아웃</span><span class="v mono">16:00 / 10:00</span></div>
+    <div><span class="k">요금</span><span class="v mono">936,615원 · 결제완료</span></div>
+    <div><span class="k">취소</span><span class="v">불가 — 선결제 확정</span></div>
+    <div><span class="k">예약번호</span><span class="v mono">부모 폰 아고다 앱</span></div>
+    <div><span class="k">체크인 방식</span><span class="v">무인 · 온라인</span></div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 06</span><span class="d">12.28</span><span class="w">월</span>
+      <span class="tag move">이동</span></div>
+    <div class="items">
+      <div class="item"><span class="t">06:05</span><span class="c">숙소 출발 → 리옹역</span></div>
+      <div class="item"><span class="t">07:00</span><span class="c"><b>TGV Lyria</b> 파리 리옹역 → 바젤<span class="note">3시간 04분</span></span></div>
+      <div class="item"><span class="t">10:30</span><span class="c">바젤 SBB → 인터라켄 Ost<span class="note">직통 약 1시간 55분</span></span></div>
+      <div class="item"><span class="t">12:45</span><span class="c">인터라켄 Ost → <b>그린델발트</b><span class="note">약 33분</span></span></div>
+      <div class="item"><span class="t">13:30</span><span class="c">도착 후 <b>바로 입실</b><span class="note">도어 코드가 정오부터 포털에 표시됩니다</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c"><b>Coop 장보기</b> — 2일 반치<span class="note">산악 리조트 물가가 높습니다</span></span></div>
+      <div class="alert"><span>인터라켄 Ost에서 타는 열차는 츠바이뤼치넨에서 <b>분리</b>됩니다. 앞 = 라우터브루넨, <b>뒤 = 그린델발트</b>. 차량 행선지 표시를 반드시 확인하십시오.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 07</span><span class="d">12.29</span><span class="w">화</span>
+      <span class="tag wash">세탁 2</span></div>
+    <div class="items">
+      <div class="item"><span class="t">전날 밤</span><span class="c"><b>웹캠·예보 확인 후 결정</b><span class="note">jungfrau.ch 공식 웹캠 · MeteoSwiss</span></span></div>
+      <div class="item"><span class="t">맑으면</span><span class="c"><b>융프라우요흐</b> — 아이거 익스프레스<span class="note">왕복 5~6시간 · 정상 -9~-14℃, 체감 -20~-25℃ · 방수장갑·선글라스 필수</span></span></div>
+      <div class="item"><span class="t">흐리면</span><span class="c"><b>First 곤돌라</b> + Cliff Walk · 마을</span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">세탁 2차<span class="note">세탁기·건조기 유무 호스트 확인 중 — 없으면 피렌체(1.5)로 미룹니다</span></span></div>
+      <div class="alert"><span>이틀 다 흐리면 <b>융프라우요흐를 포기</b>하는 것도 선택지입니다. 구름 속 3,454m는 4인 약 42만원(반액카드 기준)을 쓰고 아무것도 못 봅니다.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 08</span><span class="d">12.30</span><span class="w">수</span></div>
+    <div class="items">
+      <div class="item"><span class="t">종일</span><span class="c">전날의 <b>반대</b> — 융프라우요흐 또는 First·마을</span></div>
+      <div class="item"><span class="t">참고</span><span class="c">하더쿨른 푸니쿨라는 12~2월 운휴</span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">짐 정리<span class="note">내일 10:00 체크아웃</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 루체른 ================= -->
+<section class="city">
+  <div class="city-head">
+    <h2 class="city-name">루체른</h2>
+    <span class="nights">2박</span>
+    <span class="city-meta">12.31 목 — 1.2 토</span>
+  </div>
+  <div class="stay">
+    <div><span class="k">숙소</span><span class="v">The Lubo · 셀프 체크인</span></div>
+    <div><span class="k">위치</span><span class="v">2 Rössligasse · 카펠교 220m</span></div>
+    <div><span class="k">체크인 / 아웃</span><span class="v mono">15:00 / 11:00</span></div>
+    <div><span class="k">요금</span><span class="v mono"><span class="krw" data-cur="CHF" data-amt="600.65">약 ₩1,024,000</span> · CHF 600.65</span></div>
+    <div><span class="k">무료취소</span><span class="v mono">12.28 23:59 (한국 12.29 07:59)</span></div>
+    <div><span class="k">현장</span><span class="v mono">도시세 CHF 36 (<span class="krw" data-cur="CHF" data-amt="36">약 ₩61,000</span>)</span></div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 09</span><span class="d">12.31</span><span class="w">목</span>
+      <span class="tag move">이동</span></div>
+    <div class="items">
+      <div class="item"><span class="t">10:00</span><span class="c">그린델발트 체크아웃</span></div>
+      <div class="item"><span class="t">10:30</span><span class="c"><b>Luzern–Interlaken Express</b><span class="note">기차 약 2시간 30분 · 브리엔츠 호수 경치 노선 · 반액카드 반값</span></span></div>
+      <div class="item"><span class="t">13:00</span><span class="c">루체른 도착 → <b>짐 보관</b></span></div>
+      <div class="item"><span class="t">오후</span><span class="c"><b>Coop City 장보기</b> — 2일치<span class="note">숙소에서 80m</span></span></div>
+      <div class="item"><span class="t">15:00</span><span class="c">체크인 · 구시가와 카펠교 산책</span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">숙소에서 식사<span class="note">NYE 식당은 고정 코스라 4인이면 부담이 큽니다</span></span></div>
+      <div class="item"><span class="t">밤</span><span class="c"><b>호수 불꽃</b> → 걸어서 귀가<span class="note">카펠교 220m. 아이가 지치면 언제든 들어올 수 있습니다</span></span></div>
+      <div class="alert"><span><b>1월 1일은 스위스 전 상점 휴무</b>이고 오늘도 NYE라 마트가 일찍 닫습니다. 도착하자마자 장보기를 먼저 하십시오.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 10</span><span class="d">1.1</span><span class="w">금</span></div>
+    <div class="items">
+      <div class="item"><span class="t">종일</span><span class="c"><b>스위스 교통박물관</b><span class="note">스위스 전체가 쉬는 날인데 이곳만 365일 개관합니다. 실내 종일 코스</span></span></div>
+      <div class="item"><span class="t">교통</span><span class="c">게스트카드로 시내 교통 무료</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 밀라노 ================= -->
+<section class="city">
+  <div class="city-head">
+    <h2 class="city-name">밀라노</h2>
+    <span class="nights">2박</span>
+    <span class="city-meta">1.2 토 — 1.4 월</span>
+  </div>
+  <div class="stay">
+    <div><span class="k">숙소</span><span class="v">중앙역 편안한 아파트</span></div>
+    <div><span class="k">위치</span><span class="v">Via Vitruvio 4 · 중앙역 도보 5분</span></div>
+    <div><span class="k">체크인 / 아웃</span><span class="v mono">15:00 / 11:00</span></div>
+    <div><span class="k">요금</span><span class="v mono"><span class="krw" data-cur="USD" data-amt="502.60">약 ₩693,000</span> · $502.60</span></div>
+    <div><span class="k">예약코드</span><span class="v mono">부모 폰 에어비앤비 앱</span></div>
+    <div><span class="k">결제</span><span class="v mono">12.24 자동</span></div>
+    <div><span class="k">무료취소</span><span class="v mono">1.1 15:00 현지</span></div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 11</span><span class="d">1.2</span><span class="w">토</span>
+      <span class="tag move">이동</span></div>
+    <div class="items">
+      <div class="item"><span class="t">11:00</span><span class="c">루체른 체크아웃</span></div>
+      <div class="item"><span class="t">오전</span><span class="c">루체른 → 밀라노<span class="note">약 3시간 30분 · 국제구간 — 반액카드는 국경(키아소)까지 적용</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c">중앙역 도착 → 숙소 도보 5분</span></div>
+      <div class="item"><span class="t">16:00</span><span class="c"><b>최후의 만찬</b> — 산타 마리아 델레 그라치에<span class="note">M2 Cadorna 직통 + 도보 = 총 25~30분. 기차 지연 완충을 두고 고른 슬롯입니다. 성인 €15(+예매수수료) · 18세 미만 무료 · <b>관람 15분 엄수</b></span></span></div>
+      <div class="alert"><span><b>큰 가방 반입 불가</b> — 숙소에 짐을 두고 가십시오. 기명 티켓이라 <b>여권 지참</b>, 환불·변경 불가입니다.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 12</span><span class="d">1.3</span><span class="w">일</span>
+      <span class="tag move">당일치기</span></div>
+    <div class="items">
+      <div class="item"><span class="t">07:00</span><span class="c">밀라노 중앙역 출발<span class="note">숙소에서 도보 5분</span></span></div>
+      <div class="item"><span class="t">09:15</span><span class="c"><b>베네치아</b> 도착 — 낮 관광 7시간 30분</span></div>
+      <div class="item"><span class="t">16:45</span><span class="c">일몰 → <b>야경 4시간</b><span class="note">당일치기 인파가 빠진 산마르코가 이 시간대의 이유입니다</span></span></div>
+      <div class="item"><span class="t">21시대</span><span class="c">밀라노행 열차 → 23:15 도착</span></div>
+      <div class="item"><span class="t">요금</span><span class="c"><b>Bimbi in Treno</b> 적용<span class="note">만 4~15세 동반 시 어른 1명 정가 + 나머지 가족 반값</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 피렌체 ================= -->
+<section class="city">
+  <div class="city-head">
+    <h2 class="city-name">피렌체</h2>
+    <span class="nights">3박</span>
+    <span class="city-meta">1.4 월 — 1.7 목</span>
+  </div>
+  <div class="stay">
+    <div><span class="k">숙소</span><span class="v">끼 아라와 시몬의 집</span></div>
+    <div><span class="k">위치</span><span class="v">아카데미아 200m · 두오모 400m</span></div>
+    <div><span class="k">체크인 / 아웃</span><span class="v mono">14:00 / 11:00</span></div>
+    <div><span class="k">요금</span><span class="v mono">1,083,252원</span></div>
+    <div><span class="k">결제</span><span class="v mono">12.22 자동</span></div>
+    <div><span class="k">무료취소</span><span class="v mono">12.30</span></div>
+    <div><span class="k">구조</span><span class="v">1층 진입 · 내부 복층</span></div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 13</span><span class="d">1.4</span><span class="w">월</span>
+      <span class="tag move">이동</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전</span><span class="c"><b>밀라노 두오모 옥상</b><span class="note">월요일이라 미술관은 닫지만 두오모는 종교시설이라 엽니다. M3 직통 5분</span></span></div>
+      <div class="item"><span class="t">11:00</span><span class="c">밀라노 체크아웃</span></div>
+      <div class="item"><span class="t">오후</span><span class="c">밀라노 → <b>피렌체</b><span class="note">1시간 50분</span></span></div>
+      <div class="item"><span class="t">14:00</span><span class="c">체크인 후 두오모 광장 · 베키오 다리 산책</span></div>
+      <div class="alert"><span><b>우피치와 아카데미아는 월요일 휴관</b>입니다. 오늘은 야외 위주로 두시고 미술관은 내일 몰아서 보십시오.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 14</span><span class="d">1.5</span><span class="w">화</span>
+      <span class="tag wash">세탁 3</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전</span><span class="c"><b>두오모 쿠폴라</b><span class="note">시간 예약 필수 · 463계단</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c"><b>우피치 미술관</b><span class="note">18세 미만 무료 · 예약은 인원수만큼 별도</span></span></div>
+      <div class="item"><span class="t">일몰 전</span><span class="c"><b>미켈란젤로 광장</b><span class="note">일몰 16:50 — 그 전에 올라가야 도시 전경이 보입니다</span></span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">세탁 3차 <span class="note">건조기 없으면 자연건조 — 1.6~1.7 아침까지 마릅니다</span></span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 15</span><span class="d">1.6</span><span class="w">수</span>
+      <span class="tag move">당일치기</span></div>
+    <div class="items">
+      <div class="item"><span class="t">종일</span><span class="c"><b>피사</b> 당일치기<span class="note">사탑 등반은 선택 · 왕복 약 2시간</span></span></div>
+      <div class="alert"><span><b>주현절 공휴일</b>입니다. 상점이 쉬고 <b>기차가 감편</b>되니 시각표를 전날 확인하십시오. 저녁거리도 미리 사두시는 편이 안전합니다.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 나폴리 ================= -->
+<section class="city">
+  <div class="city-head">
+    <h2 class="city-name">나폴리</h2>
+    <span class="nights">1박</span>
+    <span class="city-meta">1.7 목 — 1.8 금</span>
+  </div>
+  <div class="stay">
+    <div><span class="k">숙소</span><span class="v">예수님의 탄생 집</span></div>
+    <div><span class="k">위치</span><span class="v">Porta Nolana 도보 5분 · 중앙역 10분</span></div>
+    <div><span class="k">체크인 / 아웃</span><span class="v mono">14:00 / 10:00</span></div>
+    <div><span class="k">요금</span><span class="v mono"><span class="krw" data-cur="USD" data-amt="234.41">약 ₩323,000</span> · $234.41</span></div>
+    <div><span class="k">결제</span><span class="v mono">12.29 자동</span></div>
+    <div><span class="k">무료취소</span><span class="v mono">1.6</span></div>
+    <div><span class="k">특전</span><span class="v">역↔숙소 무료 셔틀</span></div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 16</span><span class="d">1.7</span><span class="w">목</span>
+      <span class="tag move">이동</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전</span><span class="c">피렌체 체크아웃 → <b>나폴리</b><span class="note">약 3시간</span></span></div>
+      <div class="item"><span class="t">14:00</span><span class="c">체크인</span></div>
+      <div class="item"><span class="t">14:30</span><span class="c"><b>국립고고학박물관 MANN</b><span class="note">폼페이 벽화·모자이크 원본이 여기 있습니다. 현장은 대부분 복제품 · 화요일 휴관</span></span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">스파카나폴리 + <b>나폴리 피자</b><span class="note">다미켈레 무휴 · 디마테오·소르빌로 일요일 휴무 · 브론디 월요일 휴무</span></span></div>
+      <div class="alert"><span>일몰이 16:50이라 저녁엔 어둡습니다. <b>중앙역·가리발디 광장 주변은 야간에 주의</b>하시고, 아이들과는 일찍 움직이십시오.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 로마 ================= -->
+<section class="city">
+  <div class="city-head">
+    <h2 class="city-name">로마</h2>
+    <span class="nights">4박</span>
+    <span class="city-meta">1.8 금 — 1.12 화</span>
+  </div>
+  <div class="stay">
+    <div><span class="k">숙소</span><span class="v">기차의 집 · 오스티엔세</span></div>
+    <div><span class="k">위치</span><span class="v">Via della Stazione Ostiense 23</span></div>
+    <div><span class="k">체크인 / 아웃</span><span class="v mono">16:00 / 11:00</span></div>
+    <div><span class="k">요금</span><span class="v mono"><span class="krw" data-cur="USD" data-amt="738.27">약 ₩1,017,000</span> · $738.27</span></div>
+    <div><span class="k">예약코드</span><span class="v mono">부모 폰 에어비앤비 앱</span></div>
+    <div><span class="k">결제</span><span class="v mono">12.26 자동</span></div>
+    <div><span class="k">무료취소</span><span class="v mono">1.3 16:00</span></div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 17</span><span class="d">1.8</span><span class="w">금</span>
+      <span class="tag move">이동</span></div>
+    <div class="items">
+      <div class="item"><span class="t">08:00</span><span class="c">숙소에 짐 맡기고 출발<span class="note">Porta Nolana는 Circumvesuviana 시발역 — 4인이 앉아서 갑니다</span></span></div>
+      <div class="item"><span class="t">09:00</span><span class="c"><b>폼페이</b> — 약 3시간<span class="note">44헥타르. 겨울 09:00~17:00, 마지막 입장 15:30</span></span></div>
+      <div class="item"><span class="t">14:00</span><span class="c">나폴리 복귀 · 짐 찾기</span></div>
+      <div class="item"><span class="t">15:30</span><span class="c">나폴리 → <b>로마</b><span class="note">1시간 10분</span></span></div>
+      <div class="item"><span class="t">17:00</span><span class="c">숙소 도착 <span class="note">체크인 16:00 이후</span></span></div>
+      <div class="item"><span class="t">저녁</span><span class="c"><b>판테온 · 트레비 분수</b><span class="note">트레비는 야경이 오히려 낫습니다</span></span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 18</span><span class="d">1.9</span><span class="w">토</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전</span><span class="c"><b>콜로세움</b><span class="note">18세 미만 무료 · 시간 예약 필수 · B선 2정거장</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c"><b>포로 로마노</b> + 팔라티노 언덕<span class="note">콜로세움 통합권</span></span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 19</span><span class="d">1.10</span><span class="w">일</span>
+      <span class="tag wash">세탁 4</span></div>
+    <div class="items">
+      <div class="item"><span class="t">정오</span><span class="c"><b>성 베드로 광장 삼종기도</b><span class="note">로마 체류 중 유일한 일요일입니다</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c"><b>나보나 광장</b> + 트라스테베레</span></div>
+      <div class="item"><span class="t">저녁</span><span class="c">세탁 4차<span class="note">마지막 밤(1.11) 전에 말릴 여유를 둡니다</span></span></div>
+      <div class="alert"><span><b>바티칸 박물관은 일요일 휴관</b>입니다. 오늘은 광장까지만 보고 박물관은 내일입니다.</span></div>
+    </div>
+  </div>
+
+  <div class="day">
+    <div class="date"><span class="num">DAY 20</span><span class="d">1.11</span><span class="w">월</span></div>
+    <div class="items">
+      <div class="item"><span class="t">오전 첫 타임</span><span class="c"><b>바티칸 박물관</b> + 시스티나 성당<span class="note">월요일에 여는 날입니다. 시간 예약 필수 · A선 Ottaviano</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c">자유 · 짐 정리</span></div>
+      <div class="alert"><span><b>보르게세는 월요일 휴관</b>이라 내일 아침으로 잡혀 있습니다. 오늘 무리하지 마십시오.</span></div>
+    </div>
+  </div>
+
+  <div class="day travel">
+    <div class="date"><span class="num">DAY 21</span><span class="d">1.12</span><span class="w">화</span>
+      <span class="tag move">귀국</span></div>
+    <div class="items">
+      <div class="item"><span class="t">08:30</span><span class="c">체크아웃 + <b>짐 보관</b><span class="note">체크아웃이 11:00이라 보르게세 전에 미리 맡겨야 합니다</span></span></div>
+      <div class="item"><span class="t">09:00</span><span class="c"><b>보르게세 미술관</b><span class="note">시간 지정 예약 · 관람 2시간 제한</span></span></div>
+      <div class="item"><span class="t">오후</span><span class="c">로마 자유 시간 — 약 5시간<span class="note">22:00 출발이라 19:00 공항 도착이면 충분합니다</span></span></div>
+      <div class="item"><span class="t">17:30</span><span class="c">짐 찾아 오스티엔세역<span class="note">숙소가 역 앞길이라 FL1 직통 20~30분</span></span></div>
+      <div class="item"><span class="t">22:00</span><span class="c"><b>OZ562</b> 로마 피우미치노 출발<span class="note">예약번호는 부모 폰에</span></span></div>
+      <div class="item"><span class="t">17:35</span><span class="c">인천 도착 <span class="note">1월 13일 수요일</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 남은 준비 ================= -->
+<section class="todo">
+  <h2>남은 준비</h2>
+  <div class="tgrid">
+    <div class="tcard">
+      <h3>지금 — 시한 있음</h3>
+      <ul>
+        <li><b class="hot">9.29 화 · 한국시간 19:00</b> — 최후의 만찬 1.2 슬롯 판매 개시 <b>(예상)</b><br><a href="https://cenacolovinciano.vivaticket.it/" target="_blank" rel="noopener">cenacolovinciano.vivaticket.it</a> · 분기분을 화요일 현지 12:00에 한꺼번에 풉니다. 직전 개시일 6.23 · 3.24 · 12.17 · 9.30 — 아직 공식 공지 전이라 9월 넷째 주부터 사이트를 확인하십시오<br><b class="hot">계정은 김찬양 이름으로</b> 지금 만들어두십시오 — 황선광 계정은 2026년 한도가 3매밖에 남지 않았습니다. 당일 가입하면 늦습니다</li>
+        <li><b class="hot">9.30 수</b> — TGV Lyria 12.28 파리→바젤 판매 개시 <b>(공식 확정)</b><br><a href="https://www.sncf-connect.com/" target="_blank" rel="noopener">sncf-connect.com</a> · 12/13~3/28 운행분이 이날 열립니다. 개시 시각은 미공지 — 관례상 현지 새벽~오전이라 <b>한국시간 낮 2시경부터 확인</b>, 저녁까지 몇 번 들여다보면 됩니다<br>목표: <b>12.28 07시대 출발 + 4인 마주보는 좌석</b>. 매진보다는 좌석 배치와 가격이 문제라 만찬처럼 초 다툼은 아닙니다. SNCF Connect 계정만 미리 만들어두십시오</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h3>9월</h3>
+      <ul>
+        <li><b>최후의 만찬</b> 1.2 오후 슬롯 — 대체 불가<br><b class="hot">김찬양 계정으로 4매 한 번에.</b> 한도는 <b>구매자 기준 연간 5매</b>인데 황선광 계정은 2026.06 밀라노에서 2매를 썼습니다. 방문은 1월이어도 <b>결제가 9월</b>이라 같은 2026년으로 묶입니다<br>3매+1매로 쪼개면 <b>다른 시간대로 갈릴 수 있습니다</b> — 15분 정원제라 가족이 따로 들어가게 됩니다<br>티켓은 <b>기명</b>입니다. 결제 화면에 구매자가 아니라 <b>방문자 4명 이름</b>을 여권 철자대로 넣으십시오 — 이후 이름 변경·환불 불가<br>놓치면 <b>매주 수요일 현지 12:00</b>에 다음 주 잔여분이 풀립니다. 콜센터 <b>+39 02 92800360</b>은 최대 9매까지 가능합니다</li>
+        <li><b>TGV Lyria</b> 12.28 07시대, 4인 마주보는 좌석</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h3>10 — 11월</h3>
+      <ul>
+        <li class="pair">
+          <i class="plink" aria-hidden="true"></i>
+          <div class="pr"><b>스위스 반액카드 2장</b> 구매 — 트래블패스 대신 (약 62만원 절감 확정) · 2026년 내 구매</div>
+          <div class="pr"><b class="hot">패밀리 카드 동시 신청</b> — 만 6~16세 미만 아이가 부모 동반 시 스위스 대중교통을 <b>무료</b>로 타게 해주는 무료 카드. 반액카드 <b>구매 화면에서만</b> 같이 신청할 수 있고 나중에 따로 발급이 <b>안 되기 때문에</b>, 놓치면 아이 둘 기차값을 전액 내야 합니다</div>
+        </li>
+        <li>이탈리아 열차 4구간 — Bimbi in Treno</li>
+        <li>입장권 예약 — 루브르·오르세·노트르담·우피치·쿠폴라·콜로세움·바티칸·보르게세</li>
+        <li>호스트 문의 4건</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h3>12월</h3>
+      <ul>
+        <li><b>12.15 알림</b> — 디즈니(한국시간 12.22 08:00)·파리 취소마감</li>
+        <li><b>12.22~27 결제 4건 약 407만원</b> — 카드 한도 미리 확인</li>
+        <li>12.18~20 알프스 예보 확인 시작</li>
+      </ul>
+    </div>
+  </div>
+  <p class="foot">총 지출(계획) 1,882만원 = 항공·숙박·디즈니 1,050 + 교통 272 + 입장권 120 + 식음료·마트 340 + 보험·유심·쇼핑·예비비 100 — 현지 체재비 전부 포함 · 여유 반영 시 2,200만원 권고 · 최종 갱신 2026.08.23</p>
+</section>
+
+</div>
+
+<button type="button" class="totop" id="toTop" aria-label="맨 위로 — 진행 차트로 돌아가기">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M5 14.5l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+<button type="button" class="tobot" id="toBot" aria-label="맨 아래로 — 남은 준비로 이동">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M5 9.5l7 7 7-7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script>
+(function () {
+  var START = new Date(2026, 11, 23);   // DAY 01 = 2026.12.23
+  var TOTAL = 21;
+  var MS = 86400000;
+  var WD = ['일', '월', '화', '수', '목', '금', '토'];
+
+  var prog     = document.querySelector('.prog');
+  var statusEl = document.getElementById('progStatus');
+  var subEl    = document.getElementById('progSub');
+  var marker   = document.getElementById('marker');
+  var segs     = Array.prototype.slice.call(document.querySelectorAll('#bar .seg'));
+  var cities   = Array.prototype.slice.call(document.querySelectorAll('section.city'));
+  var days     = document.querySelectorAll('.day');
+  var pvDays   = document.getElementById('pvDays');
+  var reset    = document.getElementById('pvReset');
+  var dayBtns  = [];
+  var lastNight = null;
+  var previewing = false;
+
+  // 오늘 일차 — 여행 기간 중에는 유럽(파리·로마) 날짜 기준.
+  // 폰의 시간대 설정과 무관하게 현지 자정에 일차가 넘어간다.
+  function todayIdx() {
+    var local = new Date(); local.setHours(0, 0, 0, 0);
+    var li = Math.round((local - START) / MS);
+    try {
+      var p = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Paris' })
+        .format(new Date()).split('-');
+      var ei = Math.round((new Date(+p[0], p[1] - 1, +p[2]) - START) / MS);
+      if (ei >= 0 && ei < TOTAL) return ei;
+    } catch (e) {}
+    return li;
+  }
+
+  function placeMarker(nightIdx) {
+    var seg = null, st, n;
+    for (var i = 0; i < segs.length; i++) {
+      st = +segs[i].dataset.start; n = +segs[i].dataset.nights;
+      if (nightIdx >= st && nightIdx < st + n) { seg = segs[i]; break; }
+    }
+    if (!seg) { marker.style.display = 'none'; return; }
+    st = +seg.dataset.start; n = +seg.dataset.nights;
+    marker.style.left = (seg.offsetLeft + seg.offsetWidth * ((nightIdx - st + 0.5) / n)) + 'px';
+    marker.style.display = 'block';
+  }
+
+  function render(idx, isPreview) {
+    segs.forEach(function (s) { s.classList.remove('done', 'now'); });
+    days.forEach(function (d) { d.classList.remove('today'); });
+    prog.classList.toggle('is-preview', !!isPreview);
+    document.body.classList.toggle('pv', !!isPreview);
+    marker.style.display = 'none';
+    lastNight = null;
+
+    var narrow = matchMedia('(max-width:720px)').matches;
+    if (idx < 0) {
+      statusEl.textContent = 'D-' + Math.abs(idx);
+      subEl.textContent = '출발까지 ' + Math.abs(idx) + '일' + (narrow ? '' : ' · 2026.12.23 → 2027.01.12');
+      return;
+    }
+    if (idx >= TOTAL) {
+      statusEl.textContent = '여행 종료';
+      subEl.textContent = '2026.12.23 — 2027.01.12 · 20박 21일';
+      segs.forEach(function (s) { s.classList.add('done'); });
+      return;
+    }
+
+    statusEl.textContent = (idx + 1) + '일차 / 21일';
+    var nightIdx = Math.min(idx, 19);
+    lastNight = nightIdx;
+    segs.forEach(function (s) {
+      var st = +s.dataset.start, n = +s.dataset.nights;
+      if (nightIdx >= st + n) s.classList.add('done');
+      else if (nightIdx >= st) s.classList.add('now');
+    });
+    var cur = document.querySelector('#bar .seg.now ' + (narrow ? '.scs' : '.sc'));
+    subEl.textContent = (isPreview ? '미리보기 — ' : '') +
+      (cur ? cur.textContent + ' · ' : '') + (narrow ? '남은 ' : '남은 일정 ') + (TOTAL - idx - 1) + '일';
+    if (days[idx]) days[idx].classList.add('today');
+    placeMarker(nightIdx);
+  }
+
+  // 요일 헤더 (폰 7열 달력형에서만 표시)
+  ['수','목','금','토','일','월','화'].forEach(function (w) {
+    var h = document.createElement('div');
+    h.className = 'pwd' + (w === '일' ? ' sun' : '');
+    h.textContent = w;
+    pvDays.appendChild(h);
+  });
+
+  // 날짜 칩 21개 생성
+  for (var di = 0; di < TOTAL; di++) {
+    (function (idx) {
+      var d = new Date(START.getTime() + idx * MS);
+      var CITY_STARTS = [0, 5, 8, 10, 12, 15, 16];
+      var n = Math.min(idx, 19), ci = 0;
+      for (var k = 0; k < CITY_STARTS.length; k++) { if (n >= CITY_STARTS[k]) ci = k; }
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'pd pc' + (ci + 1);
+      b.innerHTML = (d.getMonth() + 1) + '.' + d.getDate() + '<small>' + WD[d.getDay()] + '</small>';
+      b.setAttribute('aria-label', 'DAY ' + (idx + 1) + ' 미리보기');
+      b.addEventListener('click', function () {
+        previewing = true;
+        render(idx, true);
+        setOn(idx);
+      });
+      pvDays.appendChild(b); dayBtns.push(b);
+    })(di);
+  }
+
+  function setOn(idx) {
+    dayBtns.forEach(function (b, i) { b.classList.toggle('on', i === idx); });
+    if (dayBtns[idx]) dayBtns[idx].scrollIntoView({ inline: 'center', block: 'nearest' });
+  }
+
+  function syncRange() {
+    var t = todayIdx();
+    var inTrip = t >= 0 && t < TOTAL;
+    // 여행 전·후에는 어떤 날짜도 '오늘'로 표시하지 않는다
+    dayBtns.forEach(function (b, i) {
+      b.classList.toggle('today-pd', inTrip && i === t);
+      b.classList.toggle('on', inTrip && i === t);
+    });
+    if (inTrip) dayBtns[t].scrollIntoView({ inline: 'center', block: 'nearest' });
+  }
+
+  reset.addEventListener('click', function () {
+    previewing = false;
+    render(todayIdx(), false);
+    syncRange();
+  });
+
+  // 도시 섹션에 무지개 색 클래스
+  cities.forEach(function (sec, i) { sec.classList.add('cc' + (i + 1)); });
+
+  // 진행 바 탭 → 해당 도시 일정으로 이동
+  segs.forEach(function (s, i) {
+    if (!cities[i]) return;
+    s.setAttribute('role', 'link');
+    s.setAttribute('tabindex', '0');
+    s.setAttribute('aria-label', s.querySelector('.sc').textContent + ' 일정으로 이동');
+    function go() { cities[i].scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    s.addEventListener('click', go);
+    s.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
+  });
+
+  // ---------- 결제·취소 캘린더 ----------
+  var dlSec  = document.getElementById('dl');
+  var dlSub  = document.getElementById('dlSub');
+  var dlRows = Array.prototype.slice.call(document.querySelectorAll('.dl-row'));
+  var ndBtn  = document.getElementById('nextDl');
+  var ndD    = document.getElementById('ndD');
+  var ndT    = document.getElementById('ndT');
+
+  function rowDate(r) {
+    var a = r.dataset.date.split('-');
+    return new Date(+a[0], a[1] - 1, +a[2]);
+  }
+
+  function updateDl() {
+    var t = new Date(); t.setHours(0, 0, 0, 0);
+    var next = null;
+    dlRows.forEach(function (r) {
+      r.classList.remove('past', 'next');
+      if (rowDate(r) < t) r.classList.add('past');
+      else if (!next) next = r;
+    });
+    if (!next) {
+      ndBtn.hidden = true;
+      dlSec.classList.add('done');
+      dlSub.textContent = '모든 결제·취소 마감이 지났습니다';
+      return;
+    }
+    var nd = rowDate(next);
+    dlRows.forEach(function (r) {
+      if (r.dataset.date === next.dataset.date) r.classList.add('next');
+    });
+    var dn = Math.round((nd - t) / MS);
+    ndD.textContent = next.dataset.fuzzy ? '곧' : (dn === 0 ? 'D-DAY' : 'D-' + dn);
+    ndT.textContent = next.querySelector('.dt').textContent.split(' — ')[0] +
+                      ' · ' + next.querySelector('.db').textContent;
+    ndBtn.hidden = false;
+  }
+
+  ndBtn.addEventListener('click', function () {
+    dlSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // ---------- 반액카드+패밀리카드 ㄷ자 연결선 ----------
+  var pairEl = document.querySelector('.tcard li.pair');
+  function drawPair() {
+    if (!pairEl) return;
+    var prs = pairEl.querySelectorAll('.pr');
+    var link = pairEl.querySelector('.plink');
+    if (prs.length < 2 || !link) return;
+    var fs = parseFloat(getComputedStyle(prs[0]).fontSize);
+    var a = prs[0].offsetTop + fs * 0.5 + 1.5;                    // 첫 점 중심
+    var b = prs[prs.length - 1].offsetTop + fs * 0.5 + 1.5;      // 끝 점 중심
+    link.style.top = a + 'px';
+    link.style.height = Math.max(b - a, 12) + 'px';
+  }
+  window.addEventListener('load', drawPair);
+  drawPair();
+
+  // ---------- 맨 위로 버튼 ----------
+  var toTop = document.getElementById('toTop');
+  var toBot = document.getElementById('toBot');
+  function fabVis() {
+    var atTop = scrollY <= 400;
+    toTop.classList.toggle('show', !atTop);
+    toBot.classList.toggle('show', atTop);
+  }
+  window.addEventListener('scroll', fabVis, { passive: true });
+  toTop.addEventListener('click', function () { scrollTo({ top: 0, behavior: 'smooth' }); });
+  toBot.addEventListener('click', function () {
+    scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
+  });
+  fabVis();
+
+  // ---------- 갱신 ----------
+  function refresh() {
+    if (!previewing) { render(todayIdx(), false); syncRange(); }
+    updateDl();
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (!document.hidden) refresh();
+  });
+  window.addEventListener('focus', refresh);
+  window.addEventListener('resize', function () {
+    if (lastNight !== null) placeMarker(lastNight);
+    drawPair();
+  });
+  setInterval(refresh, 1800000);   // 30분 — 자정 넘김·오래 열어둔 탭 대비
+  refresh();
+})();
+</script>
+
+</body></html>
