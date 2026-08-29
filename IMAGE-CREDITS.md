@@ -28,3 +28,7 @@
 - `img/naples.jpg` — [Naples, Italy, A view over Bay of Naples, Port of Naples and Mt. Vesuvius.jpg](https://commons.wikimedia.org/wiki/File:Naples%2C_Italy%2C_A_view_over_Bay_of_Naples%2C_Port_of_Naples_and_Mt._Vesuvius.jpg) · Vyacheslav Argenberg · CC BY 4.0
 - `img/mann.jpg` — [Naples Archaeological Museum (48445875986).jpg](https://commons.wikimedia.org/wiki/File:Naples_Archaeological_Museum_%2848445875986%29.jpg) · Gary Todd from Xinzheng, China · Public domain
 - `img/forum.jpg` — [Forum romanum 6k (5760x2097).jpg](https://commons.wikimedia.org/wiki/File:Forum_romanum_6k_%285760x2097%29.jpg) · BeBo86 · CC BY-SA 3.0
+- `img/pantheon.jpg` — [Pantheon (Rome) - Right side and front.jpg](https://commons.wikimedia.org/wiki/File:Pantheon_%28Rome%29_-_Right_side_and_front.jpg) · NikonZ7II · CC BY-SA 4.0
+- `img/navona.jpg` — [Piazza Navona (Rome) at night.jpg](https://commons.wikimedia.org/wiki/File:Piazza_Navona_%28Rome%29_at_night.jpg) · NikonZ7II · CC BY-SA 4.0
+- `img/fiduomo.jpg` — [Cattedrale di Santa Maria del Fiore – Il Duomo di Firenze.jpg](https://commons.wikimedia.org/wiki/File:Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg) · Gary Campbell-Hall · CC BY 2.0
+- `img/pontevecchio.jpg` — [Ponte Vecchio from Ponte alle Grazie.jpg](https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_from_Ponte_alle_Grazie.jpg) · Ingo Mehling · CC BY-SA 4.0
