@@ -333,6 +333,10 @@ body{
   display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;
   padding-bottom:12px; border-bottom:2px solid var(--accent);
 }
+.city-ic{width:38px; height:38px; flex:none; align-self:center; color:var(--accent)}
+.city.cc1 .city-ic{color:var(--c1)} .city.cc2 .city-ic{color:var(--c2)} .city.cc3 .city-ic{color:var(--c3t)}
+.city.cc4 .city-ic{color:var(--c4)} .city.cc5 .city-ic{color:var(--c5)} .city.cc6 .city-ic{color:var(--c6)}
+.city.cc7 .city-ic{color:var(--c7)}
 .city-name{font-size:26px; font-weight:700; letter-spacing:-.02em; margin:0}
 .city-meta{
   font-family:var(--font); font-variant-numeric:tabular-nums; font-size:13.5px; color:var(--muted);
@@ -498,6 +502,7 @@ body.pv .day.today .date .d{color:var(--move)}
   .wx{padding:18px 15px}
 
   .city-name{font-size:23px}
+  .city-ic{width:31px; height:31px}
   .city-head{gap:9px}
   .city-meta{margin-left:0; width:100%; font-size:13px}
 
@@ -769,18 +774,18 @@ body.pv .day.today .date .d{color:var(--move)}
 
   <div class="snap-head">
     <span class="snap-title">현재 날씨</span>
-    <span class="snap-time">2026.08.29 06:15 현지 조회 · 한국시간 13:15</span>
+    <span class="snap-time">2026.08.29 06:30 현지 조회 · 한국시간 13:30</span>
   </div>
   <div class="snap-grid">
-    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">17.3°</span><span class="sc-m">체감 16.9° · 17.2–24.4°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">10.1°</span><span class="sc-m">체감 9.2° · 9.9–19.3°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">−1.4°</span><span class="sc-m">체감 −7.4° · 바람 19.9km/h</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">13.8°</span><span class="sc-m">체감 14.3° · 13.6–24.2°</span><span class="sc-w">부분 흐림</span></div>
-    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">21.5°</span><span class="sc-m">체감 24.4° · 21.2–29.7°</span><span class="sc-w">부분 흐림</span></div>
-    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">21.9°</span><span class="sc-m">체감 25.3° · 21.8–29.2°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">24.5°</span><span class="sc-m">체감 26.9° · 21.5–31.8°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">24.2°</span><span class="sc-m">체감 26.1° · 24.3–35.7°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">25.6°</span><span class="sc-m">체감 27.8° · 25.6–34.9°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">17.1°</span><span class="sc-m">체감 16.7° · 17.1–24.3°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">8.8°</span><span class="sc-m">체감 7.7° · 8.9–19.5°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">−1.3°</span><span class="sc-m">체감 −7.8° · 바람 22.8km/h</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">13.1°</span><span class="sc-m">체감 13.2° · 13.0–24.0°</span><span class="sc-w">부분 흐림</span></div>
+    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">21.1°</span><span class="sc-m">체감 24.3° · 20.8–30.0°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">21.8°</span><span class="sc-m">체감 25.2° · 21.7–29.2°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">25.0°</span><span class="sc-m">체감 27.7° · 22.1–32.1°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">24.3°</span><span class="sc-m">체감 26.1° · 24.3–35.7°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">25.5°</span><span class="sc-m">체감 27.8° · 25.6–34.9°</span><span class="sc-w">흐림</span></div>
   
   </div>
   <p class="snap-note"><b>매시간 자동 갱신됩니다</b> (서버에서 무인 실행 — 위 시각이 마지막 조회 시점). 실제 예보가 의미를 갖는 건 <b>여행 7~10일 전</b>부터이므로, 그 전에는 아래 평년값을 기준으로 준비하시면 됩니다.</p>
@@ -818,6 +823,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 파리 ================= -->
 <section class="city">
   <div class="city-head">
+    <svg class="city-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5 L16 44 M24 5 L32 44 M19.5 20 h9 M16.5 31 h15 M13 44 q11 -13 22 0 M9 44 h30"/></svg>
     <h2 class="city-name">파리</h2>
     <span class="nights">5박</span>
     <span class="city-meta">12.23 수 — 12.28 월</span>
@@ -889,6 +895,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 그린델발트 ================= -->
 <section class="city">
   <div class="city-head">
+    <svg class="city-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 40 L16 16 L22 27 L30 8 L44 40 M26 15 l4 4 l4 -4"/><circle cx="10" cy="10" r="3"/></svg>
     <h2 class="city-name">그린델발트</h2>
     <span class="nights">3박</span>
     <span class="city-meta">12.28 월 — 12.31 목</span>
@@ -942,6 +949,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 루체른 ================= -->
 <section class="city">
   <div class="city-head">
+    <svg class="city-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 40 h40 M4 33 h26 M4 33 L9 26 h16 L30 33 M12 33 v7 M21 33 v7 M30 40 v-22 M38 40 v-22 M29 18 h10 M30 18 L34 10 L38 18"/></svg>
     <h2 class="city-name">루체른</h2>
     <span class="nights">2박</span>
     <span class="city-meta">12.31 목 — 1.2 토</span>
@@ -982,6 +990,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 밀라노 ================= -->
 <section class="city">
   <div class="city-head">
+    <svg class="city-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 44 h36 M14 44 V25 L24 15 L34 25 V44 M14 25 v-8 M19 21 v-9 M24 15 V6 M29 21 v-9 M34 25 v-8"/></svg>
     <h2 class="city-name">밀라노</h2>
     <span class="nights">2박</span>
     <span class="city-meta">1.2 토 — 1.4 월</span>
@@ -1024,6 +1033,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 피렌체 ================= -->
 <section class="city">
   <div class="city-head">
+    <svg class="city-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 30 Q24 8 38 30 M8 30 h32 M8 30 v5 h32 v-5 M24 12 V30 M17 14.5 L14.5 30 M31 14.5 L33.5 30 M21 8 h6 M24 8 V4"/></svg>
     <h2 class="city-name">피렌체</h2>
     <span class="nights">3박</span>
     <span class="city-meta">1.4 월 — 1.7 목</span>
@@ -1074,6 +1084,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 나폴리 ================= -->
 <section class="city">
   <div class="city-head">
+    <svg class="city-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 38 L18 15 L24 21 L30 11 L44 38 M4 44 h40 M32 7 q4 -2 3 -6"/></svg>
     <h2 class="city-name">나폴리</h2>
     <span class="nights">1박</span>
     <span class="city-meta">1.7 목 — 1.8 금</span>
@@ -1105,6 +1116,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 로마 ================= -->
 <section class="city">
   <div class="city-head">
+    <svg class="city-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 21 Q24 12 42 21 M6 21 V38 M42 21 V38 M4 38 h40 M8 29 Q24 23 40 29 M13 38 v-5 q3 -4 6 0 v5 M28 38 v-5 q3 -4 6 0 v5 M20.5 38 v-6 q3.5 -4 7 0 v6"/></svg>
     <h2 class="city-name">로마</h2>
     <span class="nights">4박</span>
     <span class="city-meta">1.8 금 — 1.12 화</span>
