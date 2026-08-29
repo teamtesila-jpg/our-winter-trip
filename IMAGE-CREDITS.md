@@ -16,7 +16,7 @@
 - `img/vatican.jpg` — [Basilica di San Pietro in Vaticano September 2015-1a.jpg](https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg) · Alvesgaspar · CC BY-SA 4.0
 - `img/trevi.jpg` — [Trevi Fountain, Rome, Italy 2 - May 2007.jpg](https://commons.wikimedia.org/wiki/File:Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg) · Diliff · CC BY 3.0
 - `img/borghese.jpg` — [Galleria borghese facade.jpg](https://commons.wikimedia.org/wiki/File:Galleria_borghese_facade.jpg) · Alessio Damato · CC BY-SA 3.0
-- `img/grindelwald.jpg` — [Eiger met Grindelwald, Zwitserland.jpg](https://commons.wikimedia.org/wiki/File:Eiger_met_Grindelwald%2C_Zwitserland.jpg) · Tinelot Wittermans · CC BY-SA 3.0
+- `img/grindelwald.jpg` — [North face.jpg (아이거 북벽)](https://commons.wikimedia.org/wiki/File:North_face.jpg) · Terra3 · CC BY-SA 3.0
 - `img/jungfraujoch.jpg` — [Jungfraujoch 090425.jpg](https://commons.wikimedia.org/wiki/File:Jungfraujoch_090425.jpg) · Mike Lehmann · CC BY-SA 3.0
 - `img/lucerne.jpg` — [Chapel Bridge (Kapellbrücke), Lucerne, Switzerland 01.jpg](https://commons.wikimedia.org/wiki/File:Chapel_Bridge_%28Kapellbr%C3%BCcke%29%2C_Lucerne%2C_Switzerland_01.jpg) · Godot13 · CC BY-SA 4.0
 - `img/verkehrshaus.jpg` — [00 9020 Luzern (CH) - Verkehrshaus.jpg](https://commons.wikimedia.org/wiki/File:00_9020_Luzern_%28CH%29_-_Verkehrshaus.jpg) · W. Bulach · CC BY-SA 4.0
