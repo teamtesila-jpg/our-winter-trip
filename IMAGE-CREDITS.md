@@ -36,3 +36,6 @@
 - `img/musegg.jpg` — [Luzern, Stadtmauer.jpg](https://commons.wikimedia.org/wiki/File:Luzern%2C_Stadtmauer.jpg) · Lines voisy · CC BY-SA 3.0
 - `img/lakelucerne.jpg` — [Dampfschiff Stadt Luzern volle Fahrt.jpg](https://commons.wikimedia.org/wiki/File:Dampfschiff_Stadt_Luzern_volle_Fahrt.jpg) · Sputniktilt · CC BY-SA 3.0
 - `img/spacca.jpg` — [Spaccanapoli da s Elmo 1050131.JPG](https://commons.wikimedia.org/wiki/File:Spaccanapoli_da_s_Elmo_1050131.JPG) · Lalupa · CC BY 3.0
+- `img/palvecchio.jpg` — [Piazza della signoria, palazzo vecchio, veduta 01.jpg](https://commons.wikimedia.org/wiki/File:Piazza_della_signoria%2C_palazzo_vecchio%2C_veduta_01.jpg) · Francesco Bini · CC BY-SA 4.0
+- `img/riccardi.jpg` — [Benozzo Gozzoli - Procession of the Youngest King (east wall) - WGA10247.jpg (동방박사 예배당 프레스코)](https://commons.wikimedia.org/wiki/File:Benozzo_Gozzoli_-_Procession_of_the_Youngest_King_%28east_wall%29_-_WGA10247.jpg) · Benozzo Gozzoli · Public domain
+- `img/pitti.jpg` — [Palazzo Pitti nel tardo pomeriggio.jpg](https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_nel_tardo_pomeriggio.jpg) · Almaak · CC BY-SA 3.0
