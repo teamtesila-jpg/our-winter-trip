@@ -1,0 +1,30 @@
+# 사진 출처 (Wikimedia Commons)
+
+이 저장소의 `img/` 사진은 모두 위키미디어 커먼즈의 자유 라이선스 이미지입니다.
+
+- `img/paris.jpg` — [La Tour Eiffel vue de la Tour Saint-Jacques, Paris août 2014 (2).jpg](https://commons.wikimedia.org/wiki/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg) · Yann Caradec from Paris, France · CC BY-SA 2.0
+- `img/eiffel.jpg` — [Eiffel tower from trocadero.jpg](https://commons.wikimedia.org/wiki/File:Eiffel_tower_from_trocadero.jpg) · NonOmnisMoriar · CC BY-SA 3.0
+- `img/disney.jpg` — [Disneyland Paryż 2013 (13).JPG](https://commons.wikimedia.org/wiki/File:Disneyland_Pary%C5%BC_2013_%2813%29.JPG) · Kapsuglan · CC BY-SA 4.0
+- `img/louvre.jpg` — [Louvre Museum Wikimedia Commons.jpg](https://commons.wikimedia.org/wiki/File:Louvre_Museum_Wikimedia_Commons.jpg) · Benh LIEU SONG (Flickr) · CC BY-SA 3.0
+- `img/orsay.jpg` — [MuseeDOrsay.jpg](https://commons.wikimedia.org/wiki/File:MuseeDOrsay.jpg) · Sanchezn · CC BY-SA 3.0
+- `img/notredame.jpg` — [Notre-Dame de Paris 2013-07-24.jpg](https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg) · P e z i · CC BY-SA 3.0
+- `img/montmartre.jpg` — [Sacré-Cœur de Montmartre.jpg](https://commons.wikimedia.org/wiki/File:Sacr%C3%A9-C%C5%93ur_de_Montmartre.jpg) · Rutger van der Maar · CC BY 2.0
+- `img/first.jpg` — [First Cliff Walk.jpg](https://commons.wikimedia.org/wiki/File:First_Cliff_Walk.jpg) · Blanky75 · CC BY-SA 4.0
+- `img/milan.jpg` — [Milan Cathedral from Piazza del Duomo.jpg](https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg) · Jiuguang Wang · CC BY-SA 3.0
+- `img/pompeii.jpg` — [Vesuvius from Pompeii (hires version 2 scaled).png](https://commons.wikimedia.org/wiki/File:Vesuvius_from_Pompeii_%28hires_version_2_scaled%29.png) · Morn the Gorn · CC BY-SA 3.0
+- `img/rome.jpg` — [Colosseo 2020.jpg](https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg) · FeaturedPics · CC BY-SA 4.0
+- `img/vatican.jpg` — [Basilica di San Pietro in Vaticano September 2015-1a.jpg](https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg) · Alvesgaspar · CC BY-SA 4.0
+- `img/trevi.jpg` — [Trevi Fountain, Rome, Italy 2 - May 2007.jpg](https://commons.wikimedia.org/wiki/File:Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg) · Diliff · CC BY 3.0
+- `img/borghese.jpg` — [Galleria borghese facade.jpg](https://commons.wikimedia.org/wiki/File:Galleria_borghese_facade.jpg) · Alessio Damato · CC BY-SA 3.0
+- `img/grindelwald.jpg` — [Eiger met Grindelwald, Zwitserland.jpg](https://commons.wikimedia.org/wiki/File:Eiger_met_Grindelwald%2C_Zwitserland.jpg) · Tinelot Wittermans · CC BY-SA 3.0
+- `img/jungfraujoch.jpg` — [Jungfraujoch 090425.jpg](https://commons.wikimedia.org/wiki/File:Jungfraujoch_090425.jpg) · Mike Lehmann · CC BY-SA 3.0
+- `img/lucerne.jpg` — [Chapel Bridge (Kapellbrücke), Lucerne, Switzerland 01.jpg](https://commons.wikimedia.org/wiki/File:Chapel_Bridge_%28Kapellbr%C3%BCcke%29%2C_Lucerne%2C_Switzerland_01.jpg) · Godot13 · CC BY-SA 4.0
+- `img/verkehrshaus.jpg` — [00 9020 Luzern (CH) - Verkehrshaus.jpg](https://commons.wikimedia.org/wiki/File:00_9020_Luzern_%28CH%29_-_Verkehrshaus.jpg) · W. Bulach · CC BY-SA 4.0
+- `img/grazie.jpg` — [Santa Maria delle Grazie Milan 2013.jpg](https://commons.wikimedia.org/wiki/File:Santa_Maria_delle_Grazie_Milan_2013.jpg) · Marcin Białek · CC BY-SA 3.0
+- `img/venice.jpg` — [Canal Grande Chiesa della Salute e Dogana dal ponte dell Accademia.jpg](https://commons.wikimedia.org/wiki/File:Canal_Grande_Chiesa_della_Salute_e_Dogana_dal_ponte_dell_Accademia.jpg) · Wolfgang Moroder · CC BY-SA 3.0
+- `img/florence.jpg` — [Panorama di Firenze centro visto dal Piazzale Michelangelo.jpg](https://commons.wikimedia.org/wiki/File:Panorama_di_Firenze_centro_visto_dal_Piazzale_Michelangelo.jpg) · PROPOLI87 · CC BY-SA 4.0
+- `img/uffizi.jpg` — [Florence, Italy - panoramio (125).jpg](https://commons.wikimedia.org/wiki/File:Florence%2C_Italy_-_panoramio_%28125%29.jpg) · Arek N. · CC BY-SA 3.0
+- `img/pisa.jpg` — [Pisa Cathedral and Pisa Tower, Campo dei Miracoli (Field of Miracles), Pisa, Italy.jpg](https://commons.wikimedia.org/wiki/File:Pisa_Cathedral_and_Pisa_Tower%2C_Campo_dei_Miracoli_%28Field_of_Miracles%29%2C_Pisa%2C_Italy.jpg) · Vyacheslav Argenberg · CC BY 4.0
+- `img/naples.jpg` — [Naples, Italy, A view over Bay of Naples, Port of Naples and Mt. Vesuvius.jpg](https://commons.wikimedia.org/wiki/File:Naples%2C_Italy%2C_A_view_over_Bay_of_Naples%2C_Port_of_Naples_and_Mt._Vesuvius.jpg) · Vyacheslav Argenberg · CC BY 4.0
+- `img/mann.jpg` — [Naples Archaeological Museum (48445875986).jpg](https://commons.wikimedia.org/wiki/File:Naples_Archaeological_Museum_%2848445875986%29.jpg) · Gary Todd from Xinzheng, China · Public domain
+- `img/forum.jpg` — [Forum romanum 6k (5760x2097).jpg](https://commons.wikimedia.org/wiki/File:Forum_romanum_6k_%285760x2097%29.jpg) · BeBo86 · CC BY-SA 3.0
