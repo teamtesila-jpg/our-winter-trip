@@ -4,7 +4,7 @@
 
 - `img/paris.jpg` — [La Tour Eiffel vue de la Tour Saint-Jacques, Paris août 2014 (2).jpg](https://commons.wikimedia.org/wiki/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg) · Yann Caradec from Paris, France · CC BY-SA 2.0
 - `img/eiffel.jpg` — [Eiffel tower from trocadero.jpg](https://commons.wikimedia.org/wiki/File:Eiffel_tower_from_trocadero.jpg) · NonOmnisMoriar · CC BY-SA 3.0
-- `img/disney.jpg` — [Disneyland Paryż 2013 (13).JPG](https://commons.wikimedia.org/wiki/File:Disneyland_Pary%C5%BC_2013_%2813%29.JPG) · Kapsuglan · CC BY-SA 4.0
+- `img/disney.jpg` — [Sleeping Beauty Castle, Disneyland, Paris.jpg](https://en.wikipedia.org/wiki/File:Sleeping_Beauty_Castle,_Disneyland,_Paris.jpg) · Heather Cowper · CC BY 2.0
 - `img/louvre.jpg` — [Louvre Museum Wikimedia Commons.jpg](https://commons.wikimedia.org/wiki/File:Louvre_Museum_Wikimedia_Commons.jpg) · Benh LIEU SONG (Flickr) · CC BY-SA 3.0
 - `img/orsay.jpg` — [MuseeDOrsay.jpg](https://commons.wikimedia.org/wiki/File:MuseeDOrsay.jpg) · Sanchezn · CC BY-SA 3.0
 - `img/notredame.jpg` — [Notre-Dame de Paris 2013-07-24.jpg](https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg) · P e z i · CC BY-SA 3.0
