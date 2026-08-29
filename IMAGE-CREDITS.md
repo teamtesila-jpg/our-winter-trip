@@ -32,3 +32,7 @@
 - `img/navona.jpg` — [Piazza Navona (Rome) at night.jpg](https://commons.wikimedia.org/wiki/File:Piazza_Navona_%28Rome%29_at_night.jpg) · NikonZ7II · CC BY-SA 4.0
 - `img/fiduomo.jpg` — [Cattedrale di Santa Maria del Fiore – Il Duomo di Firenze.jpg](https://commons.wikimedia.org/wiki/File:Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg) · Gary Campbell-Hall · CC BY 2.0
 - `img/pontevecchio.jpg` — [Ponte Vecchio from Ponte alle Grazie.jpg](https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_from_Ponte_alle_Grazie.jpg) · Ingo Mehling · CC BY-SA 4.0
+- `img/lion.jpg` — [Lion Monument.jpg](https://commons.wikimedia.org/wiki/File:Lion_Monument.jpg) · Gürkan Sengün · Public domain
+- `img/musegg.jpg` — [Luzern, Stadtmauer.jpg](https://commons.wikimedia.org/wiki/File:Luzern%2C_Stadtmauer.jpg) · Lines voisy · CC BY-SA 3.0
+- `img/lakelucerne.jpg` — [Dampfschiff Stadt Luzern volle Fahrt.jpg](https://commons.wikimedia.org/wiki/File:Dampfschiff_Stadt_Luzern_volle_Fahrt.jpg) · Sputniktilt · CC BY-SA 3.0
+- `img/spacca.jpg` — [Spaccanapoli da s Elmo 1050131.JPG](https://commons.wikimedia.org/wiki/File:Spaccanapoli_da_s_Elmo_1050131.JPG) · Lalupa · CC BY 3.0
