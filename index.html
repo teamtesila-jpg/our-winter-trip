@@ -263,6 +263,27 @@ body{
   border-radius:8px; box-shadow:var(--shadow)}
 .wx h2{margin:0 0 4px; font-size:17px; font-weight:700; letter-spacing:-.01em}
 .wx .lead{margin:0 0 16px; font-size:14px; color:var(--muted); font-weight:300}
+.mywx-btn{
+  display:inline-flex; align-items:center; gap:6px; margin-bottom:14px;
+  font-family:var(--font); font-size:13.5px; font-weight:600; color:var(--move);
+  background:var(--move-soft); border:1px solid transparent; padding:9px 14px;
+  border-radius:999px; cursor:pointer; min-height:40px;
+  transition:border-color .15s;
+}
+.mywx-btn:hover{border-color:var(--move)}
+.mywx-btn:focus-visible{outline:2px solid var(--move); outline-offset:2px}
+.mywx-btn:disabled{opacity:.6; cursor:default}
+.mywx{
+  display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;
+  background:var(--move-soft); border-radius:6px; padding:12px 15px; margin-bottom:14px;
+}
+.mywx-k{font-family:var(--font); font-size:11.5px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--move); font-weight:600}
+.mywx-loc{margin-left:7px; letter-spacing:0; text-transform:none; font-size:13px; font-weight:600; color:var(--ink)}
+.mywx-t{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:26px; font-weight:600;
+  letter-spacing:-.02em; color:var(--move)}
+.mywx-d{font-size:13.5px; color:var(--ink-2)}
+.mywx-mm{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:13px; color:var(--muted)}
 .snap-head{display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:10px}
 .snap-title{font-family:var(--font); font-variant-numeric:tabular-nums; font-size:11.5px; letter-spacing:.12em;
   text-transform:uppercase; color:var(--accent); font-weight:600}
@@ -609,6 +630,14 @@ body.pv .day.today .date .d{color:var(--move)}
 <section class="wx">
   <h2>날씨</h2>
   <p class="lead">이 여행에서 가장 큰 변수입니다. 특히 12.29~30 융프라우요흐는 날씨가 전부입니다.</p>
+
+  <button type="button" class="mywx-btn" id="myWxBtn">📍 내 위치 날씨 보기</button>
+  <div class="mywx" id="myWx" hidden>
+    <span class="mywx-k">내 위치<span class="mywx-loc" id="myLoc"></span></span>
+    <span class="mywx-t" id="myT">—</span>
+    <span class="mywx-d" id="myD"></span>
+    <span class="mywx-mm" id="myMM"></span>
+  </div>
 
   <div class="snap-head">
     <span class="snap-title">현재 날씨</span>
@@ -1291,6 +1320,53 @@ body.pv .day.today .date .d{color:var(--move)}
     scrollTo({ top: document.documentElement.scrollHeight, behavior: 'smooth' });
   });
   fabVis();
+
+  // ---------- 내 위치 날씨 (가족 링크에서만 — 아티팩트는 외부호출 차단) ----------
+  var myBtn = document.getElementById('myWxBtn');
+  var myBox = document.getElementById('myWx');
+  var MYCODE = {0:'맑음',1:'대체로 맑음',2:'부분 흐림',3:'흐림',45:'안개',48:'서리 안개',
+    51:'이슬비',53:'이슬비',55:'이슬비',61:'비',63:'비',65:'비',66:'어는 비',67:'어는 비',
+    71:'눈',73:'눈',75:'눈',77:'싸락눈',80:'소나기',81:'소나기',82:'소나기',
+    85:'소낙눈',86:'소낙눈',95:'뇌우',96:'우박 뇌우',99:'우박 뇌우'};
+  function myNum(x, d) { return x.toFixed(d).replace('-', '−'); }
+  function myFail() {
+    myBtn.disabled = false;
+    myBtn.textContent = '📍 내 위치 날씨 보기';
+  }
+  function myWxLoad() {
+    if (!navigator.geolocation || !window.fetch) { myBtn.hidden = true; return; }
+    myBtn.disabled = true; myBtn.textContent = '위치 확인 중…';
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      var la = pos.coords.latitude.toFixed(3), lo = pos.coords.longitude.toFixed(3);
+      fetch('https://api.open-meteo.com/v1/forecast?latitude=' + la + '&longitude=' + lo +
+            '&current=temperature_2m,apparent_temperature,weather_code' +
+            '&daily=temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=1')
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          var c = d.current, dl = d.daily;
+          document.getElementById('myT').textContent = myNum(c.temperature_2m, 1) + '°';
+          document.getElementById('myD').textContent =
+            (MYCODE[c.weather_code] || '') + ' · 체감 ' + myNum(c.apparent_temperature, 1) + '°';
+          document.getElementById('myMM').textContent =
+            '오늘 ' + myNum(dl.temperature_2m_min[0], 0) + '–' + myNum(dl.temperature_2m_max[0], 0) + '°';
+          myBox.hidden = false; myBtn.hidden = true;
+          try { localStorage.setItem('mywx', '1'); } catch (e) {}
+          fetch('https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=' + la +
+                '&longitude=' + lo + '&localityLanguage=ko')
+            .then(function (r) { return r.json(); })
+            .then(function (g) {
+              var nm = g.city || g.locality || g.principalSubdivision || '';
+              if (nm) document.getElementById('myLoc').textContent = nm;
+            }).catch(function () {});
+        }).catch(myFail);
+    }, myFail, { timeout: 10000, maximumAge: 600000 });
+  }
+  if (document.baseURI.indexOf('/_f/') !== -1) {
+    myBtn.hidden = true;   // 클로드 아티팩트 안 — 기능 불가라 숨김
+  } else {
+    myBtn.addEventListener('click', myWxLoad);
+    try { if (localStorage.getItem('mywx') === '1') myWxLoad(); } catch (e) {}
+  }
 
   // ---------- 갱신 ----------
   function refresh() {
