@@ -449,6 +449,18 @@ body.pv .day.today .date .d{color:var(--move)}
 .foot{margin-top:32px; font-size:13px; color:var(--muted); font-weight:300}
 .pack-hint{font-size:13px; font-weight:300; color:var(--muted); letter-spacing:0}
 .pack .tcard h3{cursor:pointer; -webkit-tap-highlight-color:transparent}
+.pack-all{
+  display:inline-flex; align-items:center; position:relative; margin:0 0 16px;
+  padding-right:24px; cursor:pointer; -webkit-tap-highlight-color:transparent;
+  font-size:14.5px; font-weight:600; color:var(--ink-2);
+}
+.pack-all::after{content:""; position:absolute; right:0; top:50%; margin-top:-8px;
+  width:15px; height:15px; border:1.5px solid var(--line-2); border-radius:4px}
+.pack-all.done{color:var(--muted)}
+.pack-all.done::after{background:var(--ok); border-color:var(--ok)}
+.pack-all.done::before{content:""; position:absolute; right:3.5px; top:50%; margin-top:-4px;
+  width:8px; height:5px; border-left:2px solid #fff; border-bottom:2px solid #fff;
+  transform:rotate(-45deg); z-index:1}
 .pack .tcard li{cursor:pointer; -webkit-tap-highlight-color:transparent; position:relative; padding-right:22px}
 .pack .tcard li::after{content:""; position:absolute; right:0; top:.35em; width:15px; height:15px;
   border:1.5px solid var(--line-2); border-radius:4px}
@@ -684,6 +696,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <!-- ================= 준비물 ================= -->
 <section class="todo pack" id="pack">
   <h2>준비물 <span class="pack-hint">— 항목 탭 = 체크 · 제목 탭 = 칸 전체 체크</span></h2>
+  <div class="pack-all" id="packAll">전체 선택</div>
   <div class="tgrid">
     <div class="tcard">
       <h3>서류 · 돈</h3>
@@ -1436,11 +1449,24 @@ body.pv .day.today .date .d{color:var(--move)}
   var packLis = Array.prototype.slice.call(document.querySelectorAll('#pack .tcard li'));
   var packSaved = [];
   try { packSaved = JSON.parse(localStorage.getItem('packdone') || '[]'); } catch (e) {}
+  var packAll = document.getElementById('packAll');
+  function syncPackAll() {
+    var all = packLis.length > 0;
+    packLis.forEach(function (l) { if (!l.classList.contains('done')) all = false; });
+    packAll.classList.toggle('done', all);
+  }
   function savePack() {
     var arr = [];
     packLis.forEach(function (l, j) { if (l.classList.contains('done')) arr.push(j); });
     try { localStorage.setItem('packdone', JSON.stringify(arr)); } catch (e) {}
+    syncPackAll();
   }
+  packAll.addEventListener('click', function () {
+    var all = true;
+    packLis.forEach(function (l) { if (!l.classList.contains('done')) all = false; });
+    packLis.forEach(function (l) { l.classList.toggle('done', !all); });
+    savePack();
+  });
   packLis.forEach(function (li, i) {
     if (packSaved.indexOf(i) !== -1) li.classList.add('done');
     li.addEventListener('click', function () {
@@ -1448,6 +1474,7 @@ body.pv .day.today .date .d{color:var(--move)}
       savePack();
     });
   });
+  syncPackAll();
   // 카드 제목 탭 → 칸 전체 체크/해제
   Array.prototype.forEach.call(document.querySelectorAll('#pack .tcard h3'), function (h) {
     h.addEventListener('click', function () {
