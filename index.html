@@ -143,7 +143,7 @@ body{
   font-family:var(--font); font-size:10px; font-weight:500; color:var(--muted);
 }
 .seg .dtn i{
-  display:block; font-style:normal; line-height:1.5;
+  display:block; font-style:normal; line-height:1.5; letter-spacing:-.02em;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .seg.now .dtn{color:#14171C}
@@ -617,10 +617,10 @@ body.pv .day.today .date .d{color:var(--move)}
   <div class="bar-hint" aria-hidden="true"><span>Click</span><svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M12 4v14m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
   <div class="bar" id="bar">
     <div class="seg" data-nights="5" data-start="0"><span class="l1"><span class="sc">파리</span><span class="scs">파리</span><span class="sn">5박</span></span><span class="dtn"><i>에펠탑</i><i>샹젤리제</i><i>개선문</i><i>디즈니</i><i>루브르</i><i>오르세</i><i>노트르담</i><i>몽마르트</i></span></div>
-    <div class="seg" data-nights="3" data-start="5"><span class="l1"><span class="sc">그린델발트</span><span class="scs">그린델</span><span class="sn">3박</span></span><span class="dtn"><i>아이거</i><i>융프라우</i><i>피르스트</i></span></div>
+    <div class="seg" data-nights="3" data-start="5"><span class="l1"><span class="sc">그린델발트</span><span class="scs">그린델</span><span class="sn">3박</span></span><span class="dtn"><i>아이거북벽</i><i>융프라우</i><i>피르스트</i></span></div>
     <div class="seg" data-nights="2" data-start="8"><span class="l1"><span class="sc">루체른</span><span class="scs">루체른</span><span class="sn">2박</span></span><span class="dtn"><i>카펠교</i><i>사자상</i><i>무제크</i><i>리기산</i><i>박물관</i><i>유람선</i></span></div>
     <div class="seg" data-nights="2" data-start="10"><span class="l1"><span class="sc">밀라노</span><span class="scs">밀라노</span><span class="sn">2박</span></span><span class="dtn"><i>두오모</i><i>만찬</i><i>베네치아</i></span></div>
-    <div class="seg" data-nights="3" data-start="12"><span class="l1"><span class="sc">피렌체</span><span class="scs">피렌체</span><span class="sn">3박</span></span><span class="dtn"><i>베키오교</i><i>베키오궁</i><i>쿠폴라</i><i>리카르디</i><i>우피치</i><i>전망대</i><i>피티</i></span></div>
+    <div class="seg" data-nights="3" data-start="12"><span class="l1"><span class="sc">피렌체</span><span class="scs">피렌체</span><span class="sn">3박</span></span><span class="dtn"><i>베키오교</i><i>베키오궁</i><i>쿠폴라</i><i>산로렌초</i><i>리카르디</i><i>우피치</i><i>전망대</i><i>피티</i></span></div>
     <div class="seg" data-nights="1" data-start="15"><span class="l1"><span class="sc">나폴리</span><span class="scs">나폴리</span><span class="sn">1박</span></span><span class="dtn"><i>베수비오</i><i>박물관</i><i>구시가</i><i>폼페이</i></span></div>
     <div class="seg" data-nights="4" data-start="16"><span class="l1"><span class="sc">로마</span><span class="scs">로마</span><span class="sn">4박</span></span><span class="dtn"><i>판테온</i><i>트레비</i><i>콜로세움</i><i>포룸</i><i>나보나</i><i>바티칸</i><i>보르게세</i></span></div>
     <div class="marker" id="marker"></div>
@@ -792,18 +792,18 @@ body.pv .day.today .date .d{color:var(--move)}
 
   <div class="snap-head">
     <span class="snap-title">현재 날씨</span>
-    <span class="snap-time">2026.08.30 08:15 현지 조회 · 한국시간 15:15</span>
+    <span class="snap-time">2026.08.30 08:30 현지 조회 · 한국시간 15:30</span>
   </div>
   <div class="snap-grid">
-    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">17.0°</span><span class="sc-m">체감 17.1° · 16.9–24.1°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">14.8°</span><span class="sc-m">체감 14.3° · 11.6–22.6°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">0.9°</span><span class="sc-m">체감 −3.0° · 바람 11.9km/h</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">16.0°</span><span class="sc-m">체감 17.0° · 14.1–26.9°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">20.9°</span><span class="sc-m">체감 22.9° · 19.9–30.7°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">22.8°</span><span class="sc-m">체감 23.5° · 22.5–30.0°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">18.6°</span><span class="sc-m">체감 19.8° · 16.2–33.2°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">26.8°</span><span class="sc-m">체감 31.7° · 25.5–32.2°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">25.1°</span><span class="sc-m">체감 28.4° · 24.2–34.6°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">17.1°</span><span class="sc-m">체감 17.4° · 16.9–24.1°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">15.2°</span><span class="sc-m">체감 15.0° · 11.6–22.6°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">0.9°</span><span class="sc-m">체감 −2.9° · 바람 11.6km/h</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">16.7°</span><span class="sc-m">체감 18.0° · 14.1–26.9°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">21.4°</span><span class="sc-m">체감 23.4° · 19.9–30.7°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">23.0°</span><span class="sc-m">체감 24.0° · 22.5–30.0°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">19.7°</span><span class="sc-m">체감 20.9° · 16.2–33.2°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">27.4°</span><span class="sc-m">체감 32.1° · 25.5–32.2°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">25.6°</span><span class="sc-m">체감 28.7° · 24.2–34.6°</span><span class="sc-w">맑음</span></div>
   
   </div>
   <p class="snap-note"><b>매시간 자동 갱신됩니다</b> (서버에서 무인 실행 — 위 시각이 마지막 조회 시점). 실제 예보가 의미를 갖는 건 <b>여행 7~10일 전</b>부터이므로, 그 전에는 아래 평년값을 기준으로 준비하시면 됩니다.</p>
@@ -1101,6 +1101,7 @@ body.pv .day.today .date .d{color:var(--move)}
     <figure><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/pontevecchio.jpg" alt="베키오 다리" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>베키오 다리</figcaption></figure>
     <figure><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/palvecchio.jpg" alt="베키오 궁전" loading="lazy" style="object-position:top" onerror="this.parentNode.style.display='none'"><figcaption>베키오 궁전</figcaption></figure>
     <figure><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/fiduomo.jpg" alt="피렌체 두오모 쿠폴라" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>두오모 쿠폴라</figcaption></figure>
+    <figure><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/laurenziana.jpg" alt="라우렌치아나 도서관 검은 대리석 계단" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>라우렌치아나 계단</figcaption></figure>
     <figure><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/riccardi.jpg" alt="리카르디 궁전 동방박사 예배당 프레스코" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>동방박사 예배당</figcaption></figure>
     <figure><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/uffizi.jpg" alt="우피치 미술관" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>우피치</figcaption></figure>
     <figure><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/florence.jpg" alt="미켈란젤로 광장에서 본 피렌체" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>미켈란젤로 광장</figcaption></figure>
@@ -1136,6 +1137,7 @@ body.pv .day.today .date .d{color:var(--move)}
       <span class="tag wash">세탁 3</span></div>
     <div class="items">
       <div class="item"><span class="t">오전</span><span class="c"><b>두오모 쿠폴라</b><span class="note">시간 예약 필수 · 463계단</span></span></div>
+      <div class="item"><span class="t">10:30</span><span class="c"><b>산 로렌초 성당 + 라우렌치아나 도서관</b><span class="note">두오모에서 도보 5분, 메디치가의 전용 성당 · 성당은 브루넬레스키 설계로 <b>겉은 미완성 벽돌, 안은 절제된 균형</b> · 도서관은 미켈란젤로가 건축가로 만든 공간, <b>검은 대리석 계단</b>이 하이라이트 · <b>도서관은 평일 10:00~13:30, 토·일·공휴일 휴관 — 화요일인 오늘이 이번 여행의 유일한 기회</b>(1.6은 주현절이라 닫힘) · 성당 €9 현장발권, 도서관 €5</span></span></div>
       <div class="item"><span class="t">여유 있으면</span><span class="c"><b>리카르디 궁전</b> — 동방박사 예배당<span class="note">숙소 코앞 · 45분~1시간이면 충분 · 성인 €7 · <b>수요일 휴관이라 오늘 아니면 못 봅니다</b> · 예배당은 7분당 10명 제한이라 예약 권장</span></span></div>
       <div class="item"><span class="t">오후</span><span class="c"><b>우피치 미술관</b><span class="note">18세 미만 무료 · 예약은 인원수만큼 별도</span></span></div>
       <div class="item"><span class="t">일몰 전</span><span class="c"><b>미켈란젤로 광장</b><span class="note">일몰 16:50 — 그 전에 올라가야 도시 전경이 보입니다</span></span></div>
@@ -1150,6 +1152,7 @@ body.pv .day.today .date .d{color:var(--move)}
       <div class="item"><span class="t">오전</span><span class="c">팔라티나 갤러리 + <b>대공의 보물관</b><span class="note">라파엘로가 벽을 채운 방들 · 보물관의 메디치 보석·수정 공예는 아이들이 제일 좋아하는 구역입니다 · 팔라티나만 2~3시간</span></span></div>
       <div class="item"><span class="t">14:00</span><span class="c"><b>보볼리 정원</b><span class="note">1월은 8:15~<b>16:30 폐장</b>, 마지막 입장 15:30 — 일몰 16:50 전에 끝납니다 · 부온탈렌티 그로타·원형극장·넵튠 분수 · 아이들 뛰어놀 공간</span></span></div>
       <div class="item"><span class="t">요금</span><span class="c">피티+보볼리 통합 <b>성인 €22</b>(사전예약 €25) · <b>18세 미만 무료</b><span class="note">여권 지참 — 국립박물관은 만 18세 미만 전원 무료. 공휴일이라 사전 예약을 권합니다</span></span></div>
+      <div class="item"><span class="t">힘 남으면</span><span class="c"><b>메디치 예배당</b> — 미켈란젤로의 무덤 조각<span class="note">8:15~18:50, 마지막 입장 18:10 · <b>화요일 휴관이라 어제는 불가, 주현절엔 정상 개관</b> · 보볼리(16:30 폐장) 후 걸어서 20분이면 닿습니다 · 새 성구실의 '낮·밤·여명·황혼' 4상 · 성인 €11(+예약 €3), 18세 미만 무료 · <b>미켈란젤로의 비밀의 방은 만 10세 미만 불가</b>라 이번엔 제외</span></span></div>
       <div class="item"><span class="t">대안</span><span class="c">피사 당일치기 또는 바르베리노 아울렛<span class="note">피사는 왕복 약 2시간이나 주현절 기차 감편이 변수 · 아울렛은 SMN역 셔틀 30분, 13세 이하 무료</span></span></div>
       <div class="alert"><span><b>주현절 공휴일</b>이라 상점이 쉬고 기차가 감편됩니다 — 그래서 <b>피렌체 시내에 머무는 이 날이 오히려 안전</b>합니다. 저녁거리는 전날 사두십시오. 우피치·피티·보볼리는 이날 전 단지가 정상 운영합니다(휴관은 1.1과 12.25뿐).</span></div>
     </div>
