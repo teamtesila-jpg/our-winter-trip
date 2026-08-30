@@ -41,4 +41,4 @@
 - `img/pitti.jpg` — [Palazzo Pitti nel tardo pomeriggio.jpg](https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_nel_tardo_pomeriggio.jpg) · Almaak · CC BY-SA 3.0
 - `img/rigi.jpg` — [Rigibahn Winter.jpg](https://commons.wikimedia.org/wiki/File:Rigibahn_Winter.jpg) · jschmitt7 · CC BY-SA 4.0
 - `img/arc.jpg` — [Arc de Triomphe, Paris 21 October 2010.jpg](https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe%2C_Paris_21_October_2010.jpg) · Jiuguang Wang · CC BY-SA 2.0
-- `img/champselysees.jpg` — [Illuminations de Noël 2024 des Champs-Élysées.jpg](https://commons.wikimedia.org/wiki/File:Illuminations_de_No%C3%ABl_2024_des_Champs-%C3%89lys%C3%A9es.jpg) · Tangopaso · Public domain
+- `img/champselysees.jpg` — [Champs-Elysées-Illuminations.jpg](https://commons.wikimedia.org/wiki/File:Champs-Elys%C3%A9es-Illuminations.jpg) · Dimitri Destugues · CC BY-SA 3.0
