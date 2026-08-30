@@ -43,3 +43,4 @@
 - `img/arc.jpg` — [Arc de Triomphe, Paris 21 October 2010.jpg](https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe%2C_Paris_21_October_2010.jpg) · Jiuguang Wang · CC BY-SA 2.0
 - `img/champselysees.jpg` — [Champs-Elysées-Illuminations.jpg](https://commons.wikimedia.org/wiki/File:Champs-Elys%C3%A9es-Illuminations.jpg) · Dimitri Destugues · CC BY-SA 3.0
 - `img/laurenziana.jpg` — [Biblioteca laurenziana, vestibolo, scalinata 01.JPG](https://commons.wikimedia.org/wiki/File:Biblioteca_laurenziana%2C_vestibolo%2C_scalinata_01.JPG) · sailko · CC BY-SA 3.0
+- `img/roastery.jpg` — [Starbucks Reserve Roastery - Palazzo Broggi - Piazzza Cordusio.jpg](https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_-_Palazzo_Broggi_-_Piazzza_Cordusio.jpg) · Vincenzo Paolella · CC BY-SA 4.0
