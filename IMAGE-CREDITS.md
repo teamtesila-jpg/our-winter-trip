@@ -46,3 +46,4 @@
 - `img/roastery.jpg` — [Starbucks Reserve Roastery - Palazzo Broggi - Piazzza Cordusio.jpg](https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_-_Palazzo_Broggi_-_Piazzza_Cordusio.jpg) · Vincenzo Paolella · CC BY-SA 4.0
 - `img/seebruecke.jpg` — [CH-Luzern - Seebrücke bei Nacht 1201.JPG](https://commons.wikimedia.org/wiki/File:CH-Luzern_-_Seebr%C3%BCcke_bei_Nacht_1201.JPG) · ANKAWÜ · CC BY-SA 3.0
 - `img/pope.jpg` — [Pope Leo XIV in popemobile at inauguration.jpg](https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_in_popemobile_at_inauguration.jpg) · Congressman Michael McCaul (R-Texas) · Public domain
+- `img/laterano.jpg` — [San Giovanni in Laterano 2021.jpg](https://commons.wikimedia.org/wiki/File:San_Giovanni_in_Laterano_2021.jpg) · NikonZ7II · CC BY-SA 4.0
