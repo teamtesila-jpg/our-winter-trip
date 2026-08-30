@@ -45,3 +45,4 @@
 - `img/laurenziana.jpg` — [Biblioteca laurenziana, vestibolo, scalinata 01.JPG](https://commons.wikimedia.org/wiki/File:Biblioteca_laurenziana%2C_vestibolo%2C_scalinata_01.JPG) · sailko · CC BY-SA 3.0
 - `img/roastery.jpg` — [Starbucks Reserve Roastery - Palazzo Broggi - Piazzza Cordusio.jpg](https://commons.wikimedia.org/wiki/File:Starbucks_Reserve_Roastery_-_Palazzo_Broggi_-_Piazzza_Cordusio.jpg) · Vincenzo Paolella · CC BY-SA 4.0
 - `img/seebruecke.jpg` — [CH-Luzern - Seebrücke bei Nacht 1201.JPG](https://commons.wikimedia.org/wiki/File:CH-Luzern_-_Seebr%C3%BCcke_bei_Nacht_1201.JPG) · ANKAWÜ · CC BY-SA 3.0
+- `img/pope.jpg` — [Pope Leo XIV in popemobile at inauguration.jpg](https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_in_popemobile_at_inauguration.jpg) · Congressman Michael McCaul (R-Texas) · Public domain
