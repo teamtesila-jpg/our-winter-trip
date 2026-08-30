@@ -23,13 +23,13 @@
   --move:#1C4A73; --move-soft:#E9F0F7;
   --shadow:0 1px 2px rgba(20,23,28,.05), 0 8px 24px -16px rgba(20,23,28,.28);
   --on-now:#FFFFFF;
-  --c1:#FF4D4D; --c1t:#C11F2E; --c1s:rgba(255,77,77,.20);
-  --c2:#FF9500; --c2t:#A85413; --c2s:rgba(255,149,0,.22);
-  --c3:#FFCC00; --c3t:#8A6D00; --c3s:rgba(255,204,0,.28);
-  --c4:#30C551; --c4t:#1F7A3D; --c4s:rgba(48,197,81,.20);
-  --c5:#0A84FF; --c5t:#0A5AA8; --c5s:rgba(10,132,255,.18);
-  --c6:#3838D8; --c6t:#2E2EB0; --c6s:rgba(56,56,216,.24);
-  --c7:#A93BEC; --c7t:#7E1FBC; --c7s:rgba(169,59,236,.22);
+  --c1:#E8474E; --c1t:#B3242C; --c1s:rgba(232,71,78,0.20);
+  --c2:#E2611B; --c2t:#8C4A0C; --c2s:rgba(226,97,27,0.26);
+  --c3:#CDB40C; --c3t:#736100; --c3s:rgba(205,180,12,0.30);
+  --c4:#2FAF57; --c4t:#1B6D36; --c4s:rgba(47,175,87,0.22);
+  --c5:#149FC6; --c5t:#0A637A; --c5s:rgba(20,159,198,0.22);
+  --c6:#3F6BE2; --c6t:#28409E; --c6s:rgba(63,107,226,0.22);
+  --c7:#B043C9; --c7t:#7C2391; --c7s:rgba(176,67,201,0.24);
   color-scheme:light dark;
 }
 @media (prefers-color-scheme: dark){
@@ -341,9 +341,7 @@ body{
   padding-bottom:12px; border-bottom:2px solid var(--accent);
 }
 .city-ic{width:38px; height:38px; flex:none; align-self:center; color:var(--accent)}
-.city.cc1 .city-ic{color:var(--c1)} .city.cc2 .city-ic{color:var(--c2)} .city.cc3 .city-ic{color:var(--c3t)}
-.city.cc4 .city-ic{color:var(--c4)} .city.cc5 .city-ic{color:var(--c5)} .city.cc6 .city-ic{color:var(--c6)}
-.city.cc7 .city-ic{color:var(--c7)}
+.city.cc1 .city-ic{color:var(--c1)} .city.cc2 .city-ic{color:var(--c2)} .city.cc3 .city-ic{color:var(--c3t)} .city.cc4 .city-ic{color:var(--c4t)} .city.cc5 .city-ic{color:var(--c5)} .city.cc6 .city-ic{color:var(--c6)} .city.cc7 .city-ic{color:var(--c7)}
 
 .pics{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin:16px 0 2px}
 .pics figure{margin:0}
@@ -766,6 +764,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <li>면도기 · 셰이빙폼</li>
         <li>선크림 · BB · 쿠션(톡톡이) <b>(설원 자외선 — 융프라우 필수)</b></li>
         <li>헤어드라이기 <b>(220V 겸용인지 확인)</b></li>
+        <li><b>수영복 4벌</b> (리기 칼트바트 온천 · 숙소 욕조)<span style="display:block;color:var(--muted);font-size:13px">알프스 노천 온천에 들어가려면 필수 — 현지 구매는 비쌉니다</span></li>
         <li>여행용 세제 · 빨래망 · 휴대 빨랫줄 (세탁 4회 계획)</li>
         <li>1회용 주방세제 · 수세미 (숙소 조리 후 설거지)</li>
         <li>수건 4개</li>
@@ -1039,6 +1038,7 @@ body.pv .day.today .date .d{color:var(--move)}
       <div class="item"><span class="t">오전</span><span class="c"><b>리기산</b> — 새해 첫 설경<span class="note">톱니열차 365일 운행 · 기차로 아르트골다우 이동(반액 반값·아이 패밀리카드 무료) 후 등산철도 — <b>리기 데이패스 성인 반액 CHF 36 · 15세 이하는 어른 동반 시 무료(리기 자체 정책)</b> · 정상 1,798m 설원 · 눈썰매 대여 CHF 15/일+보증금 20, 헬멧 5 — 300대 선착순 · 쿨름→클뢰스털리 3.1km 코스, 셔틀열차 복귀는 데이패스로 추가요금 없음 · 08시대 출발, 정오 하산</span></span></div>
       <div class="item"><span class="t">13:00</span><span class="c"><b>스위스 교통박물관</b><span class="note">스위스 전체가 쉬는 날인데 이곳만 365일 개관합니다. 오후 4~5시간 — 플라네타륨·초콜릿 어드벤처 포함</span></span></div>
       <div class="item"><span class="t">옵션</span><span class="c">힘이 남으면 <b>루체른 호수 유람선</b> 1시간 코스<span class="note">1.1에도 운항하나 겨울 감편 — 당일 시각표 확인 · 반액카드 반값 · 박물관 앞 Lido 선착장</span></span></div>
+      <div class="item"><span class="t">선택</span><span class="c"><b>리기 칼트바트 알프스 온천</b><span class="note">해발 1,433m 노천 온천 — 눈 덮인 알프스를 보며 들어갑니다 · 마리오 보타 설계, 600년 역사의 천연 광천수 · <b>1.1도 10:00~20:00 영업</b>(입욕 종료는 폐장 30분 전) · <b>미네랄바트는 성인 동반 시 아이도 입장 가능</b>, 사우나 스파 구역만 16세 이상 · <b>수영복 4벌 필요</b> · 쿨름 정상에서 열차로 내려와 들르고, 비츠나우로 하산해 유람선으로 귀환하면 하루가 완성됩니다 — 대신 <b>교통박물관은 포기</b></span></span></div>
       <div class="item"><span class="t">흐리면</span><span class="c">리기 접고 <b>교통박물관 종일</b><span class="note">원래 종일 코스라 오전부터 가면 플라네타륨·초콜릿 어드벤처까지 여유 있게 봅니다 · 리기는 눈·구름이면 정상에서 아무것도 안 보입니다</span></span></div>
       <div class="item"><span class="t">20:15</span><span class="c"><b>신년 불꽃 — 노이야르스차우버</b><span class="note">루체른의 진짜 새해 행사는 <b>1월 1일 밤</b>입니다 · 호수 분지(제브뤼케)에서 15분간 · 16년 전통, 시내 호텔들이 공동 주최 · 라디오 필라투스 음악 중계 · <b>최적 관람은 제브뤼케와 호반 산책로</b> — 숙소에서 도보 5분 · <b>2026년은 사고로 취소됐으니 2027년 개최 여부를 12월에 확인</b></span></span></div>
       <div class="item"><span class="t">교통</span><span class="c">게스트카드로 시내 교통 무료</span></div>
