@@ -39,3 +39,4 @@
 - `img/palvecchio.jpg` — [Piazza della signoria, palazzo vecchio, veduta 01.jpg](https://commons.wikimedia.org/wiki/File:Piazza_della_signoria%2C_palazzo_vecchio%2C_veduta_01.jpg) · Francesco Bini · CC BY-SA 4.0
 - `img/riccardi.jpg` — [Benozzo Gozzoli - Procession of the Youngest King (east wall) - WGA10247.jpg (동방박사 예배당 프레스코)](https://commons.wikimedia.org/wiki/File:Benozzo_Gozzoli_-_Procession_of_the_Youngest_King_%28east_wall%29_-_WGA10247.jpg) · Benozzo Gozzoli · Public domain
 - `img/pitti.jpg` — [Palazzo Pitti nel tardo pomeriggio.jpg](https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_nel_tardo_pomeriggio.jpg) · Almaak · CC BY-SA 3.0
+- `img/rigi.jpg` — [Rigibahn Winter.jpg](https://commons.wikimedia.org/wiki/File:Rigibahn_Winter.jpg) · jschmitt7 · CC BY-SA 4.0
