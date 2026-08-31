@@ -48,3 +48,4 @@
 - `img/pope.jpg` — [Pope Leo XIV in popemobile at inauguration.jpg](https://commons.wikimedia.org/wiki/File:Pope_Leo_XIV_in_popemobile_at_inauguration.jpg) · Congressman Michael McCaul (R-Texas) · Public domain
 - `img/laterano.jpg` — [San Giovanni in Laterano 2021.jpg](https://commons.wikimedia.org/wiki/File:San_Giovanni_in_Laterano_2021.jpg) · NikonZ7II · CC BY-SA 4.0
 - `img/vaticansquare.jpg` — [Sicht vom petersdom roma.jpg](https://commons.wikimedia.org/wiki/File:Sicht_vom_petersdom_roma.jpg) · Lukask · CC BY-SA 3.0
+- `img/david.jpg` — [Firenze, galleria dell'accademia, tribuna del david 01.jpg](https://commons.wikimedia.org/wiki/File:Firenze%2C_galleria_dell%27accademia%2C_tribuna_del_david_01.jpg) · Francesco Bini · CC BY-SA 4.0
