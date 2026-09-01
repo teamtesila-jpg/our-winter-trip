@@ -92,6 +92,7 @@ body{
   text-transform:uppercase; color:var(--muted); display:block; margin-bottom:5px}
 .stat .v{font-size:19px; font-weight:600; font-variant-numeric:tabular-nums; letter-spacing:-.01em}
 .stat .v small{font-size:13px; font-weight:400; color:var(--muted); margin-left:3px}
+  .stat .sub{display:block; margin-top:5px; font-size:12px; font-weight:400; color:var(--muted); letter-spacing:-.01em; line-height:1.45}
 
 /* ---------- progress ---------- */
 .prog{margin-top:34px}
@@ -599,7 +600,7 @@ body.pv .day.today .date .d{color:var(--move)}
     <!-- 인원 메모: 4명 · 성인 2 + 아이 2 (표기 생략 — 이름 pill이 이미 보여줌) -->
     <div class="stat"><span class="k">숙소</span><span class="v">7<small>곳 · 예약완료</small></span></div>
     <div class="stat"><span class="k">확정 지출<small style="font-weight:400"> (출국 전)</small></span><span class="v">1,202<small>만/결제완료 733만</small></span></div>
-    <div class="stat"><span class="k">총 지출<small style="font-weight:400"> (카드혜택 반영)</small></span><span class="v">1,752<small>/2,000만원</small></span></div>
+    <div class="stat"><span class="k">총 지출<small style="font-weight:400"> (카드혜택 반영)</small></span><span class="v">1,752<small>/2,000만원</small></span><span class="sub">카드 할인 −약 100만 · 롯데 결제할인 93 + 캐시백 7</span></div>
   </div>
   <button type="button" class="next-dl" id="nextDl" hidden>
     <span class="nd-k">다음 마감</span><span class="nd-d" id="ndD"></span><span class="nd-t" id="ndT"></span>
@@ -906,18 +907,18 @@ body.pv .day.today .date .d{color:var(--move)}
 
   <div class="snap-head">
     <span class="snap-title">현재 날씨</span>
-    <span class="snap-time">2026.09.01 14:00 현지 조회 · 한국시간 21:00</span>
+    <span class="snap-time">2026.09.01 14:15 현지 조회 · 한국시간 21:15</span>
   </div>
   <div class="snap-grid">
-    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">22.2°</span><span class="sc-m">체감 22.3° · 15.2–23.6°</span><span class="sc-w">부분 흐림</span></div>
-    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">20.7°</span><span class="sc-m">체감 21.3° · 8.4–21.3°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">2.0°</span><span class="sc-m">체감 0.3° · 바람 7.2km/h</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">23.8°</span><span class="sc-m">체감 24.9° · 12.8–24.8°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">29.3°</span><span class="sc-m">체감 31.1° · 20.9–30.6°</span><span class="sc-w">부분 흐림</span></div>
-    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">29.0°</span><span class="sc-m">체감 30.4° · 22.4–29.6°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">32.0°</span><span class="sc-m">체감 35.1° · 21.5–32.7°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">32.1°</span><span class="sc-m">체감 37.2° · 25.0–32.2°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">35.5°</span><span class="sc-m">체감 37.1° · 21.4–35.7°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">22.4°</span><span class="sc-m">체감 22.5° · 15.2–23.6°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">20.9°</span><span class="sc-m">체감 21.3° · 8.4–21.3°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">2.0°</span><span class="sc-m">체감 0.3° · 바람 6.9km/h</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">24.0°</span><span class="sc-m">체감 25.0° · 12.8–24.8°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">29.5°</span><span class="sc-m">체감 31.2° · 20.9–30.6°</span><span class="sc-w">부분 흐림</span></div>
+    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">29.0°</span><span class="sc-m">체감 30.3° · 22.4–29.6°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">32.2°</span><span class="sc-m">체감 35.1° · 21.5–32.7°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">32.1°</span><span class="sc-m">체감 36.9° · 25.0–32.2°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">35.6°</span><span class="sc-m">체감 37.1° · 21.4–35.7°</span><span class="sc-w">부분 흐림</span></div>
   
   </div>
   <p class="snap-note"><b>매시간 자동 갱신됩니다</b> (서버에서 무인 실행 — 위 시각이 마지막 조회 시점). 실제 예보가 의미를 갖는 건 <b>여행 7~10일 전</b>부터이므로, 그 전에는 아래 평년값을 기준으로 준비하시면 됩니다.</p>
