@@ -598,8 +598,8 @@ body.pv .day.today .date .d{color:var(--move)}
     <div class="stat"><span class="k">기간</span><span class="v">20<small>박</small> 21<small>일</small></span></div>
     <!-- 인원 메모: 4명 · 성인 2 + 아이 2 (표기 생략 — 이름 pill이 이미 보여줌) -->
     <div class="stat"><span class="k">숙소</span><span class="v">7<small>곳 · 예약완료</small></span></div>
-    <div class="stat"><span class="k">확정 지출<small style="font-weight:400"> (출국 전)</small></span><span class="v">1,262<small>만/결제완료 582만</small></span></div>
-    <div class="stat"><span class="k">총 지출(계획)</span><span class="v">1,849<small>/2,000만원</small></span></div>
+    <div class="stat"><span class="k">확정 지출<small style="font-weight:400"> (출국 전)</small></span><span class="v">1,267<small>만/결제완료 690만</small></span></div>
+    <div class="stat"><span class="k">총 지출(계획)</span><span class="v">1,861<small>/2,000만원</small></span></div>
   </div>
   <button type="button" class="next-dl" id="nextDl" hidden>
     <span class="nd-k">다음 마감</span><span class="nd-d" id="ndD"></span><span class="nd-t" id="ndT"></span>
@@ -642,6 +642,7 @@ body.pv .day.today .date .d{color:var(--move)}
   <div class="dl-list">
     <div class="dl-row" data-date="2026-08-29"><span class="dd">8.29</span><span class="db pay">결제</span><span class="dt">로마 4박 — 선결제 완료 · 무료취소 1.3까지 유지</span><span class="dm">$738.27</span></div>
     <div class="dl-row" data-date="2026-08-29"><span class="dd">8.29</span><span class="db pay">결제</span><span class="dt">나폴리 1박 — 선결제 완료 · 무료취소 1.6까지 유지</span><span class="dm">$234.41</span></div>
+    <div class="dl-row" data-date="2026-09-01"><span class="dd">9.1</span><span class="db pay">결제</span><span class="dt">루체른 2박 — <b>선결제 완료</b> · 무료취소 12.29까지</span><span class="dm">₩1,077,891</span></div>
     <div class="dl-row" data-date="2026-09-29"><span class="dd">9.29 화</span><span class="db open">판매 개시</span><span class="dt">최후의 만찬 1.2 슬롯 — <b>한국시간 19:00</b> · <a href="https://cenacolovinciano.vivaticket.it/" target="_blank" rel="noopener">비바티켓</a> 계정 먼저</span><span class="dm">예상</span></div>
     <div class="dl-row" data-date="2026-09-30"><span class="dd">9.30 수</span><span class="db open">판매 개시</span><span class="dt">TGV Lyria 12.28 — <b>한국시간 14시부터 확인</b> · <a href="https://www.sncf-connect.com/" target="_blank" rel="noopener">SNCF</a> 계정 먼저</span><span class="dm">확정</span></div>
     <div class="dl-row" data-date="2026-10-20"><span class="dd">10월 중하순</span><span class="db open">구매</span><span class="dt">스위스 반액카드 2장 — <b>유효 시작일 12.28 지정</b> · 패밀리 카드 동시 신청 필수 <b>(12월 부담 분산 위해 앞당김)</b></span><span class="dm"><span class="krw" data-cur="CHF" data-amt="300">약 ₩508,000</span></span></div>
@@ -654,7 +655,6 @@ body.pv .day.today .date .d{color:var(--move)}
     <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db cxl">취소마감</span><span class="dt">파리 5박</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db pay">결제</span><span class="dt">피렌체 3박</span><span class="dm">₩1,083,252</span></div>
     <div class="dl-row" data-date="2026-12-24"><span class="dd">12.24</span><span class="db pay">결제</span><span class="dt">밀라노 2박</span><span class="dm"><span class="krw" data-cur="USD" data-amt="502.60">약 ₩688,000</span></span></div>
-    <div class="dl-row" data-date="2026-12-26"><span class="dd">12.26~27</span><span class="db pay">결제</span><span class="dt">루체른 2박</span><span class="dm"><span class="krw" data-cur="CHF" data-amt="600.65">약 ₩1,017,000</span></span></div>
     <div class="dl-row" data-date="2026-12-29"><span class="dd">12.29</span><span class="db cxl">취소마감</span><span class="dt">루체른 — 한국시간 07:59</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2026-12-30"><span class="dd">12.30</span><span class="db cxl">취소마감</span><span class="dt">피렌체 3박</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2027-01-01"><span class="dd">1.1</span><span class="db cxl">취소마감</span><span class="dt">밀라노 — 한국시간 23:00</span><span class="dm"></span></div>
@@ -715,7 +715,7 @@ body.pv .day.today .date .d{color:var(--move)}
       </ul>
     </div>
   </div>
-  <p class="foot">총 지출(계획) 1,849만원 = <b>확정 지출(출국 전) 1,262</b> + 현지 결제 147 + 식음료·마트 340 + <b>보험·유심·쇼핑·예비비 100</b> — <b>확정 지출은 출국(12.23) 전에 계좌에서 빠져나가는 돈</b>입니다: 항공 287.5 + 숙박 653.4(12.26까지 전액 자동결제) + 디즈니 67.4 + <b>온라인 사전예약 입장·교통 202.5</b>(루브르·오르세·오랑주리·개선문·밀라노 두오모·베키오궁·쿠폴라·우피치·피티·<b>아카데미아</b>·폼페이·콜로세움·바티칸·보르게세·최후의 만찬 + TGV·이탈리아 열차) + <b>반액카드 51.2</b> · <b>이 중 582만은 이미 결제 완료</b>, 출국 전 남은 결제는 <b>680만</b> · 현지 결제 147은 융프라우요흐·리기·교통박물관·온천·파리/로마 교통·MANN·산로렌초 등 현장 지불분 · <b>기타 100은 넷을 묶은 값</b>이며 여행자보험 자체는 4인 합쳐 <b>수만~십수만원대</b>(기간·보장한도에 따라 변동, 12월에 견적) · 근거는 <a href="#tickets" style="color:inherit"><b>입장권·교통 표</b></a> · 여유 반영 시 2,200만원 권고 · 일정 최종 수정 2026.08.30 · 날씨·환율 매시간 자동 갱신 · 사진 <a href="https://github.com/teamtesila-jpg/our-winter-trip/blob/main/IMAGE-CREDITS.md" style="color:inherit">Wikimedia Commons (CC)</a></p>
+  <p class="foot">총 지출(계획) 1,861만원 = <b>확정 지출(출국 전) 1,267</b> + 현지 결제 153 + 식음료·마트 340 + <b>보험·유심·쇼핑·예비비 100</b> — <b>확정 지출은 출국(12.23) 전에 계좌에서 빠져나가는 돈</b>입니다: 항공 287.5 + 숙박 653.4(12.26까지 전액 자동결제) + 디즈니 67.4 + <b>온라인 사전예약 입장·교통 202.5</b>(루브르·오르세·오랑주리·개선문·밀라노 두오모·베키오궁·쿠폴라·우피치·피티·<b>아카데미아</b>·폼페이·콜로세움·바티칸·보르게세·최후의 만찬 + TGV·이탈리아 열차) + <b>반액카드 51.2</b> · <b>이 중 690만은 이미 결제 완료</b>(루체른 9.1 포함), 출국 전 남은 결제는 <b>578만</b> · 현지 결제 153은 융프라우요흐·리기·교통박물관·온천·파리/로마 교통·MANN·산로렌초 + <b>루체른 도시세 USD 44.96</b> 등 현장 지불분 · <b>기타 100은 넷을 묶은 값</b>이며 여행자보험 자체는 4인 합쳐 <b>수만~십수만원대</b>(기간·보장한도에 따라 변동, 12월에 견적) · 근거는 <a href="#tickets" style="color:inherit"><b>입장권·교통 표</b></a> · 여유 반영 시 2,200만원 권고 · 일정 최종 수정 2026.08.30 · 날씨·환율 매시간 자동 갱신 · 사진 <a href="https://github.com/teamtesila-jpg/our-winter-trip/blob/main/IMAGE-CREDITS.md" style="color:inherit">Wikimedia Commons (CC)</a></p>
 </section>
 
 <!-- ================= 입장권·교통권 ================= -->
@@ -825,7 +825,7 @@ body.pv .day.today .date .d{color:var(--move)}
       <ul>
         <li>여권 4개 <b>+ 사본</b> (분실 대비, 따로 보관)</li>
         <li>운전면허증 (신분증용)</li>
-        <li>유로 현금 — <b>보유 €220(10유로권 21장 + 동전) 그대로, 추가 환전 불필요</b> · 스위스프랑도 불필요<span style="display:block;color:var(--muted);font-size:13px">전부 10유로권이라 권종도 최적 — 노점·화장실 어디서든 통합니다 · 용처: 밀라노·피렌체 도시세 현장 현금(~€50) · 마켓·젤라토 · 절반은 숙소 금고에 · 미국 달러 $20는 유럽에서 못 쓰니 두고 가기</span></li>
+        <li>유로 현금 — <b>보유 €220(10유로권 21장 + 동전) 그대로, 추가 환전 불필요</b> · 스위스프랑도 불필요<span style="display:block;color:var(--muted);font-size:13px">전부 10유로권이라 권종도 최적 — 노점·화장실 어디서든 통합니다 · 용처: <b>루체른 도시세 USD 44.96</b>(현장) · 밀라노·피렌체 도시세(~€50) · 마켓·젤라토 · 절반은 숙소 금고에 · 미국 달러 $20는 유럽에서 못 쓰니 두고 가기</span></li>
         <li>트래블카드 1장 (환전수수료 0 · 현지 ATM 출금)<span style="display:block;color:var(--muted);font-size:13px">현금 부족분은 현지에서 출금 — 결제는 기존 해외 할인 카드(한도 확인), 이건 현금 보충·예비용</span></li>
         <li>영문 가족관계증명서 1부 (아이 동반 확인 대비)</li>
         <li><b>해외여행자보험 4인</b> — 증권번호·사고접수 번호를 폰에 저장<span style="display:block;color:var(--muted);font-size:13px">출국 <b>3~7일 전 온라인 가입</b>(공항 창구는 비쌈) · <b>카카오페이는 12월부터 &ldquo;다음 달 가입&rdquo; 방식이라 12.23 출국분은 12월 중 미리 신청해 둬야 합니다</b> — 가입 화면에서 보장 시작일이 12.23으로 잡히는지 반드시 확인 · 다이렉트 비교 후 결정, 3인 이상 가족 할인 있음 · <b>휴대품 손해 특약 필수</b>(소매치기 대비) · <b>겨울스포츠 특약 확인</b> — 리기 눈썰매·설상 활동은 기본 약관에서 빠지는 경우가 있음</span></li>
@@ -905,18 +905,18 @@ body.pv .day.today .date .d{color:var(--move)}
 
   <div class="snap-head">
     <span class="snap-title">현재 날씨</span>
-    <span class="snap-time">2026.09.01 06:45 현지 조회 · 한국시간 13:45</span>
+    <span class="snap-time">2026.09.01 07:00 현지 조회 · 한국시간 14:00</span>
   </div>
   <div class="snap-grid">
-    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">15.3°</span><span class="sc-m">체감 15.3° · 14.9–22.8°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">8.3°</span><span class="sc-m">체감 7.4° · 8.4–21.1°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">−0.5°</span><span class="sc-m">체감 −5.5° · 바람 11.9km/h</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">12.9°</span><span class="sc-m">체감 12.9° · 12.8–24.6°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">21.1°</span><span class="sc-m">체감 23.2° · 20.9–30.2°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">15.2°</span><span class="sc-m">체감 15.3° · 14.9–22.8°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">8.4°</span><span class="sc-m">체감 7.4° · 8.4–21.1°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">−0.5°</span><span class="sc-m">체감 −5.2° · 바람 10.0km/h</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">12.8°</span><span class="sc-m">체감 12.9° · 12.8–24.6°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">21.1°</span><span class="sc-m">체감 23.0° · 20.9–30.2°</span><span class="sc-w">대체로 맑음</span></div>
     <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">22.9°</span><span class="sc-m">체감 24.4° · 22.4–29.6°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">21.4°</span><span class="sc-m">체감 25.4° · 21.5–32.8°</span><span class="sc-w">안개</span></div>
-    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">25.2°</span><span class="sc-m">체감 30.7° · 25.2–32.2°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">21.7°</span><span class="sc-m">체감 25.3° · 21.7–35.6°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">21.5°</span><span class="sc-m">체감 25.6° · 21.5–32.8°</span><span class="sc-w">안개</span></div>
+    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">25.2°</span><span class="sc-m">체감 30.6° · 25.2–32.2°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">21.7°</span><span class="sc-m">체감 25.2° · 21.7–35.6°</span><span class="sc-w">맑음</span></div>
   
   </div>
   <p class="snap-note"><b>매시간 자동 갱신됩니다</b> (서버에서 무인 실행 — 위 시각이 마지막 조회 시점). 실제 예보가 의미를 갖는 건 <b>여행 7~10일 전</b>부터이므로, 그 전에는 아래 평년값을 기준으로 준비하시면 됩니다.</p>
@@ -1119,7 +1119,8 @@ body.pv .day.today .date .d{color:var(--move)}
     <div><span class="k">숙소</span><span class="v">The Lubo · 셀프 체크인</span></div>
     <div><span class="k">위치</span><span class="v">구시가 · 카펠교 220m</span></div>
     <div><span class="k">체크인 / 아웃</span><span class="v mono">15:00 / 11:00</span></div>
-    <div><span class="k">요금</span><span class="v mono"><span class="krw" data-cur="CHF" data-amt="600.65">약 ₩1,017,000</span> · CHF 600.65</span></div>
+    <div><span class="k">요금</span><span class="v mono">1,077,891원 · <b>결제완료 (9.1)</b><span class="note">CHF 601(첫 예약 10% 쿠폰) — 아고다 자체 환율로 <b>원화 청구</b>라 카드 해외 혜택 대상 아님</span></span></div>
+    <div><span class="k">도시세</span><span class="v mono">USD 44.96 — 현장 별도<span class="note">로마·나폴리와 달리 요금에 미포함</span></span></div>
     <div><span class="k">무료취소</span><span class="v mono">12.28 23:59 (한국 12.29 07:59)</span></div>
     <div><span class="k">현장</span><span class="v mono">도시세 CHF 36 (<span class="krw" data-cur="CHF" data-amt="36">약 ₩61,000</span>)</span></div>
   </div>
