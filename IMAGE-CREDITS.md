@@ -54,3 +54,15 @@
 - `img/saintechapelle.jpg` — [Sainte-Chapelle, Paris, upper chapel windows.jpg](https://commons.wikimedia.org/wiki/File:Sainte-Chapelle%2C_Paris%2C_upper_chapel_windows.jpg) · Gerda Arendt · CC0
 - `img/orangerie.jpg` — [Musée de L'Orangerie Water Lilies Room.jpg](https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_L%27Orangerie_Water_Lilies_Room.jpg) · Brady Brenot · CC BY-SA 4.0
 - `img/gletscher.jpg` — [Luzern Gletschergarten1.jpg](https://commons.wikimedia.org/wiki/File:Luzern_Gletschergarten1.jpg) · Leiju · CC BY-SA 3.0
+
+<!-- 2026.9.4 추가 — 로마 6·파리 3·피렌체 1 -->
+- `img/pyramid.jpg` — [Pyramid of Caius Cestius (Rome).jpg](https://commons.wikimedia.org/wiki/File:Pyramid_of_Caius_Cestius_%28Rome%29.jpg) · Daniel Ventura · CC BY-SA 4.0
+- `img/castel.jpg` — [Castel Sant'Angelo at dusk, Rome, Italy.jpg](https://commons.wikimedia.org/wiki/File:Castel_Sant%27Angelo_at_dusk%2C_Rome%2C_Italy.jpg) · Jebulon · CC0
+- `img/capitoline.jpg` — [Rome Capitoline Marcus Aurelius statue original.jpg](https://commons.wikimedia.org/wiki/File:Rome_Capitoline_Marcus_Aurelius_statue_original.jpg) · Nicholas Hartmann · CC BY-SA 4.0
+- `img/bocca.jpg` — [Rome Santa Maria in Cosmedin 2020 P03 Bocca della Verità.jpg](https://commons.wikimedia.org/wiki/File:Rome_Santa_Maria_in_Cosmedin_2020_P03_Bocca_della_Verit%C3%A0.jpg) · Fallaner · CC BY-SA 4.0
+- `img/campo.jpg` — [Market scene - Campo de' Fiori - Rome, Italy - DSC01645.jpg](https://commons.wikimedia.org/wiki/File:Market_scene_-_Campo_de%27_Fiori_-_Rome%2C_Italy_-_DSC01645.jpg) · Daderot · CC0
+- `img/santignazio.jpg` — [Triumph of St. Ignatius of Loyola, ceiling fresco by Andrea Pozzo.jpg](https://commons.wikimedia.org/wiki/File:Triumph_of_St._Ignatius_of_Loyola%2C_ceiling_fresco_by_Andrea_Pozzo.jpg) · Wilfredor · CC0
+- `img/palaisroyal.jpg` — [Garden, Palais Royal, Paris 25 June 2016.jpg](https://commons.wikimedia.org/wiki/File:Garden%2C_Palais_Royal%2C_Paris_25_June_2016.jpg) · Guilhem Vellut · CC BY 2.0
+- `img/shakespeare.jpg` — [Shakespeare and Company Bookshop - Paris 2012-04-07 n2.jpg](https://commons.wikimedia.org/wiki/File:Shakespeare_and_Company_Bookshop_-_Paris_2012-04-07_n2.jpg) · Jim Linwood · CC BY 2.0
+- `img/boboli.jpg` — [FirenzeGiardinoBoboliAnfiteatro.jpg](https://commons.wikimedia.org/wiki/File:FirenzeGiardinoBoboliAnfiteatro.jpg) · MM · CC BY-SA 4.0
+- `img/bnf.jpg` — [Bibliothèque nationale de France, site Richelieu (salle ovale).jpg](https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_nationale_de_France%2C_site_Richelieu_%28salle_ovale%29.jpg) · Zubro · CC BY-SA 3.0
