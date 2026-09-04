@@ -50,7 +50,8 @@
 - `img/vaticansquare.jpg` — [Sicht vom petersdom roma.jpg](https://commons.wikimedia.org/wiki/File:Sicht_vom_petersdom_roma.jpg) · Lukask · CC BY-SA 3.0
 - `img/david.jpg` — [Firenze, galleria dell'accademia, tribuna del david 01.jpg](https://commons.wikimedia.org/wiki/File:Firenze%2C_galleria_dell%27accademia%2C_tribuna_del_david_01.jpg) · Francesco Bini · CC BY-SA 4.0
 
-- `img/galleria.jpg` — [Galleria Vittorio Emanuele II central dome long exposure.jpg](https://commons.wikimedia.org/wiki/File:Galleria_Vittorio_Emanuele_II_central_dome_long_exposure.jpg) · Sdkb · CC BY-SA 4.0
+- `img/galleria.jpg` — 가족 직접 촬영 (2026.6 밀라노, 갤러리아 유리 돔) · EXIF 제거 · 종전 Sdkb CC BY-SA 4.0 사진은 교체됨
+- `img/marchesi.jpg` — 가족 직접 촬영 (2026.6 밀라노, 마르케지 발코니에서 본 갤러리아) · EXIF 제거
 - `img/saintechapelle.jpg` — [Sainte-Chapelle, Paris, upper chapel windows.jpg](https://commons.wikimedia.org/wiki/File:Sainte-Chapelle%2C_Paris%2C_upper_chapel_windows.jpg) · Gerda Arendt · CC0
 - `img/orangerie.jpg` — [Musée de L'Orangerie Water Lilies Room.jpg](https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_L%27Orangerie_Water_Lilies_Room.jpg) · Brady Brenot · CC BY-SA 4.0
 - `img/gletscher.jpg` — [Luzern Gletschergarten1.jpg](https://commons.wikimedia.org/wiki/File:Luzern_Gletschergarten1.jpg) · Leiju · CC BY-SA 3.0
