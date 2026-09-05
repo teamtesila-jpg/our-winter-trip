@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
-"""index.html의 날씨 스냅샷·환율 환산액을 최신값으로 교체 (GitHub Actions에서 매시 실행)."""
+"""날씨 스냅샷·환율 환산액을 최신값으로 교체.
+
+대상 파일은 argv[1], 기본값은 index.html (GitHub Actions에서 매시 실행).
+원본 HTML을 넘기면 아티팩트용 스냅샷도 같이 갱신된다.
+"""
 import io
+import sys
 import json
 import re
 import urllib.request
@@ -35,7 +40,9 @@ def num(x):
     return ("%.1f" % float(x)).replace("-", "−")
 
 
-s = io.open("index.html", encoding="utf-8").read()
+TARGET = sys.argv[1] if len(sys.argv) > 1 else "index.html"
+
+s = io.open(TARGET, encoding="utf-8").read()
 
 # ---- 날씨 ----
 wx = get(WX_URL)
@@ -90,5 +97,5 @@ try:
 except Exception as e:  # noqa: BLE001
     print("fx skipped:", e)
 
-io.open("index.html", "w", encoding="utf-8").write(s)
-print("updated:", stamp)
+io.open(TARGET, "w", encoding="utf-8").write(s)
+print("updated:", stamp, "->", TARGET)
