@@ -602,8 +602,8 @@ body.pv .day.today .date .d{color:var(--move)}
     <div class="stat"><span class="k">기간</span><span class="v">20<small>박</small> 21<small>일</small></span></div>
     <!-- 인원 메모: 4명 · 성인 2 + 아이 2 (표기 생략 — 이름 pill이 이미 보여줌) -->
     <div class="stat"><span class="k">숙소</span><span class="v">7<small>곳 · 예약완료</small></span></div>
-    <div class="stat"><span class="k">확정 지출<small style="font-weight:400"> (출국 전)</small></span><span class="v">1,209<small>만</small></span><span class="snote">결제완료 740만 · 남은 469만</span></div>
-    <div class="stat"><span class="k">총 지출<small style="font-weight:400"> (카드혜택 반영)</small></span><span class="v">1,771<small>/2,000만원</small></span><span class="snote">카드 할인 −약 115만 (롯데 108 · 캐시백 7)</span></div>
+    <div class="stat"><span class="k">확정 지출<small style="font-weight:400"> (출국 전)</small></span><span class="v">1,236<small>만</small></span><span class="snote">결제완료 740만 · 남은 496만</span></div>
+    <div class="stat"><span class="k">총 지출<small style="font-weight:400"> (카드혜택 반영)</small></span><span class="v">1,798<small>/2,000만원</small></span><span class="snote">카드 할인 −약 115만 (롯데 108 · 캐시백 7)</span></div>
   </div>
   <button type="button" class="next-dl" id="nextDl" hidden>
     <span class="nd-k">다음 마감</span><span class="nd-d" id="ndD"></span><span class="nd-t" id="ndT"></span>
@@ -653,23 +653,24 @@ body.pv .day.today .date .d{color:var(--move)}
     <div class="dl-row" data-date="2026-09-30"><span class="dd">9.30 수</span><span class="db open">판매 개시</span><span class="dt">TGV Lyria 12.28 — <b>한국시간 14시부터 확인</b> · <a href="https://www.sncf-connect.com/" target="_blank" rel="noopener">SNCF</a> 계정 먼저</span><span class="dm">확정</span></div>
     <div class="dl-row" data-date="2026-10-01" data-fuzzy="1"><span class="dd">10.1 전후</span><span class="db open">확인</span><span class="dt">밀라노 두오모 <b>1.2 슬롯 예약창 오픈</b> — <b>월 단위로 열립니다</b>(9.5 확인 시 달력이 12.31까지만, 1월은 통째로 없음) · 열렸는지만 확인, 결제는 11월</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2026-10-21" data-fuzzy="1"><span class="dd">10월 중하순</span><span class="db pay">결제</span><span class="dt">이탈리아 열차 4구간 — <b>10월 결제</b>(특가 초기 물량이 가장 싸서 숙소보다 먼저 · <b>FrecciaFAMILY는 출발 15일 전 마감</b>이라 10월이면 여유) · 파리·반액카드와 함께 10월 한도 260만 안(255.7)</span><span class="dm">약 ₩610,000</span></div>
-    <div class="dl-row" data-date="2026-10-23" data-fuzzy="1"><span class="dd">10월 중하순</span><span class="db pay">결제</span><span class="dt">파리 5박 — <b>조기결제</b>(에어비앤비 결제 관리 → 지금 결제하기) · 달러 · 미실행 시 12.14 자동 · <b>10월 한도 260만: 파리 143.5 + 열차 61 + 반액카드 51.2 = 255.7</b></span><span class="dm">$1,041.12</span></div>
-    <div class="dl-row" data-date="2026-10-24" data-fuzzy="1"><span class="dd">10월 중하순</span><span class="db open">구매</span><span class="dt">스위스 반액카드 2장 — <b>유효 시작일 12.28 지정</b> · 패밀리 카드 동시 신청 필수 <b>(10월 한도 260만에 파리·열차와 함께 255.7만으로 태움 — 가격 고정이라 시기 무관)</b></span><span class="dm"><span class="krw" data-cur="CHF" data-amt="300">약 ₩500,000</span></span></div>
+    <div class="dl-row" data-date="2026-10-23" data-fuzzy="1"><span class="dd">10월 중하순</span><span class="db pay">결제</span><span class="dt">파리 5박(새 숙소) — <b>조기결제</b>(에어비앤비 결제 관리 → 지금 결제하기) · 달러 · 미실행 시 12.14 자동 · <b>10월 한도 260만: 파리 173.5 + 열차 61 = 234.5</b></span><span class="dm">$1,041.12</span></div>
     <div class="dl-row" data-date="2026-11-12"><span class="dd">11.12</span><span class="db open">판매 개시</span><span class="dt">바티칸 박물관 1.11 슬롯 — 60일 전 자정(CET) 오픈</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2026-11-13" data-fuzzy="1"><span class="dd">11월 중순</span><span class="db pay">결제</span><span class="dt">피렌체 3박 — <b>조기결제</b>(에어비앤비 결제 관리) · 안 누르면 <b>12.22 자동</b></span><span class="dm">$766.59</span></div>
     <div class="dl-row" data-date="2026-11-14" data-fuzzy="1"><span class="dd">11월 중순</span><span class="db open">구매</span><span class="dt">입장권 일괄 — 파리 4곳(<b>루브르는 9.1 완료</b>) · 피렌체 4곳(<b>아카데미아 포함</b>) · 밀라노 · 폼페이 (+보르게세 창 확인)</span><span class="dm">약 €527</span></div>
+    <div class="dl-row" data-date="2026-11-15" data-fuzzy="1"><span class="dd">11월 중순</span><span class="db open">구매</span><span class="dt">스위스 반액카드 2장 — <b>유효 시작일 12.28 지정</b> · 패밀리 카드 동시 신청 필수 <b>(11월 한도 250만에 249.4만으로 태움 — 파리가 30만 늘어 10월에 안 들어갑니다)</b></span><span class="dm"><span class="krw" data-cur="CHF" data-amt="300">약 ₩500,000</span></span></div>
+    <div class="dl-row" data-date="2026-11-23"><span class="dd">11.23</span><span class="db cxl">취소마감</span><span class="dt">파리 5박(새 숙소) 무료취소 마감 — 현지 15:00 · 이후 12.16까지 부분환불</span></div>
     <div class="dl-row" data-date="2026-12-05" data-fuzzy="1"><span class="dd">12월 초</span><span class="db open">구매</span><span class="dt">베키오 궁전+아르놀포 탑 €76 온라인 구매</span><span class="dm">약 ₩116,000</span></div>
     <div class="dl-row" data-date="2026-12-06"><span class="dd">12월 초</span><span class="db open">확인</span><span class="dt">천사의 성 1.10 09:00 — 온라인 예약창이 열렸는지 확인 · <b>기명 티켓이라 4인 이름을 여권 철자대로</b> · 안 열렸으면 현장 매표(월요일 휴관이라 대체일 없음)</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2026-12-10"><span class="dd">12.10</span><span class="db open">판매 개시</span><span class="dt">콜로세움 1.9 슬롯 — 30일 전 오픈 · <b>물량 적음, 당일 확보 필수</b> · <b>로마 09:00경(한국 17:00경) · ticketing.colosseo.it</b> · <b>09:30~10:30 슬롯</b>, 11:00 이후는 피하십시오</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db cxl">취소마감</span><span class="dt">디즈니 4매 — 한국시간 08:00</span><span class="dm">₩674,366</span></div>
-    <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db cxl">취소마감</span><span class="dt">파리 5박 — 현지 15:00 (한국 23:00)</span><span class="dm"></span></div>
+    <div class="dl-row" data-date="2026-12-22"><span class="dd">12.22</span><span class="db cxl">취소마감</span><span class="dt"><b class="hot">이전 파리 숙소 취소 마감</b> — 새 숙소로 옮겼으니 그 전에 반드시 취소</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2026-12-25"><span class="dd">12.25</span><span class="db open">예약</span><span class="dt"><b>노트르담 무료 시간예약</b> — 방문(12.27 14:30) 2일 전 오픈 · <b>디즈니 가는 날이라 폰 알림 필수</b></span><span class="dm">무료</span></div>
     <div class="dl-row" data-date="2026-12-30"><span class="dd">12.30</span><span class="db cxl">취소마감</span><span class="dt">피렌체 3박 — 현지 14:00 (한국 22:00)</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2027-01-01"><span class="dd">1.1</span><span class="db cxl">취소마감</span><span class="dt">밀라노 — 한국시간 23:00</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2027-01-03"><span class="dd">1.3</span><span class="db cxl">취소마감</span><span class="dt">로마 — 현지 16:00</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2027-01-06"><span class="dd">1.6</span><span class="db cxl">취소마감</span><span class="dt">나폴리 — 현지 14:00 (한국 22:00) · <b>이후 전액 미환불</b></span><span class="dm"></span></div>
   </div>
-  <p class="dl-note">출국 전 자동결제는 없습니다 — <b>파리 $1,041.12(약 143.5만)는 10월, 피렌체 $766.59(약 106만)는 11월에 에어비앤비 '지금 결제하기'로 조기결제</b>(10월 255.7 · 11월 196.9로 각 한도 안), 미실행 시에만 12.14·12.22 자동 (로마·나폴리 8.29 · 루체른·밀라노·루브르 9.1 선결제 완료) — 카드 한도를 미리 확인하십시오.
+  <p class="dl-note">출국 전 자동결제는 없습니다 — <b>파리 $1,041.12(약 143.5만)는 10월, 피렌체 $766.59(약 106만)는 11월에 에어비앤비 '지금 결제하기'로 조기결제</b>(10월 234.5 · 11월 249.4로 각 한도 안), 미실행 시에만 12.14·12.22 자동 (로마·나폴리 8.29 · 루체른·밀라노·루브르 9.1 선결제 완료) — 카드 한도를 미리 확인하십시오.
   에어비앤비는 결제된 뒤에도 무료취소 마감 전이면 전액 환불됩니다. 그린델발트와 루체른(아고다 9.1 재예약)은 <b>선결제 · 취소 불가</b>.<br>
   카드 옆 원화 표시는 실시간 환율(<span id="fxTime">2026.09.06 · USD 1,350원 · CHF 1,667원</span>)로 자동 환산되지만, <b>예산의 만원 단위 숫자는 보수적으로 잡은 기준 환율(USD 1,378 · CHF 1,705 · EUR 1,525) 고정</b>이라 두 값이 다를 수 있으며,
   실제 청구액은 결제 시점 환율에 따라 조금 달라집니다.</p>
@@ -699,11 +700,11 @@ body.pv .day.today .date .d{color:var(--move)}
       <ul>
         <li class="pair">
           <i class="plink" aria-hidden="true"></i>
-          <div class="pr"><b>스위스 반액카드 2장</b> 구매 — 트래블패스 대신 (약 62만원 절감 확정) · <b>10월 중하순, 유효 시작일 12.28 지정</b> (10월 한도 260만에 파리·열차와 함께)</div>
+          <div class="pr"><b>스위스 반액카드 2장</b> 구매 — 트래블패스 대신 (약 62만원 절감 확정) · <b>11월 중순, 유효 시작일 12.28 지정</b> (11월 한도 250만)</div>
           <div class="pr"><b class="hot">패밀리 카드 동시 신청</b> — 만 6~16세 미만 아이가 부모 동반 시 스위스 대중교통을 <b>무료</b>로 타게 해주는 무료 카드. 반액카드 <b>구매 화면에서만</b> 같이 신청할 수 있고 나중에 따로 발급이 <b>안 되기 때문에</b>, 놓치면 아이 둘 기차값을 전액 내야 합니다</div>
         </li>
         <li><b>이탈리아 열차 4구간</b> — <b>FrecciaFAMILY</b>(15세 미만 무료 + 성인 Base 50% · 출발 15일 전 마감) · <b class="hot">스페르이코노미 특가와는 택일이라 4구간마다 두 값을 비교해 싼 쪽으로</b> — 아이 둘이 무료라 €400 예산은 보수적일 수 있습니다 · <b>10월 중하순에 구매</b>(프레차 특가는 3~4개월 전 개시라 이때가 적기이자 트레니탈리아 고속열차는 <b>출발 90~120일 전 개시</b>라 1월분은 10월이면 열려 있고, 스퍼이코노미는 <b>초기 물량이 가장 싸고 먼저 소진</b>되므로 11월보다 10월이 유리합니다)</li>
-        <li><b class="hot">★ 롯데 해외결제 10% 혜택 — 10월 260만 · 11월 250만 한도</b> <span style="color:var(--muted)">(이미 받은 분: 8월 9.2만 · 9월 17.8만)</span>. 두 달로 나누면 <b>외화 454만이 전액 혜택 안에 들어갑니다</b> — <b>10월(한도 260만)</b>에 파리 숙소 143.5 + 이탈리아 열차 61 + 반액카드 51.2 = <b>255.7만</b>, <b>11월(한도 250만)</b>에 피렌체 숙소 105.6 + 입장권 일괄 80.4 + 바티칸 12.2 = <b>198.2만</b>. 합 453.9만 × 10% = <b>45.4만원 절감</b> · <b>열차를 10월에 사는 이유</b>는 특가 초기 물량이 가장 싸기 때문이고, 숙소는 자동결제일까지 언제 내도 같아 열차에 자리를 내줍니다 · <b>폼페이·보르게세 예약창이 11월에 안 열리면 12월로 넘겨도</b> 11월 여유가 52만이라 무리가 없습니다 · <b>피렌체는 자동결제가 12.22라 10월에 직접 ‘지금 결제하기’를 눌러야</b> 합니다</li>
+        <li><b class="hot">★ 롯데 해외결제 10% 혜택 — 10월 260만 · 11월 250만 한도</b> <span style="color:var(--muted)">(이미 받은 분: 8월 9.2만 · 9월 17.8만)</span>. 두 달로 나누면 <b>외화 454만이 전액 혜택 안에 들어갑니다</b> — <b>10월(한도 260만)</b>에 파리 숙소 173.5 + 이탈리아 열차 61 = <b>234.5만</b>, <b>11월(한도 250만)</b>에 피렌체 105.6 + 입장권 일괄 80.4 + 바티칸 12.2 + 반액카드 51.2 = <b>249.4만</b>. 합 483.9만 × 10% = <b>48.4만원 절감</b> · <b>열차를 10월에 사는 이유</b>는 특가 초기 물량이 가장 싸기 때문이고, 숙소는 자동결제일까지 언제 내도 같아 열차에 자리를 내줍니다 · <b>폼페이·보르게세 예약창이 11월에 안 열리면 12월로 넘겨도</b> 11월 여유가 52만이라 무리가 없습니다 · <b>피렌체는 자동결제가 12.22라 10월에 직접 ‘지금 결제하기’를 눌러야</b> 합니다</li>
         <li><b>입장권 — 11월 중순에 일괄 구매</b>(10월 한도는 파리·열차·반액카드가 채움 · 가격 고정, 1월 비수기라 슬롯 여유): 오르세·오랑주리·개선문·생트샤펠(파리 — <b>루브르는 9.1 결제 완료</b>) + 우피치·쿠폴라·피티·<b>아카데미아</b>(피렌체) + 밀라노 두오모 + 폼페이 + 보르게세<span style="display:block;color:var(--muted);font-size:13px">가격은 언제 사도 동일(고정가) — 관건은 예약창 오픈뿐. 4인 실결제 합계 약 €527(아이는 대부분 무료 — 밀라노 €22·쿠폴라 €24 등 소액만) — 유로 결제라 카드 해외 혜택에 태우기 좋습니다. 대부분 시간지정·환불불가이니 일정 확정분만. 보르게세(1.12)는 10월 말에 창이 열리는지, <b>폼페이는 월 단위 개방이라 1월분이 열렸는지</b> 먼저 확인</span></li>
         <li><b>입장권 — 오픈이 늦어 10월 불가</b>: 바티칸(<b>11.12</b> 자정 CET, 60일 전) · 콜로세움(<b>12.10</b>, 30일 전 — 물량 적어 오픈 직후 필수) · 베키오 궁전(12월) · 노트르담(무료, 며칠 전)</li>
         <li><b>미리 사면 안 되는 것</b>: 융프라우요흐(날씨 보고 전날 결정) · 리기·유람선·온천(당일 현장)</li>
@@ -714,13 +715,13 @@ body.pv .day.today .date .d{color:var(--move)}
       <h3>12월</h3>
       <ul>
         <li><b>12.15 알림</b> — 디즈니(한국시간 12.22 08:00)·파리 취소마감</li>
-        <li><b>(10·11월 결제 계획) 10월 중하순 — 파리 $1,041.12 조기결제 + 이탈리아 열차 4구간 + 스위스 반액카드</b>(255.7만, 한도 260만 — <b>열차는 초특가 물량 때문에 10월이 급하고</b>, 숙소는 자동결제일까지 언제 내도 같아 열차에 자리를 줍니다) · <b>11월 — 피렌체 $766.59 조기결제 + 입장권 일괄 €527 + 바티칸</b>(196.9만, 한도 250만) · 12월·1월 한도 250만은 베키오궁과 현지 결제분에 적용 · 에어비앤비 조기결제는 결제 관리 → 지금 결제하기 · 피렌체 106만($766.59)은 <b>10월 조기결제 완료 여부 확인</b>, 미실행 시 12.22 자동 (로마·나폴리·루체른·밀라노·루브르 선결제 완료)</li>
+        <li><b>(10·11월 결제 계획) 10월 중하순 — 파리 $1,259.42 조기결제 + 이탈리아 열차 4구간</b>(234.5만, 한도 260만 — <b>열차는 초특가 물량 때문에 10월이 급하고</b>, 숙소는 자동결제일까지 언제 내도 같아 열차에 자리를 줍니다) · <b>11월 — 피렌체 $766.59 조기결제 + 입장권 일괄 €527 + 바티칸 + 반액카드</b>(249.4만, 한도 250만) · 12월·1월 한도 250만은 베키오궁과 현지 결제분에 적용 · 에어비앤비 조기결제는 결제 관리 → 지금 결제하기 · 피렌체 106만($766.59)은 <b>10월 조기결제 완료 여부 확인</b>, 미실행 시 12.22 자동 (로마·나폴리·루체른·밀라노·루브르 선결제 완료)</li>
         <li><b>로밍 신청</b> — 아빠 대표 baro 64GB(99,000) + 가족로밍 3,000원으로 엄마·첫째 데이터 공유. T월드 앱, 시작일 12.23 · 사전에 가족결합 여부 확인</li>
         <li><b class="hot">로마 요금·시각 12월 재확인 12건</b> — 감사에서 출처가 갈리거나 확인이 안 된 것들입니다. ① <b>카피톨리노</b> 특별전 편성 여부(전시별로 €20.50/€15 또는 €16.50/€11로 갈립니다)와 비EU 감면 적용 여부 — 공식 두 페이지가 <b>"EU 시민 6~25세"</b>와 <b>"비거주자 6~25세"</b>로 서로 어긋납니다. 거부되면 4인 €60이니 <b>예산은 €60으로 잡으십시오</b> ② <b>천사의 성</b> 정가 — <b>2026.7.1부 €18로 확인됨(닫힘)</b> ③ <b>성 베드로 쿠폴라</b> 현장 창구 판매 여부(공식은 온라인 €17/€22만 게시) ④ <b>성 베드로 대성당</b> 폐관 — <b>2026.6.1부터 연중 07:00~20:00으로 확인됨(닫힘)</b> ⑤ <b>진실의 입</b> 겨울 마감(공식 17:50 vs 동절기 17:00) ⑥ <b>산타 산토룸</b> 마감(공식 17:15 vs 로마시 17:00) ⑦ <b>Roma Sparita</b> 1.9 토요일 저녁 영업 — <b>+39 06 5800757로 예약 확인 필수</b> ⑧ <b>바티칸 박물관</b> 2027.1 개관(08:00 vs 09:00 — 08:00은 희년 연장 표기일 가능성) ⑨ <b>트레비 수반</b> 마지막 입장 — <b>공식 21:00으로 확인됨(닫힘)</b> ⑩ <b>콜로세움</b> 티켓 방출 시각(로마 08:45 vs 09:00) ⑪ <b>폼페이</b> 아동 무료 — 공식 요금 페이지에 명시가 없습니다 ⑫ <b>로마 숙소 세탁기·건조기 유무</b> — 1.10 세탁 4차를 전제하는데 호스트 문의 목록에 빠져 있습니다</li>
         <li><b class="hot">CDG 도착 터미널 — 12월 초 확인</b> 아시아나는 <b>2026.12.16 23:59 스타얼라이언스 탈퇴, 12.17 통합 대한항공 출범</b>으로 스카이팀이 됩니다. 인천 T1→T2(1.14)·프랑크푸르트 T1→T3(9월)처럼 CDG도 T1→2E 이전이 예상되나 <b>이전일이 미발표</b>입니다. ① e-티켓의 편명(OZ501 유지 여부)과 operated by ② 대한항공·아시아나 출도착 조회의 CDG 터미널 ③ Paris Aéroport 항공사별 안내 — 셋을 교차 확인하고 <b>출발 전날 한 번 더</b> 보십시오. 기재도 12.26부터 KE B787-10 투입 보도가 있어 <b>좌석 배치(34A·B·C/34D)가 바뀔 수 있습니다</b></li>
         <li><b class="hot">열차 시각은 12.13 시간표 개정 뒤 전부 재확정</b> — 지금 적힌 분 단위 시각(바젤 10:58·IC61 11:30 / BOB :04·:34 / 그린델발트 09:17 → LIX 10:04 → 루체른 11:55 / 루체른 08:18 → 밀라노 11:17 / 밀라노 07:15 FR 9705 → 09:42 / 베네치아 19:48 FR 9762 → 22:15)은 <b>현행 시간표를 연장한 값</b>입니다. 유럽 철도는 <b>2026.12.13</b>에 연간 시간표가 바뀌므로, 그 뒤 SBB 앱·트레니탈리아에서 편명과 시각을 다시 확인하십시오. 이탈리아 4구간을 10월에 사면 <b>FrecciaFAMILY 마감(출발 15일 전)</b>은 자동으로 지켜집니다</li>
         <li><b>공식 미게시라 12월까지 못 닫는 것 6건</b> — ① <b>디즈니 12.25 개장 시각</b>(공식 캘린더 12월분이 아직 비활성 — 07:15 출발은 09:30 개장 가정) ② <b>루브르 12.26 연말 야간 연장</b>(2025-26 연말엔 21:00까지 열었습니다 — 열리면 오후가 통째로 여유) ③ <b>오르세 진입 동선</b>(2026.3~2028 접수공간 공사 — 시간지정 티켓 입구가 바뀔 수 있음) ④ <b>융프라우요흐 2027 요금</b>(42만원은 현행 반액 기준 · 좌석예약 CHF 10/인은 12월엔 의무 아님) ⑤ <b>피르스트 클리프 워크 겨울 개방</b>(공식에 겨울 폐쇄 문구는 없으나 명시도 없음) ⑥ <b>샹젤리제·몽마르트르 연말 공지</b>(2026 시즌 조명·푸니쿨라 정비 일정 미발표)</li>
-        <li><b>파리 교통 12월 확인 3건</b> — ① 12.28(월) 숙소 앞 M8역 첫차·Bastille M1 연결(RATP) ② <b>12.25 Chessy발 RER A 막차</b>와 Gare de Lyon 마지막 M1→M8 ③ 몽마르트르 푸니쿨라 12월 가동(2026년 정비 예정 — 운휴면 rue Foyatier 222계단) · 12.22~28 연말 공사 공지</li>
+        <li><b>파리 교통 12월 확인 3건</b> — ① 12.28(월) 숙소 앞 M1·M8역 첫차·Bastille M1 연결(RATP) ② <b>12.25 Chessy발 RER A 막차</b>와 Gare de Lyon 마지막 M1→M8 ③ 몽마르트르 푸니쿨라 12월 가동(2026년 정비 예정 — 운휴면 rue Foyatier 222계단) · 12.22~28 연말 공사 공지</li>
         <li>12.18~20 알프스 예보 확인 시작</li>
         <li><b>MUS.E 가족 투어 예약</b> — 베키오 궁전 '궁정 생활'(4~10세·영어)의 <b>1.4 월요일 편성 확인</b>. 온라인 bigliettimusei.comune.fi.it · 이메일 info@musefirenze.it · 전화 +39 055 2768224(월~토 9:30~13:00, 14:00~17:00). 영어·비정규 시간대는 이메일이 빠릅니다. <b>다른 투어 두 개는 조건이 안 맞습니다</b> — 비밀 통로는 12세 이상, 일반 가이드 투어(월 15:00·영어·75분·€8+입장권)는 10세 이상이라 <b>유솔이가 빠지고</b> 16:15에 끝나 <b>탑 매표 16:00</b>도 놓칩니다. 편성이 없으면 그냥 자유 관람 + 매표소 무료 가족 키트로 가십시오</li>
         <li><b>여행자보험 4인 — ✅ 9.1 가입 완료</b> (카카오페이손해보험 <b>70,590원</b> · 보험기간 <b>12.23 00시 ~ 1.13 23시</b>, 귀국편 1.13 17:25 ICN 도착까지 커버) · 남은 건 <b>증권 PDF를 가족 카톡방에 공유</b>하고 사고접수 <b>1544-0022</b>를 폰에 저장하는 것뿐입니다. <b>청약철회는 9.30까지</b>(청약일로부터 30일)</li>
@@ -729,7 +730,7 @@ body.pv .day.today .date .d{color:var(--move)}
       </ul>
     </div>
   </div>
-  <p class="foot">총 지출 <b>1,771만원</b>(카드 혜택 반영) = <b>확정 지출(출국 전) 1,209</b> + 현지 결제 172 + 식음료·마트 340 + <b>유심·쇼핑·예비비 93</b> − <b>여행 중 카드 혜택 43</b> · <b>카드 혜택은 다 합쳐 약 115만원</b>입니다 — 롯데 해외 <b>결제할인</b>은 카드 청구액에서 바로 빠져 실제 출금이 줄어들기 때문에 <b>확정 지출에서 이미 차감했습니다</b>: 8월 9.2 + 9월 17.8 + <b>10월 25.6(파리 143.5 + 열차 61 + 반액카드 51.2) · 11월 19.8(피렌체 105.6 + 입장권 80.4 + 바티칸 12.2)</b> = <b>72.4</b>(네 달 모두 12.23 전 청구서에서 빠집니다 — 한도 10월 260 · 11월 250) · 나머지 43은 여행 중분 — <b>12월 약 16 + 1월 약 20</b>(현지 식음료·교통·입장료가 전부 해외결제 — 12·1월 한도가 각 250만이라 현지분이 온전히 할인됩니다. 숙소 결제를 10월로 앞당겨 12월 한도를 비워둔 효과) + 신한 클래식와이 5.0 · 우리 디어쇼퍼 1.6 = <b>캐시백 6.6</b>(이건 나갔다 돌아오는 돈이라 확정 지출에서 안 뺍니다) — <b>확정 지출은 출국(12.23) 전에 계좌에서 빠져나가는 돈</b>입니다. 총액 1,282에서 결제할인 72.4를 뺀 값입니다: 항공 287.5 + 숙박 643.9(자동결제는 파리 12.14 $1,041.12뿐 — 피렌체는 11월 조기결제, 미실행 시 12.22 자동) + 디즈니 67.4 + <b>온라인 사전예약 입장·교통 224.6</b>(루브르·오르세·오랑주리·개선문·<b>생트샤펠</b>·밀라노 두오모·베키오궁·쿠폴라·우피치·피티·<b>아카데미아</b>·폼페이·콜로세움·바티칸·보르게세·최후의 만찬 + TGV·이탈리아 열차) + <b>반액카드 51.2</b> + <b>여행자보험 7.1</b> · <b>이 중 740만은 이미 결제 완료</b>(총액 767 − 8·9월 할인 27 · 9.1 루체른·밀라노·<b>루브르</b>·<b>보험</b> 포함), 출국 전 남은 결제는 <b>469만</b>(총액 514.7 − 10·11월 할인 45.4) · 현지 결제 172는 융프라우요흐·리기·교통박물관·온천·파리/로마 교통·MANN·산로렌초 + <b>피사 왕복 기차 €59</b> + 천사의 성 €36 + 판테온 €14 + <b>카피톨리노 €49</b> + <b>루체른 도시세 CHF 18</b>·피렌체 €36 등 현장 지불분 (<b>표 전 행을 €1,525·CHF 1,705로 기계 재집계한 값</b>이며 리기 온천·스칼라 산타·트레비 수반 같은 선택분은 뺐습니다)(사탑 등반 €60은 선택이라 미포함) · <b>여행자보험 7.1은 9.1 결제 완료</b>(카카오페이 70,590원 · 4인 22일 · 원화라 카드 할인 대상 아님)라 <b>기타 뭉치에서 빼내 확정 지출로 옮겼습니다</b> — 남은 <b>기타 93은 유심·쇼핑·예비비 셋</b>을 묶은 값 · 근거는 <a href="#tickets" style="color:inherit"><b>입장권·교통 표</b></a> · 여유 반영 시 2,200만원 권고 · 일정 최종 수정 2026.09.01 · 날씨·환율 매시간 자동 갱신 · 사진 <a href="https://github.com/teamtesila-jpg/our-winter-trip/blob/main/IMAGE-CREDITS.md" style="color:inherit">Wikimedia Commons (CC)</a></p>
+  <p class="foot">총 지출 <b>1,798만원</b>(카드 혜택 반영) = <b>확정 지출(출국 전) 1,236</b> + 현지 결제 172 + 식음료·마트 340 + <b>유심·쇼핑·예비비 93</b> − <b>여행 중 카드 혜택 43</b> · <b>카드 혜택은 다 합쳐 약 115만원</b>입니다 — 롯데 해외 <b>결제할인</b>은 카드 청구액에서 바로 빠져 실제 출금이 줄어들기 때문에 <b>확정 지출에서 이미 차감했습니다</b>: 8월 9.2 + 9월 17.8 + <b>10월 23.5(파리 173.5 + 열차 61) · 11월 24.9(피렌체 105.6 + 입장권 80.4 + 바티칸 12.2 + 반액카드 51.2)</b> = <b>75.4</b>(네 달 모두 12.23 전 청구서에서 빠집니다 — 한도 10월 260 · 11월 250) · 나머지 43은 여행 중분 — <b>12월 약 16 + 1월 약 20</b>(현지 식음료·교통·입장료가 전부 해외결제 — 12·1월 한도가 각 250만이라 현지분이 온전히 할인됩니다. 숙소 결제를 10월로 앞당겨 12월 한도를 비워둔 효과) + 신한 클래식와이 5.0 · 우리 디어쇼퍼 1.6 = <b>캐시백 6.6</b>(이건 나갔다 돌아오는 돈이라 확정 지출에서 안 뺍니다) — <b>확정 지출은 출국(12.23) 전에 계좌에서 빠져나가는 돈</b>입니다. 총액 1,312에서 결제할인 75.4를 뺀 값입니다: 항공 287.5 + 숙박 673.9(파리는 9.6 교체 — 피렌체는 11월 조기결제, 미실행 시 12.22 자동) + 디즈니 67.4 + <b>온라인 사전예약 입장·교통 224.6</b>(루브르·오르세·오랑주리·개선문·<b>생트샤펠</b>·밀라노 두오모·베키오궁·쿠폴라·우피치·피티·<b>아카데미아</b>·폼페이·콜로세움·바티칸·보르게세·최후의 만찬 + TGV·이탈리아 열차) + <b>반액카드 51.2</b> + <b>여행자보험 7.1</b> · <b>이 중 740만은 이미 결제 완료</b>(총액 767 − 8·9월 할인 27 · 9.1 루체른·밀라노·<b>루브르</b>·<b>보험</b> 포함), 출국 전 남은 결제는 <b>496만</b>(총액 544.7 − 10·11월 할인 48.4) · 현지 결제 172는 융프라우요흐·리기·교통박물관·온천·파리/로마 교통·MANN·산로렌초 + <b>피사 왕복 기차 €59</b> + 천사의 성 €36 + 판테온 €14 + <b>카피톨리노 €49</b> + <b>루체른 도시세 CHF 18</b>·피렌체 €36 등 현장 지불분 (<b>표 전 행을 €1,525·CHF 1,705로 기계 재집계한 값</b>이며 리기 온천·스칼라 산타·트레비 수반 같은 선택분은 뺐습니다)(사탑 등반 €60은 선택이라 미포함) · <b>여행자보험 7.1은 9.1 결제 완료</b>(카카오페이 70,590원 · 4인 22일 · 원화라 카드 할인 대상 아님)라 <b>기타 뭉치에서 빼내 확정 지출로 옮겼습니다</b> — 남은 <b>기타 93은 유심·쇼핑·예비비 셋</b>을 묶은 값 · 근거는 <a href="#tickets" style="color:inherit"><b>입장권·교통 표</b></a> · 여유 반영 시 2,200만원 권고 · 일정 최종 수정 2026.09.01 · 날씨·환율 매시간 자동 갱신 · 사진 <a href="https://github.com/teamtesila-jpg/our-winter-trip/blob/main/IMAGE-CREDITS.md" style="color:inherit">Wikimedia Commons (CC)</a></p>
 </section>
 
 <!-- ================= 입장권·교통권 ================= -->
@@ -759,7 +760,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <tr><td class="city" colspan="4"><b>오픈이 늦어 그때만 가능</b></td></tr>
         <tr><td>바티칸 박물관 (1.11)</td><td class="mono">€50</td><td class="mono">€30 · 7~18세</td><td class="mono"><b>11.12</b> 자정 CET</td></tr>
         <tr><td>콜로세움 통합권 (1.9)</td><td class="mono">€40</td><td class="mono">예약료 €4</td><td class="mono"><b>12.10</b> · 물량 적음</td></tr>
-        <tr><td>스위스 반액카드 2장</td><td class="mono">CHF 300</td><td class="mono">패밀리카드 무료</td><td class="mono">10월 중하순 · 시작일 12.28</td></tr>
+        <tr><td>스위스 반액카드 2장</td><td class="mono">CHF 300</td><td class="mono">패밀리카드 무료</td><td class="mono">11월 중순 · 시작일 12.28</td></tr>
         <tr><td>베키오 궁전 + 아르놀포 탑 (1.4)</td><td class="mono">€76</td><td class="mono">무료</td><td class="mono">12월</td></tr>
         <tr><td>노트르담 (12.27 14:30)</td><td class="mono">무료</td><td class="mono">무료</td><td class="mono">12.25 예약(2일 전)</td></tr>
         <tr><td class="city" colspan="4"><b>현장 구매 — 미리 사면 안 되는 것</b></td></tr>
@@ -770,7 +771,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <tr><td>루체른 교통박물관 (1.1)</td><td class="mono" colspan="2">4인 CHF 106 · 데이패스 182</td><td class="mono">현장</td></tr>
         <tr><td>산로렌초 + 라우렌치아나 (1.4)</td><td class="mono">€28</td><td class="mono">확인</td><td class="mono">현장발권만</td></tr>
         <tr><td>피사 왕복 기차 (1.5)</td><td class="mono">4인 약 €59</td><td class="mono">12세 미만 반값</td><td class="mono">현장</td></tr>
-        <tr><td>마르모탕 모네 (12.26) <span style="color:var(--muted)">선택 · 사립</span></td><td class="mono">€28</td><td class="mono">€18 · <b>7세 미만만 무료</b></td><td class="mono">현장 · 특별전이면 예매</td></tr>
+        <tr><td>마르모탕 모네 (12.24) <span style="color:var(--muted)">선택 · 사립</span></td><td class="mono">€28</td><td class="mono">€18 · <b>7세 미만만 무료</b></td><td class="mono">현장 · 12.24 영업시간 확인</td></tr>
         <tr><td>피사 사탑 <span style="color:var(--muted)">(선택)</span></td><td class="mono">€40</td><td class="mono">€40 · <b>만 8세 이상 · 할인 없음</b></td><td class="mono">2~3주 전</td></tr>
         <tr><td>천사의 성 (1.10)</td><td class="mono">€36</td><td class="mono">무료</td><td class="mono">현장 · 12월 재확인</td></tr>
         <tr><td>판테온 내부 (1.11)</td><td class="mono">€14</td><td class="mono">무료</td><td class="mono">현장</td></tr>
@@ -930,18 +931,18 @@ body.pv .day.today .date .d{color:var(--move)}
 
   <div class="snap-head">
     <span class="snap-title">현재 날씨</span>
-    <span class="snap-time">2026.09.06 11:00 현지 조회 · 한국시간 18:00</span>
+    <span class="snap-time">2026.09.06 11:15 현지 조회 · 한국시간 18:15</span>
   </div>
   <div class="snap-grid">
-    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">20.1°</span><span class="sc-m">체감 18.8° · 15.6–28.9°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">19.6°</span><span class="sc-m">체감 19.9° · 10.6–25.7°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">4.5°</span><span class="sc-m">체감 1.3° · 바람 3.9km/h</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">20.3°</span><span class="sc-m">체감 21.5° · 14.5–26.9°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">27.7°</span><span class="sc-m">체감 29.7° · 22.4–32.7°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">28.3°</span><span class="sc-m">체감 28.6° · 23.7–29.5°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">29.0°</span><span class="sc-m">체감 32.2° · 17.9–36.2°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">28.5°</span><span class="sc-m">체감 33.0° · 22.6–30.7°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">28.7°</span><span class="sc-m">체감 32.4° · 22.0–32.2°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">20.7°</span><span class="sc-m">체감 19.4° · 15.6–28.9°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">20.3°</span><span class="sc-m">체감 20.6° · 10.6–25.7°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">4.7°</span><span class="sc-m">체감 1.9° · 바람 4.6km/h</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">20.8°</span><span class="sc-m">체감 22.0° · 14.5–26.9°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">28.0°</span><span class="sc-m">체감 30.2° · 22.4–32.7°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">28.6°</span><span class="sc-m">체감 28.9° · 23.7–29.5°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">29.7°</span><span class="sc-m">체감 33.2° · 17.9–36.2°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">28.9°</span><span class="sc-m">체감 33.5° · 22.6–30.7°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">29.1°</span><span class="sc-m">체감 33.0° · 22.0–32.2°</span><span class="sc-w">대체로 맑음</span></div>
   
   </div>
   <p class="snap-note"><b>매시간 자동 갱신됩니다</b> (서버에서 무인 실행 — 위 시각이 마지막 조회 시점). 실제 예보가 의미를 갖는 건 <b>여행 7~10일 전</b>부터이므로, 그 전에는 아래 평년값을 기준으로 준비하시면 됩니다.</p>
@@ -1001,14 +1002,16 @@ body.pv .day.today .date .d{color:var(--move)}
     <figure><a href="https://shakespeareandcompany.com/" target="_blank" rel="noopener" title="셰익스피어 — 설명 보기"><img src="https://teamtesila-jpg.github.io/our-winter-trip/img/shakespeare.jpg" alt="셰익스피어 앤 컴퍼니 서점" loading="lazy" onerror="this.parentNode.style.display='none'"><figcaption>셰익스피어</figcaption></a></figure>
   </div>
   <div class="stay">
-    <div><span class="k">숙소</span><span class="v">파리 아파트 · 5층 엘리베이터</span></div>
-    <div><span class="k">위치</span><span class="v">11구 (상세는 부모 폰에)</span></div>
+    <div><span class="k">숙소</span><span class="v">파리 아파트 · 84㎡ · 4방 구조</span></div>
+    <div><span class="k">위치</span><span class="v">12구 (상세는 부모 폰에) — <b>M1·M8이 함께 서는 뢰이-디드로 바로 옆</b></span></div>
+    <div><span class="k">구조</span><span class="v"><b>침실 3 · 침대 3 · 욕실 1</b> · 정원 4<span style="display:block;color:var(--muted);font-size:13px"><b>아이 전용 방이 생깁니다</b> — 파리 5박 내내 소파베드를 쓰던 구조가 여기서 풀립니다</span></span></div>
     <div><span class="k">체크인 / 아웃</span><span class="v mono">15:00 / 11:00</span></div>
-    <div><span class="k">요금</span><span class="v mono">약 ₩1,435,000 · $1,041.12</span></div>
-    <div><span class="k">결제</span><span class="v mono"><b>10월 중하순 조기결제 예정</b> · 달러 청구 · 미실행 시 12.14 자동</span></div>
-    <div><span class="k">재예약</span><span class="v">9.4 원화 예약(₩1,457,036)을 취소하고 달러로 재예약 — 약 2.2만원 절감 + <b>롯데 해외 10% 대상</b>(10월 청구분 약 14.3만)</span></div>
-    <div><span class="k">무료취소</span><span class="v mono">12.22 15:00 현지 (한국 23:00)</span></div>
-    <div><span class="k">호스트</span><span class="v mono">WhatsApp (부모 폰에 저장됨)</span></div>
+    <div><span class="k">요금</span><span class="v mono">약 ₩1,735,000 · $1,259.42<span style="display:block;color:var(--muted);font-size:13px">이전 예약(143.5만) 대비 +30만 — 침실 2개와 49㎡, 그리고 M1을 더 얻습니다</span></span></div>
+    <div><span class="k">결제</span><span class="v mono"><b>10월 중하순 조기결제 예정</b> · 달러 청구</span></div>
+    <div><span class="k">예약코드</span><span class="v mono">(예약코드는 부모 폰에)</span></div>
+    <div><span class="k">교체</span><span class="v">9.6 이전 11구 숙소에서 교체 — <b>RATP 실측으로 이동이 더 빠릅니다</b>(편도 합 131분 → 115분): 리옹역 8→<b>1분</b>, 루브르 13→10분, 오르세 20→18분, 마르모탕 35→27분 · 사크레쾨르만 16→19분으로 밀립니다 · <b>M1이 루브르·콩코르드·샹젤리제를 잇는 간선</b>이라 직선거리보다 실제가 빠릅니다 · <b class="hot">이전 숙소는 12.22까지 무료취소이니 잊지 말고 취소하십시오</b></span></div>
+    <div><span class="k">무료취소</span><span class="v mono"><b>11.23 15:00</b>까지 · 12.16 15:00 전 취소 시 부분환불</span></div>
+    <div><span class="k">호스트</span><span class="v">Claire · 호스팅 13년 · ★4.91(22) · <b>가족 여행객 최고의 평점</b> · 상위 10% 숙소</span></div>
   </div>
 
   <div class="day travel">
@@ -1031,6 +1034,7 @@ body.pv .day.today .date .d{color:var(--move)}
       <div class="item"><span class="t">낮</span><span class="c"><b>오랑주리</b> — 모네 수련<span class="note">목요일 정상 개관 9~18시(연중 휴관은 화요일·12.25뿐) · 18세 미만 무료 · 1시간이면 충분 · 콩코르드역 — 몽마르트르에서 메트로 12호선 직통</span></span></div>
       <div class="item"><span class="t">13:00</span><span class="c"><b>샹젤리제 거리</b> 걷기<span class="note">콩코르드 전 구간은 1.9km라 아이들에겐 김 — 메트로 1호선 세 정거장(George V) 이동 후 <b>상점 구간 800m만</b> 걸어 개선문까지가 실속입니다 · 12월엔 가로수 전체가 크리스마스 조명 장식(점등은 해 진 뒤) · 라뒤레 샹젤리제점에서 마카롱 간식 스톱</span></span></div>
       <div class="item"><span class="t">14:00</span><span class="c"><b>개선문</b> 옥상<span class="note">오랑주리에서 샹젤리제 거리 일직선 끝 · 284계단(엘리베이터 정비 중이라 계단만) · 성인 <b>€16</b>(10~3월 겨울 요금 — 개선문은 비EEA 차등 대상이 아닙니다), <b>18세 미만 무료</b> · <b>이브라 16:00 조기 폐관 — 마지막 입장 15:15, 이 시간대가 유일합니다</b> · 옥상에서 12개 대로 방사와 에펠탑 조망 · 내려와서 무명용사의 불꽃 · 6호선 2정거장이면 트로카데로</span></span></div>
+      <div class="item"><span class="t">15:20</span><span class="c"><b>마르모탕 모네 미술관</b> — 모네 본진<span class="note"><b class="hot">개선문에서 M6 트로카데로 → M9 라 뮈에트, 실측 2분</b>입니다 — 12.26 루브르 날에 두면 20~27분이 붙는데 여기서는 사실상 공짜라 옮겼습니다 · 오랑주리가 수련 대작이라면 여기는 <b>모네 컬렉션 세계 최대(약 300점)</b>이고, 인상주의라는 말을 만든 <b>&lsquo;인상, 해돋이&rsquo;</b>가 있습니다 · 베르트 모리조 컬렉션도 세계 최대 · <b>모네 사망 100주년 기념 특별전</b>(모네에서 호크니까지, 2026.9.24~2027.1.31) · <b class="hot">12.24 이브 영업시간은 미확인입니다</b> — 평시는 화~일 10:00~18:00(마지막 입장 17:00)인데 이날 조기 폐관하면 이 자리가 무너집니다. <b>12월에 확인해서 단축이면 12.26 오후로 되돌리십시오</b> · <b>사립이라 아이도 냅니다</b> — 성인 €14 · 18세 미만 €9 · 만 7세 미만만 무료라 4인 €46 · 끝나면 트로카데로로 돌아와 에펠탑 야경으로 이어집니다</span></span></div>
       <div class="item"><span class="t">오후</span><span class="c"><b>에펠탑</b> + 트로카데로<span class="note">개선문에서 <b>M6 3정거장 트로카데로 → 이에나 다리 → 에펠탑</b> 순서가 본안입니다 — M8 에콜 밀리테르로 가면 샹드마르스 횡단 도보가 15~18분 붙습니다 · 귀가는 <b>M6 라모트피케-그르넬 → M8 직통</b>(환승 1회) 또는 RER C 앵발리드 → M8 — <b>M2는 M8과 만나는 역이 없습니다</b></span></span></div>
       <div class="item"><span class="t">저녁</span><span class="c">숙소에서 크리스마스 이브</span></div>
       <div class="alert"><span>상점·식당이 <b>오후에 조기 마감</b>합니다. 저녁 외식은 어렵다고 보시는 편이 안전합니다.</span></div>
@@ -1040,7 +1044,7 @@ body.pv .day.today .date .d{color:var(--move)}
   <div class="day">
     <div class="date"><span class="num">DAY 03</span><span class="d">12.25</span><span class="w">금</span></div>
     <div class="items">
-      <div class="item"><span class="t">07:15</span><span class="c"><b>디즈니랜드 파리</b> — 개장 30분 전 도착<span class="note"><b>경로 고정</b>: 숙소 앞 M8역 → 1정거장 Bastille → M1 1정거장 Gare de Lyon → RER A(<b>샤틀레 대환승 회피</b>, 실이동 약 60분 — 휴일 배차·역내 이동·개찰 대기까지 <b>105분으로 잡았습니다</b>) · 승강장 전광판 종착이 <b>Marne-la-Vallée–Chessy</b>인지 확인(Torcy 단축편 있음) · 개장시각은 11월 공개 — 09:00이면 06:45 출발 · <b class="hot">귀갓길 Chessy발 RER A 막차와 Gare de Lyon M1→M8 마지막 연결을 당일 아침 RATP 앱으로 확인</b>(저녁 배차 15~30분) · 연중 최대 혼잡일. 어트랙션 3~4개가 현실적</span></span></div>
+      <div class="item"><span class="t">07:15</span><span class="c"><b>디즈니랜드 파리</b> — 개장 30분 전 도착<span class="note"><b>경로 고정</b>: 숙소 앞 M1·M8역 → 1정거장 Bastille → M1 1정거장 Gare de Lyon → RER A(<b>샤틀레 대환승 회피</b>, 실이동 약 60분 — 휴일 배차·역내 이동·개찰 대기까지 <b>105분으로 잡았습니다</b>) · 승강장 전광판 종착이 <b>Marne-la-Vallée–Chessy</b>인지 확인(Torcy 단축편 있음) · 개장시각은 11월 공개 — 09:00이면 06:45 출발 · <b class="hot">귀갓길 Chessy발 RER A 막차와 Gare de Lyon M1→M8 마지막 연결을 당일 아침 RATP 앱으로 확인</b>(저녁 배차 15~30분) · 연중 최대 혼잡일. 어트랙션 3~4개가 현실적</span></span></div>
       <div class="item"><span class="t">입장</span><span class="c"><b>Disneyland Park</b> 선택<span class="note">1파크 지정권 — 당일 입구에서 파크를 고릅니다. 성·판타지랜드가 있는 쪽</span></span></div>
       <div class="item"><span class="t">종일</span><span class="c">도시락 반입 가능 · <b>오후 5시 철수 옵션</b> 미리 합의</span></div>
       <div class="alert"><span><b>여권 4인 지참.</b> 기명 티켓이라 신분 확인과 입장 시 사진 촬영이 있을 수 있습니다.</span></div>
@@ -1054,9 +1058,8 @@ body.pv .day.today .date .d{color:var(--move)}
       <div class="item"><span class="t">09:00</span><span class="c"><b>루브르</b> — <b>✅ 예약 완료</b> (4매 · 오디오가이드 2대)<span class="note"><b>기명 티켓이라 여권 4인 필수</b>(아이 무료도 나이 증빙) · <b>경로는 Bastille까지 도보 8분 후 M1 단독 5정거장 — 환승 0회 46분</b>, 08:00 출발이면 08:45경 도착 — <b>슬롯까지 여유 15분</b> · 입장은 <b>피라미드 또는 카루젤</b> · 개장 첫 슬롯이라 드농관 모나리자로 직행하면 거의 빈 상태 · 오디오가이드(전용 단말, 한국어 · 대당 €6, <b>신분증 예치</b>)는 <b>피라미드 아래 나폴레옹 홀 배부 카운터</b>에서 드농관 올라가기 전에 수령 · 토 9~18시, 폐관 30분 전 퇴실 안내</span></span></div>
       <div class="item"><span class="t">12:00</span><span class="c"><b>가족 스케치 타임</b> — 관람 뒤 30분~1시간<span class="note">연필 + <b>A3(29.7×42cm) 이하</b> 종이·화판만 공식 허용 (잉크·물감·이젤 금지). 리슐리외관 조각 중정(쿠르 마를리)이 밝고 벤치가 많아 아이들과 앉아 그리기 좋습니다. 준비물: 스케치북·연필·지우개 4인분</span></span></div>
       <div class="item"><span class="t">13:00</span><span class="c">점심 후 <b>팔레루아얄 · 갤러리 비비엔</b> 산책<span class="note">루브르에서 <b>전부 도보권</b>(팔레루아얄 3분 · 갤러리 비비엔 8분) — 줄무늬 기둥과 19세기 유리지붕 아케이드. 메트로를 안 타도 되는 오후입니다</span></span></div>
-      <div class="item"><span class="t">13:45</span><span class="c"><b>BnF 살 오발</b> — 국립도서관 타원형 열람실<span class="note">5 rue Vivienne · 루브르에서 <b>도보 10분</b> · <b>입장 무료, 예약도 신분증도 필요 없습니다</b> · <b>토요일 10~18시</b>(월요일·12.25 휴관) · 개가 2만 권 중 <b>만화·그래픽노블 1만 1천 권</b>(망가 다수) + 어린이책 4,500권 — 아이들이 직접 꺼내 자리에서 봅니다 · 30~40분이면 충분하고 <b>열람실이라 정숙</b> · <b>마르모탕에 가려면 14:20에는 나서야 합니다</b></span></span></div>
-      <div class="item"><span class="t">14:30</span><span class="c"><b>마르모탕 모네 미술관</b> — 모네 본진<span class="note"><b class="hot">오랑주리가 수련 대작이라면 여기는 모네 컬렉션 세계 최대(약 300점)</b>입니다 — 인상주의라는 말을 만든 <b>&lsquo;인상, 해돋이&rsquo;</b>가 여기 있고, 베르트 모리조 컬렉션도 세계 최대입니다 · <b>마침 모네 사망 100주년 기념 특별전</b>(모네에서 호크니까지, 2026.9.24~2027.1.31)이 열립니다 · <b>화~일 10:00~18:00, 마지막 입장 17:00</b>(월요일 휴관 — 12.26은 토요일이라 정상) · <b class="hot">사립이라 아이도 냅니다</b> — 성인 €14 · 18세 미만 €9 · 만 7세 미만만 무료라 <b>4인 €46</b>(루브르·오르세의 18세 미만 무료와 다릅니다) · 오디오가이드 €4 · <b>경로는 팔레루아얄 M1 → 프랭클린 D. 루즈벨트 M9 → 라 뮈에트, 도보 6분 합 35분</b> · 16구 주택가라 루브르 같은 인파가 없습니다 · <b>아이들이 루브르에서 이미 지쳤으면 접고 일찍 귀가하십시오</b> — 이날 유일한 선택 항목입니다</span></span></div>
-      <div class="item"><span class="t">17:00</span><span class="c">숙소 복귀 · <b>마트에서 27일 저녁·28일 기차 아침거리 구매</b> · 아이들 휴식<span class="note"><b>루브르 하나로 오전을 다 쓰는 날</b>이라 오후는 도보권 세 곳 + 선택으로 마르모탕만 남겼습니다(마르모탕을 접으면 16:00 귀가) · Carrefour City가 22시까지라 늦어도 됩니다 — 시테섬(생트샤펠·노트르담·셰익스피어)은 12.27로 옮겼습니다</span></span></div>
+      <div class="item"><span class="t">13:45</span><span class="c"><b>BnF 살 오발</b> — 국립도서관 타원형 열람실<span class="note">5 rue Vivienne · 루브르에서 <b>도보 10분</b> · <b>입장 무료, 예약도 신분증도 필요 없습니다</b> · <b>토요일 10~18시</b>(월요일·12.25 휴관) · 개가 2만 권 중 <b>만화·그래픽노블 1만 1천 권</b>(망가 다수) + 어린이책 4,500권 — 아이들이 직접 꺼내 자리에서 봅니다 · 30~40분이면 충분하고 <b>열람실이라 정숙</b></span></span></div>
+      <div class="item"><span class="t">16:00</span><span class="c">숙소 복귀 · <b>마트에서 27일 저녁·28일 기차 아침거리 구매</b> · 아이들 휴식<span class="note"><b>루브르 하나로 오전을 다 쓰는 날</b>이라 오후는 도보권 세 곳만 남겼습니다 — 마르모탕은 트로카데로 옆이라 12.24로 옮겼습니다 — 시테섬(생트샤펠·노트르담·셰익스피어)은 12.27로 옮겼습니다</span></span></div>
             <div class="item"><span class="t">저녁</span><span class="c">세탁 1차 <span class="note">건조기 있음 — 하룻밤이면 완료</span></span></div>
     </div>
   </div>
@@ -1100,7 +1103,7 @@ body.pv .day.today .date .d{color:var(--move)}
     <div class="date"><span class="num">DAY 06</span><span class="d">12.28</span><span class="w">월</span>
       <span class="tag move">이동</span></div>
     <div class="items">
-      <div class="item"><span class="t">05:50</span><span class="c">숙소 출발 → 리옹역<span class="note">숙소 앞 M8역 1정거장 → Bastille → M1 1정거장, <b>2정거장 약 25분</b>(M8 첫차 05:39) · 실버퍼가 15분뿐이라 06:05에서 당겼습니다 · <b>전날 밤 택시 예약이 가장 안전</b>(직선 2.5km, 8~15분, €15~25) — 펑크나도 Bastille까지 도보 8분으로 회복 · 발차가 07:15인지 07:22인지 예약확인서로 대조 · Lyria는 <b>Hall 2 전용</b>이고 20분 전에 뜨는 것은 승강장(voie) 번호입니다 — Hall 2 안에서 전광판 위치를 미리 파악</span></span></div>
+      <div class="item"><span class="t">05:50</span><span class="c">숙소 출발 → 리옹역<span class="note">숙소 앞 M1·M8역 1정거장 → Bastille → M1 1정거장, <b>2정거장 약 25분</b>(M8 첫차 05:39) · 실버퍼가 15분뿐이라 06:05에서 당겼습니다 · <b>전날 밤 택시 예약이 가장 안전</b>(직선 2.5km, 8~15분, €15~25) — 펑크나도 Bastille까지 도보 8분으로 회복 · 발차가 07:15인지 07:22인지 예약확인서로 대조 · Lyria는 <b>Hall 2 전용</b>이고 20분 전에 뜨는 것은 승강장(voie) 번호입니다 — Hall 2 안에서 전광판 위치를 미리 파악</span></span></div>
       <div class="item"><span class="t">07시대</span><span class="c"><b>TGV Lyria</b> 파리 리옹역 → 바젤<span class="note">약 3시간 · <b>현행 시간표엔 07:00 정각 편이 없습니다(첫차 07:15~22)</b> — 정확한 시각과 바젤 환승은 <b>9.30 예매 때 실편 기준으로 확정</b>. 바젤 환승 여유가 30분 미만이면 <b>한 편 뒤 IC</b>로 잡으십시오 — 그린델발트 도착이 약 14:30이 되어도 무인 숙소라 지장 없습니다</span></span></div>
       <div class="item"><span class="t">아침</span><span class="c">기차에서 <b>도시락</b><span class="note">유럽 기차는 좌석에서 음식 먹는 게 일상입니다 — 전날 산 빵·과일·요거트로 아침 해결. 단 온수가 없어 컵라면류는 불가 · 이 규칙은 스위스 IC·이탈리아 프레차 등 모든 이동일 공통 — 도시락을 싸면 이동일마다 4인 점심 €50~60이 굳습니다</span></span></div>
       <div class="item"><span class="t">10시대</span><span class="c">바젤 SBB → 인터라켄 Ost<span class="note"><b class="hot">10시대 직통은 없습니다</b> — 10:58 ICE로 베른 1회 환승(12:59 착)이 본안이고, 직통 IC61은 11:30(13:28 착·1시간 58분)이 첫 편입니다 · 10:30 편은 슈피츠 환승 4분이라 4인 짐으로 불가 · 12.13 시간표 개정 후 SBB 앱으로 확정</span></span></div>
