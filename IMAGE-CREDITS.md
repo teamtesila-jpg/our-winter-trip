@@ -67,3 +67,5 @@
 - `img/shakespeare.jpg` — [Shakespeare and Company Bookshop - Paris 2012-04-07 n2.jpg](https://commons.wikimedia.org/wiki/File:Shakespeare_and_Company_Bookshop_-_Paris_2012-04-07_n2.jpg) · Jim Linwood · CC BY 2.0
 - `img/boboli.jpg` — [FirenzeGiardinoBoboliAnfiteatro.jpg](https://commons.wikimedia.org/wiki/File:FirenzeGiardinoBoboliAnfiteatro.jpg) · MM · CC BY-SA 4.0
 - `img/bnf.jpg` — [Bibliothèque nationale de France, site Richelieu (salle ovale).jpg](https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_nationale_de_France%2C_site_Richelieu_%28salle_ovale%29.jpg) · Zubro · CC BY-SA 3.0
+
+- `img/marmottan.jpg` — Musée Marmottan Monet - Paris XVI (FR75) - 2026-07-11 - 1.jpg · Chabe01 · CC BY-SA 4.0 · Wikimedia Commons
