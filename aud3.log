@@ -1,0 +1,18 @@
+OK   div balance                    367/367
+OK   tr balance                     91/91
+OK   a balance                      70/70
+OK   labels==tiles                  60/60
+OK   calendar sorted                26 rows
+OK   총=확정+현지+식음+기타-혜택               1248+179+340+93-34=1826 vs 1826
+OK   확정=결제완료+남은                     1248=638+610
+OK   총액-할인=확정                       1,336-88.0=1248.0 vs 1248
+OK   월별 할인 합                        9.2+17.8+23.5+24.9+12.6=88.0 vs 88.0
+OK   잔재 $1,041.12                   count=0
+OK   잔재 12.14 자동                    count=0
+OK   잔재 255.7                       count=0
+OK   잔재 45.3만                       count=0
+OK   잔재 643.6                       count=0
+OK   잔재 Bastille                    count=0
+OK   잔재 오스티엔세로                      count=0
+OK   잔재 454만                        count=0
+OK   일자별 시각 오름차순                    
