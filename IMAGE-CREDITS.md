@@ -69,3 +69,6 @@
 - `img/bnf.jpg` — [Bibliothèque nationale de France, site Richelieu (salle ovale).jpg](https://commons.wikimedia.org/wiki/File:Biblioth%C3%A8que_nationale_de_France%2C_site_Richelieu_%28salle_ovale%29.jpg) · Zubro · CC BY-SA 3.0
 
 - `img/marmottan.jpg` — Musée Marmottan Monet - Paris XVI (FR75) - 2026-07-11 - 1.jpg · Chabe01 · CC BY-SA 4.0 · Wikimedia Commons
+
+- `img/ducale.jpg` — Ponte della Paglia Palazzo Ducale Venezia.jpg · Wolfgang Moroder · CC BY-SA 3.0 · Wikimedia Commons
+- `img/sanmarco.jpg` — Venezia Basilica di San Marco Fassade 2.jpg · Zairon · Public domain · Wikimedia Commons
