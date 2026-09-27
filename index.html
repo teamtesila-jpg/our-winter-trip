@@ -590,6 +590,34 @@ body.pv .day.today .date .d{color:var(--move)}
   .next-dl .nd-t{font-size:14.5px}
 }
 
+/* ---------- 휴대폰: 표를 줄마다 카드로 쌓기 (9.27 — 오른쪽 칸을 못 보고 지나치지 않게) ---------- */
+@media (max-width:720px){
+  .wx-tbl.stack{min-width:0; width:100%}
+  .wx-tbl.stack thead{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+  .wx-tbl.stack tbody, .wx-tbl.stack tr{display:block}
+  .wx-tbl.stack tr{padding:12px 0; border-bottom:1px solid var(--line)}
+  .wx-tbl.stack tr:last-child{border-bottom:0}
+  .wx-tbl.stack td{display:block; margin:0; padding:0; border:0; white-space:normal}  /* td.city가 도시 구역용 .city 여백(52px)을 물려받지 않게 */
+  .wx-tbl.stack td + td{margin-top:5px}
+  .wx-tbl.stack td[colspan="4"]{padding-top:10px; font-size:16px; color:var(--ink)}
+  /* 이름표가 붙는 칸: 이름표 폭만큼 내어쓰기 — 글이 줄바꿈돼도 이름표 오른쪽에 정렬 */
+  #tickets .wx-tbl.stack td[data-label]:not(:first-child){padding-left:68px; text-indent:-68px}
+  .wx-tbl.stack td[data-label]::before{content:attr(data-label); display:inline-block; width:60px; margin-right:8px; text-indent:0;
+    font-size:12.5px; font-weight:500; color:var(--muted); letter-spacing:.02em}
+  /* 입장권: 항목 → 성인·아이 한 줄 → 언제 */
+  #tickets .wx-tbl.stack td:first-child{font-weight:600}
+  #tickets .wx-tbl.stack td:first-child::before, #food .wx-tbl.stack td::before{content:none}
+  #tickets .wx-tbl.stack td:nth-child(2):not([colspan]), #tickets .wx-tbl.stack td:nth-child(3):not(:last-child){display:inline-block; margin-right:18px; padding-left:0; text-indent:0}
+  /* 맛집: 날짜·구분 작은 한 줄 → 이름 → 메모 */
+  #food .wx-tbl.stack td:nth-child(1):not([colspan]), #food .wx-tbl.stack td:nth-child(2){display:inline; font-size:13px; color:var(--muted)}
+  #food .wx-tbl.stack td:nth-child(2)::before{content:"·"; display:inline; width:auto; margin:0 5px; font-size:inherit; font-weight:400}
+  #food .wx-tbl.stack td:nth-child(3){margin-top:2px; font-size:16px}
+  /* 날씨: 지역 → 최고·최저·일몰 한 줄 → 메모 */
+  .wx .wx-tbl.stack td:first-child::before, .wx .wx-tbl.stack td:last-child::before{content:none}
+  .wx .wx-tbl.stack td:nth-child(2), .wx .wx-tbl.stack td:nth-child(3), .wx .wx-tbl.stack td:nth-child(4){display:inline-block; margin-right:14px}
+  .wx .wx-tbl.stack td:nth-child(n+2)[data-label]::before, #tickets .wx-tbl.stack td:nth-child(2):not([colspan])::before, #tickets .wx-tbl.stack td:nth-child(3):not(:last-child)::before{width:auto; margin-right:5px}
+  .tbl-hint{display:none}
+}
 @media (max-width:380px){
   .stay, .snap-grid{grid-template-columns:1fr}
   .prog-status{font-size:17px}
@@ -622,7 +650,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <div class="wrap">
 
 <header class="mast">
-  <p class="pub">발행 <b id="pubAt">9.27 일 18:16</b> 한국시간 · 이 시각이 최신판 기준입니다</p>
+  <p class="pub">발행 <b id="pubAt">9.27 일 18:28</b> 한국시간 · 이 시각이 최신판 기준입니다</p>
   <p class="eyebrow">2026.12.23 — 2027.01.12</p>
   <h1>사랑스런 우리가족 유럽여행</h1>
   <p class="crew"><span class="nm">찬양</span><em class="hrt">💗</em><span class="nm">유나</span><em class="hrt">💗</em><span class="nm">유솔</span><em class="hrt">💗</em><span class="nm">선광</span></p>
@@ -776,7 +804,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <section class="todo" id="tickets">
   <h2>입장권 · 교통권 <span class="pack-hint">— 숙박 외 구매 목록 · 아이 둘은 대부분 무료</span></h2>
   <div class="tbl-wrap">
-    <table class="wx-tbl">
+    <table class="wx-tbl stack">
       <thead><tr><th>항목</th><th>성인 2인</th><th>아이 2인</th><th>언제</th></tr></thead>
       <tbody>
         <tr><td class="city" colspan="4"><b>9월 — 판매 개시일에 잡아야 하는 것</b></td></tr>
@@ -829,7 +857,6 @@ body.pv .day.today .date .d{color:var(--move)}
       </tbody>
     </table>
   </div>
-  <p class="tbl-hint">표가 잘리면 옆으로 밀어서 보세요</p>
   <div class="alert" style="margin-top:14px"><span><b>도시 투어패스는 셋 다 사지 마십시오</b> — 계산해보니 전부 손해입니다. <b>파리 뮤지엄 패스</b> 4일권 €105인데 우리가 볼 5곳 정가 합이 성인 1인 €98.5(루브르 32 · 오르세 16 · 오랑주리 12.5 · 개선문 겨울 16 · 생트샤펠 22)라 오히려 €6.5 손해(2일권은 −€15) · <b>피렌체 카드</b> €85인데 커버되는 곳 합이 €79로 −€6이고 정작 쿠폴라는 미포함 · <b>로마 패스</b> 72h는 €4 이득이나 로마 체류가 96시간이라 콜로세움(1.9)과 보르게세(1.12)를 한 장으로 못 덮습니다. <b>근본 이유는 아이 둘이 국립박물관에서는 무료</b>라 패스 효과가 성인 2인에만 걸리기 때문입니다.</span></div>
   <p class="foot" style="margin-top:12px">숙박·항공 제외 합계 <b>약 603만원</b>(<b>선택 항목 제외</b> — 표의 선택 4건 <b>약 22만원</b>: 피사 사탑 €80 · <b>마르모탕 모네 €46</b> · 스칼라 산타 산토룸 €13 · 트레비 수반 €8 · 본문에만 있는 <b>비토리아노 VIVE 통합권 €36</b>과 <b>성 베드로 쿠폴라 €68~88</b>은 권하지 않아 표에서 뺐습니다 · <b>선물·기념품 항목은 전부 뺐습니다</b> — 짐을 늘리지 않기로 했습니다) — 계획 골격(교통 296 + 입장권 120 = 416만원)을 <b>약 187만</b> 넘습니다(스위스 국내 열차를 뒤늦게 넣은 몫 44만 · 이탈리아 열차를 성수기 실제 운임으로 바꾼 몫 76만) — 10·11월 카드 할인 51.7만이 4분의 1쯤 상쇄합니다 · 가격은 공식 사이트 기준이며 <b>2027년 요금은 12월에 재확인</b> · 비EEA 국적 요금은 셋이 서로 다릅니다 — <b>루브르는 2026.1.14부터 €32</b>(EEA €22), <b>생트샤펠은 2026.1.1부터 €22</b>(EEA €16), <b>개선문은 할증이 없고 10~3월 €16</b>입니다</p>
 </section>
@@ -838,7 +865,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <section class="todo" id="food">
   <h2>맛집 · 디저트 <span class="pack-hint">— 휴무일을 일정에 맞춰 검증한 것만</span></h2>
   <div class="tbl-wrap">
-    <table class="wx-tbl">
+    <table class="wx-tbl stack">
       <thead><tr><th>날짜</th><th>구분</th><th>이름</th><th>메모 · 4인 예산</th></tr></thead>
       <tbody>
         <tr><td class="city" colspan="4"><b>파리</b></td></tr>
@@ -873,7 +900,6 @@ body.pv .day.today .date .d{color:var(--move)}
       </tbody>
     </table>
   </div>
-  <p class="tbl-hint">표가 잘리면 옆으로 밀어서 보세요</p>
   <div class="alert" style="margin-top:14px"><span><b>이 표의 핵심은 휴무일입니다.</b> 12.25 파리·1.1 스위스·1.6 주현절·일요일·월요일에 문 닫는 곳을 걸러 <b>그날 실제로 갈 수 있는 곳만</b> 남겼습니다. 이탈리아 노포는 연말연시 임시휴업이 흔하니 <b>가기 전날 전화나 인스타그램으로 확인</b>하시고, 예약 불가 표기된 곳은 피크(13시·20시)를 피해 가십시오.</span></div>
 </section>
 
@@ -984,7 +1010,7 @@ body.pv .day.today .date .d{color:var(--move)}
   </div>
 
   <div class="wx-scroll">
-  <table class="wx-tbl">
+  <table class="wx-tbl stack">
     <thead><tr><th>지역</th><th>최고</th><th>최저</th><th>일몰</th><th>메모</th></tr></thead>
     <tbody>
       <tr><td class="city">파리</td><td class="mono">3~7℃</td><td class="mono">1~3℃</td><td class="mono">16:57~17:00</td><td>실내 위주라 날씨 영향 작음</td></tr>
@@ -999,7 +1025,6 @@ body.pv .day.today .date .d{color:var(--move)}
     </tbody>
   </table>
   </div>
-  <p class="tbl-hint">표가 잘리면 옆으로 밀어서 보세요</p>
 </section>
 
 <!-- ================= 파리 ================= -->
@@ -1822,6 +1847,19 @@ body.pv .day.today .date .d{color:var(--move)}
   }
   window.addEventListener('load', drawPair);
   drawPair();
+
+  // ---------- 휴대폰 카드형 표: 칸 이름표 붙이기 (합친 칸은 '요금') ----------
+  [].forEach.call(document.querySelectorAll('.wx-tbl.stack'), function (t) {
+    var heads = [].map.call(t.querySelectorAll('thead th'), function (th) { return th.textContent.trim(); });
+    [].forEach.call(t.querySelectorAll('tbody tr'), function (tr) {
+      var col = 0;
+      [].forEach.call(tr.cells, function (td) {
+        var span = td.colSpan || 1;
+        if (span < heads.length && heads[col]) td.setAttribute('data-label', span > 1 ? '요금' : heads[col]);
+        col += span;
+      });
+    });
+  });
 
   // ---------- 맨 위로 버튼 ----------
   var toTop = document.getElementById('toTop');
