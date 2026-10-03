@@ -82,16 +82,18 @@ try:
     fx = get(FX_URL)
     krw = float(fx["rates"]["KRW"])
     chf_krw = krw / float(fx["rates"]["CHF"])
-    rate = {"USD": krw, "CHF": chf_krw}
+    eur_krw = krw / float(fx["rates"]["EUR"])
+    rate = {"USD": krw, "CHF": chf_krw, "EUR": eur_krw}
 
     def krw_repl(mm):
         v = round(float(mm.group(3)) * rate[mm.group(2)] / 1000) * 1000
         return mm.group(1) + f"약 ₩{v:,}" + mm.group(4)
 
-    s = re.sub(r'(<span class="krw" data-cur="(USD|CHF)" data-amt="([\d.]+)">)[^<]*(</span>)',
+    s = re.sub(r'(<span class="krw" data-cur="(USD|CHF|EUR)" data-amt="([\d.]+)">)[^<]*(</span>)',
                krw_repl, s)
     fxd = kst  # 한국 날짜 기준
-    fxs = f"{fxd.year}.{fxd.month:02}.{fxd.day:02} · USD {round(krw):,}원 · CHF {round(chf_krw):,}원"
+    fxs = (f"{fxd.year}.{fxd.month:02}.{fxd.day:02} · USD {round(krw):,}원 · EUR {round(eur_krw):,}원"
+           f" · CHF {round(chf_krw):,}원")
     s = re.sub(r'(<span id="fxTime">)[^<]*(</span>)',
                lambda mm: mm.group(1) + fxs + mm.group(2), s, count=1)
 except Exception as e:  # noqa: BLE001

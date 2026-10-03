@@ -253,6 +253,10 @@ body{
 .db.open{background:var(--ok-soft); color:var(--ok)}
 .dt{min-width:0}
 .dm{font-variant-numeric:tabular-nums; color:var(--muted); white-space:nowrap; font-size:13.5px}
+.kw{display:inline-block; margin:0 2px 0 4px; padding:0 5px; border-radius:5px; border:1px solid var(--line);
+  background:var(--surface-2); color:var(--ink-2); font-size:.8em; font-weight:500; line-height:1.45;
+  letter-spacing:0; white-space:nowrap; font-variant-numeric:tabular-nums; text-indent:0}
+.dm .kw{display:block; margin:1px 0 0; padding:0; border:0; background:none; color:var(--muted); font-size:12px; text-align:right}
 .dl-row.past{opacity:.42}
 .dl-row.past .dd{text-decoration:line-through}
 .dl-row.next{background:var(--warn-soft); margin:0 -10px; padding-left:10px; padding-right:10px;
@@ -659,7 +663,7 @@ body.pv .day.today .date .d{color:var(--move)}
 <div class="wrap">
 
 <header class="mast">
-  <p class="pub">발행 <b id="pubAt">10.3 토 23:14</b> 한국시간 · 이 시각이 최신판 기준입니다</p>
+  <p class="pub">발행 <b id="pubAt">10.3 토 23:34</b> 한국시간 · 이 시각이 최신판 기준입니다</p>
   <p class="eyebrow">2026.12.23 — 2027.01.12</p>
   <h1>사랑스런 우리가족 유럽여행</h1>
   <p class="crew"><span class="nm">찬양</span><em class="hrt">💗</em><span class="nm">유나</span><em class="hrt">💗</em><span class="nm">유솔</span><em class="hrt">💗</em><span class="nm">선광</span></p>
@@ -747,7 +751,7 @@ body.pv .day.today .date .d{color:var(--move)}
     <div class="dl-row" data-date="2027-01-03"><span class="dd">1.3</span><span class="db cxl">취소마감</span><span class="dt">로마 나보나 — 무료취소 마감</span><span class="dm"></span></div>
     <div class="dl-row" data-date="2027-01-06"><span class="dd">1.6</span><span class="db cxl">취소마감</span><span class="dt">나폴리 — 현지 14:00 (한국 22:00) · <b>이후 전액 미환불</b></span><span class="dm"></span></div>
   </div>
-  <p class="dl-note">카드 옆 원화 표시는 실시간 환율(<span id="fxTime">2026.10.03 · USD 1,347원 · CHF 1,626원</span>)로 자동 환산되지만, <b>예산의 만원 단위 숫자는 보수적으로 잡은 기준 환율(USD 1,378 · CHF 1,705 · EUR 1,525) 고정</b>이라 두 값이 다를 수 있으며,
+  <p class="dl-note nokrw">유로와 프랑 금액 옆의 원화(≈ 표시)와 숙소 카드의 원화는 실시간 환율(<span id="fxTime">2026.10.03 · USD 1,347원 · EUR 1,516원 · CHF 1,626원</span>)로 자동 환산되지만, <b>예산의 만원 단위 숫자는 보수적으로 잡은 기준 환율(USD 1,378 · CHF 1,705 · EUR 1,525) 고정</b>이라 두 값이 다를 수 있으며,
   실제 청구액은 결제 시점 환율에 따라 조금 달라집니다.</p>
   </details>
 </section>
@@ -789,6 +793,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <li><b>파리 교통 12월 확인 3건</b> — ① 12.28(월) <b>숙소 앞 M1 첫차</b>(RATP) ② <b class="hot">12.25 Chessy발 RER A 막차</b>와 Gare de Lyon발 M1 막차(폐장 불꽃 뒤 귀가라 최우선. 10월 운행표로는 RER A 금 23:39, 일 23:58. 12월 초 12월분 시간표와 CGT-RATP 파업 지속 여부 확인) ③ 12.22~28 연말 공사 공지 · 몽마르트르 푸니쿨라는 2026 정기 정비가 상반기에 끝나 12월 정상 운행 예상(당일 운휴만 확인)</li>
         <li><b>폼페이 1.8 · 보르게세 1.12 — 1월분이 열리는 날 바로</b>(폼페이 pompeii.vivaticket.it는 시즌 단위 판매라 지금은 12.31까지, 11.15부터 사흘마다 직접 확인 알림. 보르게세 tosc.it는 묶음 공개라 10.1 현재 11.22까지, 하루 두 번 자동 조회. 4인 €80)</li>
         <li><b>루브르 12.26 — 12.21~25에 파업·부분 개관 공지 확인</b>(2025.12~2026.2 파업 때 휴관과 명작 동선만 여는 날이 반복됐고, 예약은 환불 불가)</li>
+        <li><b>식당 예약 — 12월 초</b>(12.1 알림): Barrys 12.28 또는 12.30 저녁 4인(바 말고 레스토랑이나 라운지 자리) · 피렌체 1.6 13:00 점심(피티 광장 근처, 14:00 행렬 전에 끝나는 곳, 가게 미정) · <b>Roma Sparita 1.9 19:30</b>(토요일 저녁, 전화 예약) · Flavio 1.11 19:30(홈페이지 온라인 예약, 1월 초 휴가 여부도) · Breizh Café 12.24 12:30(이브 영업과 예약 확인)</li>
         <li>12.18~20 알프스 예보 확인 시작</li>
         <li><b>MUS.E 투어 예약(선택)</b> — 베키오 궁전 1.4 <b>16:30 Visita speciale</b>(75분 · 1인 €8 + 입장권 · 진행 언어·연령 제한 확인). 아이용 '궁정 생활'은 매일 11:30 한 회라 1.4 동선과 안 맞습니다. 온라인 bigliettimusei.comune.fi.it · 이메일 info@musefirenze.it · 전화 +39 055 2768224(월~토 9:30~13:00, 14:00~17:00). 영어·비정규 시간대는 이메일이 빠릅니다. <b>다른 투어 두 개는 조건이 안 맞습니다</b> — 비밀 통로는 12세 이상, 일반 가이드 투어(월 15:00·영어·75분·€8+입장권)는 10세 이상이라 <b>유솔이가 빠지고</b> 15:00 쿠폴라와 겹칩니다. 편성이 없으면 그냥 자유 관람 + 매표소 무료 가족 키트로 가십시오</li>
         <li><b>루체른 신년 불꽃(1.1 노이야르스차우버)</b> — 9.23 공동 주최 슈바이처호프 행사 페이지에 2027.1.1 20:15 게시 · 12월엔 악천후 순연일만 확인</li>
@@ -807,7 +812,7 @@ body.pv .day.today .date .d{color:var(--move)}
       <li>✅ 9.1 루브르 12.26 09:00 4매 €76(기명, 환불 불가)과 여행자보험</li>
     </ul>
   </details>
-  <p class="foot">총 지출 <b>1,872만원</b>(카드 혜택 반영) = <b>확정 지출(출국 전) 1,236</b> + 현지 결제 257 + 식음료·마트 340 + <b>유심·쇼핑·예비비 93</b> − <b>여행 중 카드 혜택 54</b> · <b class="hot">10.1 실제 결제 반영</b>(디즈니 €421.20, TGV €326.23, 이탈리아 열차 5구간 €288.92, 피렌체 숙소 $766.59, €1 = 1,538원, $1 = 1,356원으로 계산): 열차는 예산 추정(TGV €240, 이탈리아 €895.8)보다 약 79만, 9.23 운임 계획(TGV €240, 이탈리아 €488)보다도 약 17만 적게 들었고, 디즈니는 원화 674,366원을 유로로 다시 사 롯데 10%까지 약 9만이 줄었습니다 · 카드 혜택은 다 합쳐 <b>약 153만원</b>입니다 — 롯데 해외 <b>결제할인</b>은 카드 청구액에서 바로 빠져 실제 출금이 줄어들기 때문에 <b>확정 지출에서 이미 차감했습니다</b>: 8월 9.2 + <b class="hot">9월 17.9</b>(마감) + <b>10월 26.6</b>(10.1 결제 디즈니, 열차, 피렌체 숙소 263.4만이 해외 수수료까지 약 266만으로 한도 265,952원을 채움. 10월에 사는 산마르코와 만찬 약 8.5만은 할인 밖, 10.3 오랑주리 3.8만은 우리카드 디어쇼퍼 5%) + <b>11월 42.6</b>(파리와 로마 숙소 조기결제, 반액카드, 입장권 묶음, <b class="hot">두칼레 13.7(12.3까지)</b>, 쿠폴라, 바티칸 약 426만) + <b>12월 3.0</b>(베키오 6.1, 천사의 성 5.5, 콜로세움 6.7, 폼페이와 보르게세 12.2) = <b>99.3</b>(전부 12.23 전 청구서에서 빠집니다. 한도 10월 266(할인 265,952원), 11월 458(할인 458,332원), 12월 250) · 나머지 <b>52.0</b>은 여행 중분: <b>12월 22.0 + 1월 30.0</b>(12월 22.0은 12.23~31 현지 결제가 매입일 기준 12월로 220만 넘게 잡힐 때의 상한이고, 12.29~31 결제는 1월 매입으로 넘어갈 수 있음)(현지 식음료·교통·입장료가 전부 해외결제라 한도가 온전히 쓰입니다) + 우리 디어쇼퍼 <b>1.8</b>(캐시백 1.6과 10.3 오랑주리 5% 할인 0.2) — <b class="hot">신한 클래식와이 5.0은 구 로마 예약(유니온페이)분이라 취소와 함께 사라졌지만</b>, 새 로마가 롯데 10% 대상이 되어 <b>12.6만</b>이 붙으므로 순증입니다(이건 나갔다 돌아오는 돈이라 확정 지출에서 안 뺍니다) — <b>확정 지출은 출국(12.23) 전에 계좌에서 빠져나가는 돈</b>입니다. 총액 1,335.4에서 결제할인 99.3을 뺀 값입니다: 항공 287.5 + 숙박 696.8(기준환율 재집계, 피렌체는 10.1 조기결제 $766.59 완료, 파리와 로마는 11월 초 조기결제 예정, 미실행 시 각각 11.15와 12.17 자동) + 디즈니 64.8(10.1 유로 재구매) + <b>온라인 사전예약 입장·교통 228.0</b>(루브르·오르세·오랑주리·개선문·<b>생트샤펠</b>·밀라노 두오모·<b class="hot">두칼레 궁전·산마르코 대성당</b>·베키오궁·쿠폴라·우피치·피티(PassePartout)·<b>아카데미아</b>·폼페이·콜로세움·바티칸·보르게세·최후의 만찬 + TGV·이탈리아 열차(10.1 결제 94.6)) + <b>반액카드 51.2</b> + <b>여행자보험 7.1</b> · <b>이 중 850만은 이미 결제 완료</b>(총액 877.1 − 8·9월 할인 27.1 · 9.1 루체른·밀라노·<b>루브르</b>·<b>보험</b> · 9.22 두오모 · 10.1 디즈니, 열차, 피렌체 숙소 · 10.3 오랑주리 포함), 출국 전 남은 결제는 <b>386만</b>(총액 458.3 − <b class="hot">10~12월 할인 72.2</b>(10.1 결제분이 받는 10월 할인 26.6 포함). 파리와 로마 숙소는 11월 조기결제라 12월 출국 전 결제는 약 31만이고, 한도 250만 중 약 220만이 여행 중 12월 할인 22.0으로 갑니다) · 현지 결제 257은 <b class="hot">스위스 국내 열차(반액) 약 CHF 230 + 키아소→밀라노 €30 + 빙하공원 CHF 60</b> + <b class="hot">베네치아 바포레토 왕복 €76</b> + <b class="hot">CDG→숙소 택시 €56</b> + <b>로마 짐 보관 €10</b> + <b>공항 이동(택시 €55 또는 열차 €31~34)·세탁방 €12</b> + 융프라우요흐·리기·교통박물관·파리/로마 교통·MANN·산로렌초 + <b>피사 왕복 기차 €59</b> + <b>폼페이 Circumvesuviana 왕복 €26.40</b> + 천사의 성 €36 + 판테온 €14 + <b>카피톨리노 €60</b> + <b>루체른 도시세 CHF 18</b>·피렌체 €36(에어비앤비 영수증에 포함이면 빠짐) 등 현장 지불분 (<b>표 전 행을 €1,525·CHF 1,705로 기계 재집계한 값</b>이며 스칼라 산타·트레비 수반 같은 선택분은 뺐습니다)(사탑 등반 €80은 선택이라 미포함) · <b>여행자보험 7.1은 9.1 결제 완료</b>(원화라 카드 할인 대상 아님) · <b>기타 93은 유심·쇼핑·예비비</b> · 근거는 <a href="#tickets" style="color:inherit"><b>입장권·교통 표</b></a> · 여유 반영 시 2,200만원 권고 · 일정 최종 수정 2026.10.01 · 날씨·환율 매시간 자동 갱신 · 사진 <a href="https://github.com/teamtesila-jpg/our-winter-trip/blob/main/IMAGE-CREDITS.md" style="color:inherit">Wikimedia Commons (CC)</a></p>
+  <p class="foot nokrw">총 지출 <b>1,872만원</b>(카드 혜택 반영) = <b>확정 지출(출국 전) 1,236</b> + 현지 결제 257 + 식음료·마트 340 + <b>유심·쇼핑·예비비 93</b> − <b>여행 중 카드 혜택 54</b> · <b class="hot">10.1 실제 결제 반영</b>(디즈니 €421.20, TGV €326.23, 이탈리아 열차 5구간 €288.92, 피렌체 숙소 $766.59, €1 = 1,538원, $1 = 1,356원으로 계산): 열차는 예산 추정(TGV €240, 이탈리아 €895.8)보다 약 79만, 9.23 운임 계획(TGV €240, 이탈리아 €488)보다도 약 17만 적게 들었고, 디즈니는 원화 674,366원을 유로로 다시 사 롯데 10%까지 약 9만이 줄었습니다 · 카드 혜택은 다 합쳐 <b>약 153만원</b>입니다 — 롯데 해외 <b>결제할인</b>은 카드 청구액에서 바로 빠져 실제 출금이 줄어들기 때문에 <b>확정 지출에서 이미 차감했습니다</b>: 8월 9.2 + <b class="hot">9월 17.9</b>(마감) + <b>10월 26.6</b>(10.1 결제 디즈니, 열차, 피렌체 숙소 263.4만이 해외 수수료까지 약 266만으로 한도 265,952원을 채움. 10월에 사는 산마르코와 만찬 약 8.5만은 할인 밖, 10.3 오랑주리 3.8만은 우리카드 디어쇼퍼 5%) + <b>11월 42.6</b>(파리와 로마 숙소 조기결제, 반액카드, 입장권 묶음, <b class="hot">두칼레 13.7(12.3까지)</b>, 쿠폴라, 바티칸 약 426만) + <b>12월 3.0</b>(베키오 6.1, 천사의 성 5.5, 콜로세움 6.7, 폼페이와 보르게세 12.2) = <b>99.3</b>(전부 12.23 전 청구서에서 빠집니다. 한도 10월 266(할인 265,952원), 11월 458(할인 458,332원), 12월 250) · 나머지 <b>52.0</b>은 여행 중분: <b>12월 22.0 + 1월 30.0</b>(12월 22.0은 12.23~31 현지 결제가 매입일 기준 12월로 220만 넘게 잡힐 때의 상한이고, 12.29~31 결제는 1월 매입으로 넘어갈 수 있음)(현지 식음료·교통·입장료가 전부 해외결제라 한도가 온전히 쓰입니다) + 우리 디어쇼퍼 <b>1.8</b>(캐시백 1.6과 10.3 오랑주리 5% 할인 0.2) — <b class="hot">신한 클래식와이 5.0은 구 로마 예약(유니온페이)분이라 취소와 함께 사라졌지만</b>, 새 로마가 롯데 10% 대상이 되어 <b>12.6만</b>이 붙으므로 순증입니다(이건 나갔다 돌아오는 돈이라 확정 지출에서 안 뺍니다) — <b>확정 지출은 출국(12.23) 전에 계좌에서 빠져나가는 돈</b>입니다. 총액 1,335.4에서 결제할인 99.3을 뺀 값입니다: 항공 287.5 + 숙박 696.8(기준환율 재집계, 피렌체는 10.1 조기결제 $766.59 완료, 파리와 로마는 11월 초 조기결제 예정, 미실행 시 각각 11.15와 12.17 자동) + 디즈니 64.8(10.1 유로 재구매) + <b>온라인 사전예약 입장·교통 228.0</b>(루브르·오르세·오랑주리·개선문·<b>생트샤펠</b>·밀라노 두오모·<b class="hot">두칼레 궁전·산마르코 대성당</b>·베키오궁·쿠폴라·우피치·피티(PassePartout)·<b>아카데미아</b>·폼페이·콜로세움·바티칸·보르게세·최후의 만찬 + TGV·이탈리아 열차(10.1 결제 94.6)) + <b>반액카드 51.2</b> + <b>여행자보험 7.1</b> · <b>이 중 850만은 이미 결제 완료</b>(총액 877.1 − 8·9월 할인 27.1 · 9.1 루체른·밀라노·<b>루브르</b>·<b>보험</b> · 9.22 두오모 · 10.1 디즈니, 열차, 피렌체 숙소 · 10.3 오랑주리 포함), 출국 전 남은 결제는 <b>386만</b>(총액 458.3 − <b class="hot">10~12월 할인 72.2</b>(10.1 결제분이 받는 10월 할인 26.6 포함). 파리와 로마 숙소는 11월 조기결제라 12월 출국 전 결제는 약 31만이고, 한도 250만 중 약 220만이 여행 중 12월 할인 22.0으로 갑니다) · 현지 결제 257은 <b class="hot">스위스 국내 열차(반액) 약 CHF 230 + 키아소→밀라노 €30 + 빙하공원 CHF 60</b> + <b class="hot">베네치아 바포레토 왕복 €76</b> + <b class="hot">CDG→숙소 택시 €56</b> + <b>로마 짐 보관 €10</b> + <b>공항 이동(택시 €55 또는 열차 €31~34)·세탁방 €12</b> + 융프라우요흐·리기·교통박물관·파리/로마 교통·MANN·산로렌초 + <b>피사 왕복 기차 €59</b> + <b>폼페이 Circumvesuviana 왕복 €26.40</b> + 천사의 성 €36 + 판테온 €14 + <b>카피톨리노 €60</b> + <b>루체른 도시세 CHF 18</b>·피렌체 €36(에어비앤비 영수증에 포함이면 빠짐) 등 현장 지불분 (<b>표 전 행을 €1,525·CHF 1,705로 기계 재집계한 값</b>이며 스칼라 산타·트레비 수반 같은 선택분은 뺐습니다)(사탑 등반 €80은 선택이라 미포함) · <b>여행자보험 7.1은 9.1 결제 완료</b>(원화라 카드 할인 대상 아님) · <b>기타 93은 유심·쇼핑·예비비</b> · 근거는 <a href="#tickets" style="color:inherit"><b>입장권·교통 표</b></a> · 여유 반영 시 2,200만원 권고 · 일정 최종 수정 2026.10.01 · 날씨·환율 매시간 자동 갱신 · 사진 <a href="https://github.com/teamtesila-jpg/our-winter-trip/blob/main/IMAGE-CREDITS.md" style="color:inherit">Wikimedia Commons (CC)</a></p>
   </details>
 </section>
 
@@ -844,7 +849,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <tr><td>융프라우요흐 (12.29 또는 30)</td><td class="mono" colspan="2">4인 약 42만원</td><td class="mono"><b>날씨 보고 전날</b></td></tr>
         <tr><td>피르스트 곤돌라 (흐린 날 대안)</td><td class="mono" colspan="2">4인 CHF 70~116<br><span style="color:var(--muted)">성인 반액 38(동신 쿠폰이면 35) × 2 + 아이(패밀리 카드가 안 되면 쿠폰 1인 20) — 창구 확인</span></td><td class="mono">현장</td></tr>
         <tr><td>리기 데이패스 (1.1)</td><td class="mono">CHF 84</td><td class="mono">15세 이하 무료</td><td class="mono">현장</td></tr>
-        <tr><td>루체른 교통박물관 (1.1)</td><td class="mono" colspan="2">4인 CHF 106 · 데이패스 182</td><td class="mono">현장</td></tr>
+        <tr><td>루체른 교통박물관 (1.1)</td><td class="mono" colspan="2">4인 CHF 106 · 데이패스 CHF 182</td><td class="mono">현장</td></tr>
         <tr><td>스위스 국내 열차 (12.28 · 12.31 · 1.1 · 1.2) <span style="color:var(--muted)">바젤→그린델발트 · 그린델발트→루체른 · 루체른↔아르트골다우 · 루체른→키아소, 반액 추정 — SBB 앱에서 확정</span></td><td class="mono">약 CHF 230<br><span style="color:var(--muted)">12.13 평균 3.6% 인상 전 추정</span></td><td class="mono">패밀리카드 무료</td><td class="mono">현장</td></tr>
         <tr><td>키아소 → 밀라노 (1.2) <span style="color:var(--muted)">이탈리아 구간</span></td><td class="mono" colspan="2">4인 €30 안팎</td><td class="mono">현장</td></tr>
         <tr><td>빙하공원 + 거울 미로 (12.31)</td><td class="mono" colspan="2">가족권 CHF 60</td><td class="mono">현장</td></tr>
@@ -872,7 +877,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <tr><td>오랑주리 (12.24 09:00)</td><td class="mono">€25</td><td class="mono">무료(2매 시간 예약)</td><td class="mono"><b>✅ 10.3 결제</b>(공식 예매처, 우리카드 디어쇼퍼 5% 할인)</td></tr>
         <tr><td>루브르 (12.26 09:00) <span style="color:var(--muted)">+ 오디오가이드 2대 €12</span></td><td class="mono">€64</td><td class="mono">무료</td><td class="mono"><b>✅ 9.1 결제</b></td></tr>
         <tr><td>밀라노 두오모 내부+옥상 · 계단 (1.2)</td><td class="mono">€44</td><td class="mono">€22</td><td class="mono">✅ <b>9.22 결제</b> · 환불 불가</td></tr>
-        <tr><td>이탈리아 열차 5구간 <span style="color:var(--muted)">1.3 왕복, 1.4, 1.7, 1.8</span></td><td class="mono" colspan="2">✅ 4인 €288.92(€92.12 + €77.00 + €73.72 + €46.08)</td><td class="mono"><b>10.1 결제 완료</b>(Trip.com 앱, 롯데 유로)</td></tr>
+        <tr><td>이탈리아 열차 5구간 <span style="color:var(--muted)">1.3 왕복, 1.4, 1.7, 1.8</span></td><td class="mono" colspan="2">✅ 4인 €288.92<span class="nokrw">(€92.12 + €77.00 + €73.72 + €46.08)</span></td><td class="mono"><b>10.1 결제 완료</b>(Trip.com 앱, 롯데 유로)</td></tr>
       </tbody>
     </table></div>
   </details>
@@ -896,7 +901,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <tr><td class="mono">12.26</td><td>디저트</td><td class="city">Stohrer</td><td>1730년 파리 最古 파티스리, 벽화가 역사기념물 · 몽토르괴이 · 바바 오 럼은 럼주라 아이용은 퓌 다무르 · <b>€22~32</b></td></tr>
         <tr><td class="mono">12.24</td><td>식당</td><td class="city">Breizh Café Abbesses</td><td>몽마르트르 언덕 초입 크레프리 · <b>12.24 사크레쾨르 뒤 12:30 점심</b> · 짠 갈레트+단 크레프로 편식 대응 · 이브 영업과 예약은 12월 확인 · €55~80</td></tr>
         <tr><td class="city" colspan="4"><b>스위스</b> — 물가 최고라 외식은 최소, 한 끼만 제대로</td></tr>
-        <tr><td class="mono">12.28~30</td><td>식당</td><td class="city">Barrys (아이거 마운틴 &amp; 소울 리조트 · 옛 셀프니스 호텔)</td><td><b>연 364일 영업</b> · 퐁뒤·뢰스티·버거가 한 메뉴판에 · 마을 중심 · 예약 시 bar 말고 <b>restaurant/lounge 지정</b>, 연말 성수기라 <b>12월 초에 4인 예약</b> · <b>CHF 160~220</b></td></tr>
+        <tr><td class="mono">12.28~30</td><td>식당</td><td class="city">Barrys (아이거 마운틴 &amp; 소울 리조트 · 옛 셀프니스 호텔)</td><td><b>연 364일 영업</b> · 퐁뒤·뢰스티·버거가 한 메뉴판에 · 마을 중심 · 예약 시 bar 말고 <b>restaurant/lounge 지정</b>, 연말 성수기라 <b>12월 초에 4인 예약</b> · <b>CHF 160~220</b> · <a href="https://m.blog.naver.com/dawooo_ni/223588217277" target="_blank" rel="noopener">방문 후기(네이버 블로그)</a></td></tr>
         <tr><td class="mono">12.28~29</td><td>식당</td><td class="city">Onkel Tom's Hütte</td><td>화덕피자로 스위스에서 4인 15~20만원에 끝내는 거의 유일한 곳 · <b>수·목 휴무라 12.30 불가 · 12.29(화)는 16:00 개점</b>(점심 불가) · 예약 불가 · <b>CHF 90~120</b></td></tr>
         <tr><td class="mono">1.1</td><td>식당</td><td class="city">tibits 루체른역</td><td><b>연 365일 영업 — 1.1에 문 여는 채식 뷔페</b> · 무게 계산이라 아이 양만큼만 · 스위스 전 상점 휴무일의 안전판</td></tr>
         <tr><td class="mono">12.31</td><td>식당</td><td class="city">Rathaus Brauerei / Schiff</td><td>카펠교 옆 구시가 · 수제맥주와 퐁뒤·뢰스티 · NYE 저녁은 본문대로 숙소 식사(고정 코스라 4인 부담) — 여기는 12.31 낮 후보(NYE 영업시간 12월 확인) · 퐁뒤 1인 CHF 35</td></tr>
@@ -913,7 +918,7 @@ body.pv .day.today .date .d{color:var(--move)}
         <tr><td class="mono">1.7, 1.8</td><td>식당</td><td class="city">Antica Pizzeria Trianon</td><td><b>다미켈레 바로 맞은편</b> — 다미켈레는 대기가 길어 이쪽이 실속 · 숙소 도보 5~7분 · 연중무휴 · €55~70</td></tr>
         <tr><td class="mono">1.7, 1.8</td><td>식당</td><td class="city">da Michele 본점</td><td>원조를 원하면 여기 · 11:00~23:00 연중무휴 · 마르게리타 €5~6.5 · <b>대기 김</b>, 1.8 폼페이에서 돌아온 14시대 점심이면 줄을 보고 길면 맞은편 트리아농으로(15:05에는 짐 찾으러 일어서야 15:35 열차)</td></tr>
         <tr><td class="mono">1.8</td><td>디저트</td><td class="city">Sfogliatelle Attanasio</td><td>중앙역 북측 골목, 숙소 도보 8~10분 · <b>1.8 아침 폼페이 출발 전</b>에 최적 · 개당 €2~2.5</td></tr>
-        <tr><td class="mono">1.9</td><td>식당</td><td class="city">Roma Sparita</td><td>트라스테베레 · 치즈볼에 담아주는 카초 에 페페로 유명 · 라테라노(18:30 종료)에서 3번 계통 직통(<b>저녁엔 버스 대체 구간일 수 있으니 정류장 표시 확인</b>) · <b>귀가는 트라스테베레에서 나보나까지 도보 20분 또는 버스 15분</b> — 3번은 반대 방향(테스타초·피라미데)이니 타지 마십시오 · <b>1.9는 토요일</b>입니다 — 출발 전 <b>+39 06 5800757</b>로 토요일 저녁 영업과 4인 예약을 확인하십시오 · €80~100</td></tr>
+        <tr><td class="mono">1.9</td><td>식당</td><td class="city">Roma Sparita</td><td>트라스테베레 · 치즈볼에 담아주는 카초 에 페페로 유명 · 라테라노(18:30 종료)에서 3번 계통 직통(<b>저녁엔 버스 대체 구간일 수 있으니 정류장 표시 확인</b>) · <b>귀가는 트라스테베레에서 나보나까지 도보 20분 또는 버스 15분</b> — 3번은 반대 방향(테스타초·피라미데)이니 타지 마십시오 · <b>1.9는 토요일</b> 저녁이라 <b>12월 초에 19:30 4인 예약</b>(<b>+39 06 5800757</b>, 토요일 저녁 영업도 함께 확인) · €80~100</td></tr>
         <tr><td class="mono">1.11</td><td>식당</td><td class="city">Flavio al Velavevodetto</td><td><b>휴무 없음</b>이라 월요일에 안전 · 나보나에서 <b>버스·트램 20~25분</b>(테스타초 · 도보 35~40분) · 로마식 파스타 4종 · €70~95</td></tr>
         <tr><td class="mono">상시</td><td>디저트</td><td class="city">Pasticceria Barberini</td><td><b>테스타초</b> — 나보나에서 버스 20분(1.11 Flavio 가는 길) · <b>연중무휴 · 월~토 06:00~21:00, 일요일 06:00~20:00</b> · 마리토초 · 아침 식사로도 · €15~22</td></tr>
       </tbody>
@@ -1010,18 +1015,18 @@ body.pv .day.today .date .d{color:var(--move)}
 
   <div class="snap-head">
     <span class="snap-title">현재 날씨</span>
-    <span class="snap-time">2026.10.03 16:00 현지 조회 · 한국시간 23:00</span>
+    <span class="snap-time">2026.10.03 16:30 현지 조회 · 한국시간 23:30</span>
   </div>
   <div class="snap-grid">
-    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">22.8°</span><span class="sc-m">체감 21.2° · 11.5–22.8°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">19.5°</span><span class="sc-m">체감 19.1° · 9.9–19.9°</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">0.6°</span><span class="sc-m">체감 −2.1° · 바람 0.8km/h</span><span class="sc-w">흐림</span></div>
-    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">22.8°</span><span class="sc-m">체감 22.3° · 10.0–22.8°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">24.4°</span><span class="sc-m">체감 22.2° · 15.8–24.4°</span><span class="sc-w">대체로 맑음</span></div>
-    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">23.3°</span><span class="sc-m">체감 22.2° · 15.0–23.9°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">27.2°</span><span class="sc-m">체감 26.4° · 10.8–27.2°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">25.9°</span><span class="sc-m">체감 24.3° · 16.4–27.1°</span><span class="sc-w">맑음</span></div>
-    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">25.9°</span><span class="sc-m">체감 26.4° · 16.8–26.6°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">파리</span><span class="sc-t">22.8°</span><span class="sc-m">체감 21.1° · 11.5–22.8°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">그린델발트 <em>1,034m</em></span><span class="sc-t">19.1°</span><span class="sc-m">체감 18.7° · 9.9–19.9°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card alp"><span class="sc-city">융프라우요흐 <em>3,454m</em></span><span class="sc-t">0.5°</span><span class="sc-m">체감 −2.2° · 바람 1.6km/h</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">루체른</span><span class="sc-t">22.8°</span><span class="sc-m">체감 22.3° · 10.0–22.8°</span><span class="sc-w">흐림</span></div>
+    <div class="sc-card"><span class="sc-city">밀라노</span><span class="sc-t">24.2°</span><span class="sc-m">체감 22.2° · 15.8–24.4°</span><span class="sc-w">대체로 맑음</span></div>
+    <div class="sc-card"><span class="sc-city">베네치아</span><span class="sc-t">23.2°</span><span class="sc-m">체감 22.1° · 15.0–23.9°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">피렌체</span><span class="sc-t">27.0°</span><span class="sc-m">체감 25.8° · 10.8–27.2°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">나폴리</span><span class="sc-t">25.7°</span><span class="sc-m">체감 24.1° · 16.4–27.1°</span><span class="sc-w">맑음</span></div>
+    <div class="sc-card"><span class="sc-city">로마</span><span class="sc-t">25.6°</span><span class="sc-m">체감 26.1° · 16.8–26.6°</span><span class="sc-w">대체로 맑음</span></div>
   
   </div>
   <p class="snap-note"><b>매시간 자동 갱신됩니다</b> (서버에서 무인 실행 — 위 시각이 마지막 조회 시점). 실제 예보가 의미를 갖는 건 <b>여행 7~10일 전</b>부터이므로, 그 전에는 아래 평년값을 기준으로 준비하시면 됩니다.</p>
@@ -1298,7 +1303,7 @@ body.pv .day.today .date .d{color:var(--move)}
   <details class="anna">
     <summary>스위스안나 팁 <span class="foldhint">— 루체른 · 리기 (12.31~1.2)</span></summary>
     <p class="src">유튜브 스위스안나(SWISS ANNA · 여행서 리얼 스위스 저자) 영상 58편의 자막에서 우리 일정(겨울 · 아이 동반 · 반액카드)에 맞는 것만 추렸습니다. 영상 문장은 옮기지 않고 요지만 적었고, 가격과 운행은 9.23 공식 사이트로 다시 확인한 값입니다. 링크를 누르면 영상의 해당 장면으로 갑니다.</p>
-    <h4>12.31 도착하는 날</h4><ul><li><b>LIX 식당칸</b> — 자리에만 있지 말고 식당칸에서 커피 한 잔 하며 브리엔츠 호수 구간을 보기 · 겨울에도 식당칸 운영(공식), 10:04 인터라켄 동역 발 편은 SBB 앱의 식당 표시로 확인 <a href="https://youtu.be/cuMMzKUyAlU?t=92" target="_blank" rel="noopener">영상 1:32</a></li><li><b>짐 맡기기</b> — 루체른역 14번 플랫폼 보관함(상시) 또는 갤러리 1층 창구(08:00~19:00), CHF 6~16(SBB 공식) <a href="https://youtu.be/PqNm4Iq_pHU?t=0" target="_blank" rel="noopener">쇼츠</a></li><li><b>12.31은 상점 법정 마감 17:00</b>(루체른 상가협회 표) — 장보기와 기념품은 그 전에 · Coop City 안 레스토랑에서 장보기와 점심을 한 번에(현지인 데일리 메뉴 1인 15프랑 안쪽, 영상값) <a href="https://youtu.be/4IEh4Pucg20?t=542" target="_blank" rel="noopener">영상 9:02</a></li><li><b>2일치를 다 들고 오지 않아도 됩니다</b> — 1.1 저녁, 1.2 아침과 기차 도시락은 역 지하 Coop(일 07~22, 토 06~22)에서 · 단 1.1 공휴일 시간이 미게시라 1.1 저녁 최소분은 12.31에 <a href="https://youtu.be/4IEh4Pucg20?t=612" target="_blank" rel="noopener">영상 10:12</a></li><li><b>린도르 초콜릿 4알</b> — 역 관광안내소(12.31 08:30~16:00)에서 City Guide 책자를 받아 Schwanenplatz 7 가게에서 CHF 15 이상 사면 쿠폰으로 4알(2027.1.1까지 · 영상과 달리 구매 조건 있음) · 가게의 12.31과 1.1 영업은 미게시 <a href="https://youtu.be/oh32C5OZ9Es?t=0" target="_blank" rel="noopener">쇼츠</a></li><li><b>화장실과 물</b> — 시립 공중화장실 약 45곳은 모두 무료, 식수대 134곳 · 역 화장실은 CHF 1.50(카드 가능) <a href="https://youtu.be/ne-oPL2DE7Q?t=0" target="_blank" rel="noopener">쇼츠</a></li></ul>
+    <h4>12.31 도착하는 날</h4><ul><li><b>LIX 식당칸</b> — 자리에만 있지 말고 식당칸에서 커피 한 잔 하며 브리엔츠 호수 구간을 보기 · 겨울에도 식당칸 운영(공식), 10:04 인터라켄 동역 발 편은 SBB 앱의 식당 표시로 확인 <a href="https://youtu.be/cuMMzKUyAlU?t=92" target="_blank" rel="noopener">영상 1:32</a></li><li><b>짐 맡기기</b> — 루체른역 14번 플랫폼 보관함(상시) 또는 갤러리 1층 창구(08:00~19:00), CHF 6~16(SBB 공식) <a href="https://youtu.be/PqNm4Iq_pHU?t=0" target="_blank" rel="noopener">쇼츠</a></li><li><b>12.31은 상점 법정 마감 17:00</b>(루체른 상가협회 표) — 장보기와 기념품은 그 전에 · Coop City 안 레스토랑에서 장보기와 점심을 한 번에(현지인 데일리 메뉴 1인 CHF 15 안쪽, 영상값) <a href="https://youtu.be/4IEh4Pucg20?t=542" target="_blank" rel="noopener">영상 9:02</a></li><li><b>2일치를 다 들고 오지 않아도 됩니다</b> — 1.1 저녁, 1.2 아침과 기차 도시락은 역 지하 Coop(일 07~22, 토 06~22)에서 · 단 1.1 공휴일 시간이 미게시라 1.1 저녁 최소분은 12.31에 <a href="https://youtu.be/4IEh4Pucg20?t=612" target="_blank" rel="noopener">영상 10:12</a></li><li><b>린도르 초콜릿 4알</b> — 역 관광안내소(12.31 08:30~16:00)에서 City Guide 책자를 받아 Schwanenplatz 7 가게에서 CHF 15 이상 사면 쿠폰으로 4알(2027.1.1까지 · 영상과 달리 구매 조건 있음) · 가게의 12.31과 1.1 영업은 미게시 <a href="https://youtu.be/oh32C5OZ9Es?t=0" target="_blank" rel="noopener">쇼츠</a></li><li><b>화장실과 물</b> — 시립 공중화장실 약 45곳은 모두 무료, 식수대 134곳 · 역 화장실은 CHF 1.50(카드 가능) <a href="https://youtu.be/ne-oPL2DE7Q?t=0" target="_blank" rel="noopener">쇼츠</a></li></ul>
     <h4>1.1 리기</h4><ul><li><b>갈지 말지는 쿨름 웹캠으로</b> — 겨울엔 루체른이 잿빛이어도 정상만 구름 위로 나온 운해 날이 있습니다(안개 윗면이 대개 1,100~1,800m · MeteoSwiss) · 전날 밤과 당일 아침 rigi.ch 웹캠 <a href="https://youtu.be/yQzTrzJc3fw?t=683" target="_blank" rel="noopener">영상 11:23</a></li><li><b>올라갈 땐 일자 카드대로 08:18 기차로 아르트골다우</b> — 배로 올라가면 비츠나우행 첫 배가 09:12라 쿨름이 11시 무렵이어서 오전 일정에 안 맞습니다 · 배는 내려올 때만(비츠나우나 베기스 → 교통박물관 앞 Lido) · 루체른역 앞 선착장은 아치를 지나 2분 <a href="https://youtu.be/yQzTrzJc3fw?t=163" target="_blank" rel="noopener">영상 2:43</a></li><li><b>비츠나우 노선은 호수 쪽 창가가 명당</b>(영상은 비츠나우에서 올라갈 때 진행 방향 왼쪽 · 우리는 내려올 때만 이 노선) · 쿨름역에서 정상까지 걸어서 약 10분, 바람이 세니 따뜻하게 · 정상 아래 초록 건물이 화장실 <a href="https://youtu.be/yQzTrzJc3fw?t=256" target="_blank" rel="noopener">영상 4:16</a></li><li><b>겨울엔 산 위 먹을 곳이 적습니다</b> — 간식을 챙기고 식당은 전날 확인(쿨름 호텔은 12.7~25 휴업, 1.1은 기간 밖) · 눈 상태에 따라 열리는 산책길이 달라 걸어 내려갈 생각이면 직원에게 <a href="https://youtu.be/yQzTrzJc3fw?t=278" target="_blank" rel="noopener">영상 4:38</a></li><li><b>베기스 케이블카로 내려오는 길</b> — 케이블카는 중간역의 둥근 돔 안 계단이나 엘리베이터로 내려가서 타고, 베기스에서 발바닥 표시를 따라 선착장까지 약 15분 · 배 연결이 빠듯하니 서두르기(1.1: 케이블카 12:40 → 배 13:12 → 교통박물관 앞 13:35) <a href="https://youtu.be/yQzTrzJc3fw?t=578" target="_blank" rel="noopener">영상 9:38</a></li><li><b>세이버데이패스는 조건부</b> — 반액카드 소지자 CHF 29부터, 리기 · 유람선 · 케이블카까지 하루 무제한이지만 하루 전까지 온라인으로만 사고 날씨가 나빠도 날짜를 못 바꿉니다 · 패밀리 카드가 함께 인정되는지 공식 문구가 없어 사기 전 SBB 확인(안 되면 아이 1일권이 따로 붙음) · 날씨와 상관없이 갈 때만 이득 <a href="https://youtu.be/5ddXClHpzOc?t=204" target="_blank" rel="noopener">영상 3:24</a></li></ul>
     <h4>1.1 공휴일과 1.2 출발</h4><ul><li><b>1.1은 시내 상점 휴무</b> — 역 상점과 교통박물관만 엽니다(박물관 숍이 사실상 유일한 기념품점 · 박물관 브라스리 09:30~17:00) · 1.2는 평소 토요일이라 역 지하 Coop이 06:00에 엽니다 <a href="https://youtu.be/4IEh4Pucg20?t=612" target="_blank" rel="noopener">영상 10:12</a></li></ul>
   </details>
@@ -1599,7 +1604,7 @@ body.pv .day.today .date .d{color:var(--move)}
       <div class="item"><span class="t">10:00</span><span class="c"><b>콜로세움</b><span class="note"><b>성인 €18 + 예약료 €2 → 4인 €44</b>(18세 미만은 입장 무료지만 <b>예약료 €2와 온라인 예약은 아이도 필수</b>) · 판매는 방문 30일 전인 <b>12.10</b>에 열립니다 · <b class="hot">전 종류 기명 티켓 — 예매 때 4인 이름을 여권 철자대로 넣고, 당일 4인 여권 원본을 지참하십시오</b>(입구에서 신분증 원본 대조 · 사본·폰 사진 불가 · 이름 불일치나 미지참이면 입장 불가, 환불 없음) · <b>숙소에서 버스 실측 22분 · 도보 30분</b> — <b class="hot">09:30 슬롯이면 08:30, 10:00 슬롯이면 09:00에 나서십시오</b>(도보 30분 + 입구 줄 여유 15분) · 겨울 08:30 개장이지만 <b>09:30~10:30 슬롯을 목표로</b> 하십시오 · <b class="hot">예약 시각 15분 전까지 입구 도착(10:00 슬롯이면 09:45), 다른 시각엔 입장 불가, 콜로세움 내부 체류는 75분 제한</b> — 08:30·09:00 슬롯은 아이들 아침 준비가 빠듯합니다</span></span></div>
       <div class="item"><span class="t">오후</span><span class="c"><b>포로 로마노</b> + 팔라티노 언덕<span class="note">콜로세움 통합권 · 겨울 09:00~16:30(마지막 입장 15:30)이니 <b>16:30에는 나와야 아래 라테라노가 살아납니다</b> · 점심은 11:15 콜로세움 퇴장 뒤 몬티 쪽에서 먹고 포룸에 들어가십시오(마지막 입장 15:30) · 포룸 안 <b>쿠리아 율리아</b>(고대 원로원 의사당 · 교회로 개조돼 <b>원형에 가깝게</b> 남은 곳) 필수 — <b>추가 요금 없이</b> 통합권으로 입장</span></span></div>
       <div class="item"><span class="t">늦은 오후 선택</span><span class="c"><b>산 조반니 인 라테라노</b> 대성당<span class="note">09:00부터 걷는 날의 끝이라 아이들이 지쳤으면 빼고 나보나로 돌아가 쉬었다가 19:30 저녁으로 갑니다 · 포룸 티투스 개선문 출구에서 <b class="hot">버스 15분</b> — 콜로세움 옆 <b>S. Gregorio 정류장에서 81번</b>(Malatesta 방면 → P.za S. Giovanni in Laterano 하차 · 85·87번은 일요일·공휴일·매월 마지막 토요일에만 이 정류장으로 우회하고 1.9 둘째 토요일엔 정규 경로라 오지 않습니다 · 배차는 앱으로 확인) · 걸으면 2.0km <b>29~30분</b>(실측)이라 예배당을 놓칩니다 · <b>교황의 주교좌 성당</b> · <b>입장 무료</b>, 07:00~18:30 · 신랑의 사도 12인 대리석상 · 길 건너 <b>스칼라 산타</b>(예수가 밟았다는 계단) — <b class="hot">11~3월 18:00 마감</b>(<b>마지막 입장 17:30</b>) · <b>13:30~15:00 점심 휴관</b> · <b>스칼라 산타 먼저</b> · 계단 무료 · 산타 산토룸 예배당 <b>성인 €3.50 · 6~18세 €3.00</b>(4인 €13 · <b>현금·카드 모두</b>) · <b class="hot">예배당은 월~토 15:00~17:15</b>(성소 공식) — 포룸 16:30 퇴장 → 버스 15분이면 16:45~16:50 도착이라 <b>예배당 먼저, 계단은 그 뒤</b>(계단 마지막 입장 17:30) · 30~40분</span></span></div>
-      <div class="item"><span class="t">19:30</span><span class="c">저녁 — <b>트라스테베레</b><span class="note">라테라노(18:30 종료)에서 약 30분(실측 26~34분 · 3번 트램은 12월에 운행 상태 확인) · 가게와 휴무는 <b>맛집 표</b> 참조</span></span></div>
+      <div class="item"><span class="t">19:30</span><span class="c">저녁 — <b>트라스테베레</b><span class="note">라테라노(18:30 종료)에서 약 30분(실측 26~34분 · 3번 트램은 12월에 운행 상태 확인) · 가게는 <b>Roma Sparita</b>(<b>12월 초 19:30 4인 예약</b>), 메뉴와 대안은 <b>맛집 표</b> 참조</span></span></div>
     </div>
   </div>
 
@@ -1631,7 +1636,7 @@ body.pv .day.today .date .d{color:var(--move)}
     <p class="src">정우철 도슨트의 EBS 강의(나의 두 번째 교과서 미술 10강 미켈란젤로와 다빈치, 6강 젠틸레스키, 1강 모딜리아니)와 채널 영상 자막을 요약하고, 운영과 전시실 위치는 9.27 우피치, 아카데미아, 바티칸, 최후의 만찬 공식 사이트로 다시 확인했습니다. 보티첼리, 라파엘로, 카라바조, 베르니니는 그의 강의에 거의 없어 공식 자료로 위치만 적었습니다. (공식) 표시가 없는 설명은 도슨트의 해설이고, 영상 문장은 옮기지 않고 요지만 적었습니다.</p>
     <h4>꼭 볼 작품과 위치</h4><ul><li><b>시스티나 천장, 창세기 9장면</b> — 약 40m x 13.7m 천장을 4년 만에 끝냈고, 인물들이 조각처럼 튀어나와 보인다는 설명입니다. <a href="https://youtu.be/bTYN1QEp3mQ?t=1565" target="_blank" rel="noopener">EBS 10강 26:05</a></li><li><b>아담의 창조, 닿을 듯 말 듯한 손가락</b> — 생명을 주기 직전의 긴장이라는 해석과, 신과 인간은 끝내 다르다는 해석을 함께 소개합니다. <a href="https://youtu.be/bTYN1QEp3mQ?t=1683" target="_blank" rel="noopener">EBS 10강 28:03</a></li><li><b>제단 벽, 최후의 심판</b> — 천장은 30대, 이 벽은 60대에 그렸습니다. 가운데 예수가 오른손을 들고 왼손을 내린 동작이 구원과 심판이고, 원래 나체였던 인물들에 나중에 제자가 옷을 그려 넣었습니다. <a href="https://youtu.be/bTYN1QEp3mQ?t=1761" target="_blank" rel="noopener">EBS 10강 29:21</a></li><li><b>라파엘로의 방, 아테네 학당</b> — 철학자, 학자, 수학자를 한자리에 모아 학문의 위대함을 그린 라파엘로 대표작입니다. 영상은 루브르 필수작이라 말하지만 바티칸 벽화이고, 시스티나 직전 동선이라는 것은 보조 출처입니다. <a href="https://youtu.be/HEFMLXbFdiw?t=407" target="_blank" rel="noopener">서양미술사 편 6:47</a></li></ul>
     <h4>아이에게 들려줄 이야기</h4><ul><li><b>망신 주려고 맡긴 숙제</b> — 미켈란젤로를 미워한 건축가 브라만테가 실패하라고 천장화를 떠넘겼대. 그림은 한 점만 완성해 본 조각가였는데 멋지게 해냈지(그 한 점을 1.5 우피치 도니 톤도로 본 것은 우리 추정). <a href="https://youtu.be/bTYN1QEp3mQ?t=1466" target="_blank" rel="noopener">EBS 10강 24:26</a></li><li><b>물감이 눈에 떨어져</b> — 친구에게 보낸 글에 물감이 떨어져 눈병이 났다고 적었고, 4년 동안 안 아픈 곳이 없었대. 비계 위에서 고개를 한껏 젖히고 그렸다고 들려줍니다. <a href="https://youtu.be/bTYN1QEp3mQ?t=1588" target="_blank" rel="noopener">EBS 10강 26:28</a></li><li><b>하나님 뒤 모양이 뭘 닮았을까</b> — 뇌 단면을 닮았다는 해석이 있고, 해부를 해 본 미켈란젤로라 이 말이 계속 나온대. 답을 먼저 말하지 말고 맞혀 보게 하기. <a href="https://youtu.be/bTYN1QEp3mQ?t=1637" target="_blank" rel="noopener">EBS 10강 27:17</a></li><li><b>살가죽 속에 숨은 화가 얼굴</b> — 바르톨로메오 성인이 들고 있는 축 늘어진 살가죽에 미켈란젤로가 자기 얼굴을 그렸어. 고통스러운 표정이야. <a href="https://youtu.be/bTYN1QEp3mQ?t=1808" target="_blank" rel="noopener">EBS 10강 30:08</a></li><li><b>흉봤다가 당나귀 귀가 된 사람</b> — 교황의 의전 담당관이 뒷골목에나 어울릴 그림이라고 흉보자, 오른쪽 맨 아래 지옥 문지기 미노스로 그려 넣었대. 당나귀 귀는 무지, 몸을 감은 뱀은 방종을 뜻해. <a href="https://youtu.be/bTYN1QEp3mQ?t=1856" target="_blank" rel="noopener">EBS 10강 30:56</a></li></ul>
-    <h4>관람 요령</h4><ul><li><b>숨은그림찾기는 들어가기 전에</b> — 시스티나는 사진, 영상, 휴대폰 모두 금지이고 절대 정숙입니다(공식). 바르톨로메오와 미노스 찾기 미션은 라파엘로의 방에서 미리 정하고 들어갑니다. 다른 구역은 플래시 없이 촬영 가능(공식).</li><li><b>털모자와 오디오가이드</b> — 모자는 안에서 벗어야 하니 아이들 털모자는 가방에 넣습니다(공식). 한국어 오디오가이드는 8유로로 있고, 5~12세 어린이 가이드에는 한국어가 없습니다(공식).</li></ul>
+    <h4>관람 요령</h4><ul><li><b>숨은그림찾기는 들어가기 전에</b> — 시스티나는 사진, 영상, 휴대폰 모두 금지이고 절대 정숙입니다(공식). 바르톨로메오와 미노스 찾기 미션은 라파엘로의 방에서 미리 정하고 들어갑니다. 다른 구역은 플래시 없이 촬영 가능(공식).</li><li><b>털모자와 오디오가이드</b> — 모자는 안에서 벗어야 하니 아이들 털모자는 가방에 넣습니다(공식). 한국어 오디오가이드는 €8로 있고, 5~12세 어린이 가이드에는 한국어가 없습니다(공식).</li></ul>
     <h4>1.12 보르게세 예습 (강의에 보르게세 작품 없음)</h4><ul><li><b>무대 조명처럼 강한 빛과 어둠</b> — 르네상스가 균형이라면 바로크는 연극 조명 같은 명암 대비(테네브리즘)이고, 강사는 렘브란트와 함께 카라바조를 빛을 가장 잘 쓰는 화가로 꼽습니다. 보르게세 8번 방에 카라바조 다윗과 골리앗의 머리, 세례자 요한이 있습니다(공식 도록). <a href="https://youtu.be/HEFMLXbFdiw?t=524" target="_blank" rel="noopener">서양미술사 편 8:44</a></li><li><b>아폴론과 다프네 3번 방, 페르세포네의 납치 4번 방</b> — 손가락과 발가락이 잎과 뿌리로 변하는 순간을 새긴 베르니니 조각입니다(공식 도록). 누가 먼저 잎으로 변하는 손가락을 찾나 겨뤄 봅니다.</li></ul>
   </details>
 
@@ -2014,6 +2019,74 @@ body.pv .day.today .date .d{color:var(--move)}
   });
   setInterval(refresh, 1800000);   // 30분 — 자정 넘김·오래 열어둔 탭 대비
   refresh();
+})();
+</script>
+<script>
+// 유로·프랑 금액 옆 원화(≈). 환율은 #fxTime(매시 자동 갱신) 값, 못 읽으면 예산 기준 환율
+(function () {
+  var fx = document.getElementById('fxTime');
+  var ft = fx ? fx.textContent : '';
+  function rate(code, dflt) {
+    var m = ft.match(new RegExp(code + ' ([\\d,]+)원'));
+    return m ? +m[1].replace(/,/g, '') : dflt;
+  }
+  var R = { '€': rate('EUR', 1525), 'C': rate('CHF', 1705) };
+  var N = '\\d{1,3}(?:,\\d{3})+(?:\\.\\d+)?|\\d+(?:\\.\\d+)?';
+  var RX = new RegExp('(€\\s?|CHF\\s?)(' + N + ')(?:\\s?[~–]\\s?(?:€\\s?|CHF\\s?)?(' + N + '))?(~(?!\\d))?', 'g');
+  var SKIP = '.krw,.kw,.nokrw,script,style,textarea,title,noscript,option,select';
+  var BLOCK = 'td,th,li,p,summary,h1,h2,h3,h4,.v,.dt,.dm,.note,div';
+  function num(x) { return +x.replace(/,/g, ''); }
+  function part(v) {
+    if (v < 950) return [String(Math.round(v / 100) * 100), ''];
+    if (v < 9500) return [String(Math.round(v / 1000)), '천'];
+    if (v < 99500) return [String(Math.round(v / 1000) / 10), '만'];
+    return [Math.round(v / 10000).toLocaleString('ko-KR'), '만'];
+  }
+  function label(a, b) {
+    var pa = part(a);
+    if (b == null) return '≈' + pa[0] + pa[1] + '원';
+    var pb = part(b);
+    if (pa[1] === '만' && pb[1] === '만' && a < 99500) pb[0] = String(Math.round(b / 1000) / 10);  // 8.3~11.4만원
+    return '≈' + pa[0] + (pa[1] === pb[1] ? '' : pa[1]) + '~' + pb[0] + pb[1] + '원';
+  }
+  // 이미 원화가 붙은 금액(₩, (37), (약 10.0만)), 곱셈 내역(€22×2), 환율 표기(€1 = …, 1,626원), 옛 가격(€5→)은 건너뜀
+  function skip(rest) {
+    if (/^\s*(\(\s*(약\s*)?[\d.,]+\s*만?\s*\)|[×x*]\s*\d|=|원|≈|→)/.test(rest)) return true;
+    var w = rest.indexOf('₩');
+    return w !== -1 && w < 18 && !/€|CHF/.test(rest.slice(0, w));
+  }
+  var tw = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null);
+  var nodes = [], n;
+  while ((n = tw.nextNode())) nodes.push(n);
+  nodes.forEach(function (node, i) {
+    var s = node.nodeValue;
+    if (s.indexOf('€') === -1 && s.indexOf('CHF') === -1) return;
+    var pe = node.parentElement;
+    if (!pe || pe.closest(SKIP)) return;
+    var blk = pe.closest(BLOCK), ahead = '';
+    for (var j = i + 1; j < nodes.length && ahead.length < 24; j++) {
+      if (blk && !blk.contains(nodes[j])) break;
+      ahead += nodes[j].nodeValue;
+    }
+    var frag = null, last = 0, m;
+    RX.lastIndex = 0;
+    while ((m = RX.exec(s))) {
+      var end = m.index + m[0].length;
+      if (skip(s.slice(end) + ahead)) continue;
+      var r = R[m[1].charAt(0)], a = num(m[2]) * r, b = m[3] ? num(m[3]) * r : null;
+      if (!a) continue;
+      frag = frag || document.createDocumentFragment();
+      frag.appendChild(document.createTextNode(s.slice(last, end)));
+      var k = document.createElement('span');
+      k.className = 'kw';
+      k.textContent = label(a, b) + (m[4] ? '~' : '');
+      frag.appendChild(k);
+      last = end;
+    }
+    if (!frag) return;
+    frag.appendChild(document.createTextNode(s.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  });
 })();
 </script>
 
