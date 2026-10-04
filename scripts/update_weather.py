@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """날씨 스냅샷·환율 환산액을 최신값으로 교체.
 
-대상 파일은 argv[1], 기본값은 index.html (GitHub Actions에서 매시 실행).
+대상 파일은 argv[1], 기본값은 index.html (GitHub Actions 예약 실행. 매시로 걸었지만 2026.9.28 무렵부터 실제 간격은 4~7시간).
 원본 HTML을 넘기면 아티팩트용 스냅샷도 같이 갱신된다.
 """
 import io
