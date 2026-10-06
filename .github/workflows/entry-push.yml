@@ -1,0 +1,31 @@
+name: entry-push
+on:
+  schedule:
+    - cron: "17 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      test:
+        description: "2분 뒤 시험 알림 한 번"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: entry-push
+  cancel-in-progress: false
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Queue phone pushes
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          if [ "${{ inputs.test }}" = "true" ]; then python scripts/entry_push.py --test; else python scripts/entry_push.py; fi
+      - name: Commit push log if changed
+        run: |
+          git config user.name "push-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if [ -f push/sent.json ]; then git add push/sent.json; fi
+          if git diff --cached --quiet; then echo "no change"; else git commit -m "auto: entry push log" && git pull --rebase -q && git push -q; fi
